@@ -1,6 +1,14 @@
 ﻿# mongodb-system-model
 
 ## Client vs. Server System Model
+- [term: mongo](https://docs.mongodb.com/manual/reference/glossary/#term-mongod)
+The MongoDB *shell*. The `mongo` process starts the MongoDB shell as a daemon connected to either a `mongod` instance. The shell has a JavaScript interface.
+
+- [term: mongod](https://docs.mongodb.com/manual/reference/glossary/#term-mongod)
+The MongoDB *database* server. The `mongod`  process starts the MongoDB server as a daemon. The MongoDB server manages data requests and formats and manages background operations.
+
+- [term: mongos](https://docs.mongodb.com/manual/reference/glossary/#term-mongos)
+The *routing and load balancing* process that acts an interface between an application and a MongoDB  sharded cluster. 
 
 ## [Client](https://docs.mongodb.com/manual/reference/glossary/#term-client)
 > The *application layer* that uses a database for data persistence and storage.  
@@ -8,7 +16,7 @@
 
 ## [Drivers](https://docs.mongodb.com/manual/reference/glossary/#term-driver)  
 > Drives provide the interface level between the application layer and the database server.
-
+> A *client library* for interacting with MongoDB in a particular language.
 
 ## [Replica Set](https://docs.mongodb.com/manual/replication/)
 
