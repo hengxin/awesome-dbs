@@ -5,6 +5,8 @@
 - [云数据库 PolarDB @ 阿里云文档](https://help.aliyun.com/product/58609.html)
 > 产品简介: 优势、架构、案例、术语表 (包括 **数据一致性**)、最佳实践
 
+- [带领国产数据库走向世界, POLARDB底层逻辑是什么? @ 阿里技术 2019-10](https://mp.weixin.qq.com/s/D56101wV4dAR1aDeEodl7w)
+
 - [使用Sysbench验证POLARDB的高并发大吞吐量在线交易处理能力](https://edu.aliyun.com/article/160)
 
 - [读懂POLARDB不能错过的18篇深度文章 @ 云栖社区 2019-10](https://yq.aliyun.com/articles/721566)
