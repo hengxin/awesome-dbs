@@ -44,7 +44,19 @@ with majority writes and sub-majority reads.
 We also don’t check how failures and process crashes influence causal orders.
 *Ultimately, there’s still a lot we don’t know!*
 
+- [MongoDB 4.2.6; Kyle Kingsbury, 2020-05-15](https://jepsen.io/analyses/mongodb-4.2.6)
+> Jepsen evaluated MongoDB version 4.2.6, and found that 
+> even at the strongest levels of read and write concern, 
+> it failed to preserve snapshot isolation.
+
+- [Jepsen Testing on YugaByte DB; 2018](https://blog.yugabyte.com/jepsen-testing-on-yugabyte-db-database/)
+
 ## Discussions about Jepsen-Test on MongoDB
+- [Jepsen Disputes MongoDB’s Data Consistency Claims; InfoQ, May 22, 2020](https://www.infoq.com/news/2020/05/Jepsen-MongoDB-4-2-6/)
+
+> In recent years MongoDB has been heavily promoting its transactional capabilities. 
+> But as Jepsen found, transactional support doesn’t work by default.
+
 - [MongoDB 3.4.0-rc3 (jepsen.io); aphyr on Feb 7, 2017](https://news.ycombinator.com/item?id=13590385)
 
 > Bigger news is that Jepsen tests are now part of the MongoDB continuous integration suite EverGreen.
