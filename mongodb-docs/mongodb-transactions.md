@@ -19,6 +19,10 @@
 > With *distributed transactions*, transactions can be used across multiple operations, 
 > collections, databases, documents, and shards.
 
+- [MongoDB Transactions: Your Very First Transaction with MongoDB 4.0; 2018](https://dzone.com/articles/mongodb-transactions-your-very-first-transaction-w)
+
+> MongoDB 4.0 implements snapshot isolation for the transactions.
+
 ## API Examples
 - [Example using Transactions (Callback) API](https://docs.mongodb.com/manual/core/transactions/#transactions-api)
 > The example uses the new callback API for working with transactions, 
