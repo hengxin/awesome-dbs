@@ -16,8 +16,8 @@ across multiple operations, collections, databases, documents, and shards.
 > 本文尝试对Mongo的复制和分布式事务的原理进行描述，在必要的地方，对实现的正确性进行论证。
 
 ## Papers (See [here](https://github.com/hengxin/2020-ccf-tencent/tree/master/2020-ccf-tencent-projects/refs))
-- [GSI:SRDS2003]()
-- [ClockSI:SRDS2003]()
+- [GSI:SRDS2005](https://github.com/hengxin/2020-ccf-tencent/blob/master/2020-ccf-tencent-projects/refs/SRDS2005%20Database%20Replication%20Using%20Generalized%20Snapshot%20Isolation.pdf)
+- [ClockSI:SRDS2013](https://github.com/hengxin/2020-ccf-tencent/blob/master/2020-ccf-tencent-projects/refs/SRDS2013%20Clock-SI%20Snapshot%20Isolation%20for%20Partitioned%20Data%20Stores%20Using%20Loosely%20Synchronized%20Clocks.pdf)
 
 ## Source Code
-> Please update this section.
+> ***You are expected to fill in this section.***

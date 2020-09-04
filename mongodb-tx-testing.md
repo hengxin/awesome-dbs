@@ -7,5 +7,5 @@ and found that even at the strongest levels of read and write concern,
 it failed to preserve snapshot isolation.
 
 ## Papers (See [here](https://github.com/hengxin/2020-ccf-tencent/tree/master/2020-ccf-tencent-projects/refs))
-- [CLOTHO:OOPSLA2019]()
-- [ComplexityTx:OOPSLA2019]()
+- [CLOTHO:OOPSLA2019](https://github.com/hengxin/2020-ccf-tencent/blob/master/2020-ccf-tencent-projects/refs/OOPSLA2019%20CLOTHO%20Directed%20Test%20Generation%20for%20Weakly%20Consistent%20Database%20Systems.pdf)
+- [ComplexityTx:OOPSLA2019](https://github.com/hengxin/2020-ccf-tencent/blob/master/2020-ccf-tencent-projects/refs/OOPSLA2019%20On%20the%20Complexity%20of%20Checking%20Transactional%20Consistency.pdf)
