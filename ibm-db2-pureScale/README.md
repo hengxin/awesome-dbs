@@ -1,1 +1,0 @@
-# ibm-db2-pureScale
