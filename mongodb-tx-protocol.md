@@ -2,8 +2,13 @@
 
 ## MongoDB Docs
 - [Transactions@docs](https://docs.mongodb.com/manual/core/transactions/)
-  - With distributed transactions, transactions can be used 
+  - With distributed transactions, transactions can be used
     across multiple operations, collections, databases, documents, and shards.
+  - ***VERY IMPORTANT!!!***
+
+- [MongoDB Whitepaper]()
+  - ***VERY IMPORTANT!!!***
+  - see refs/
 
 - [MongoDB Transactions: Your very First Transaction with MongoDB 4.0; 2018](https://dzone.com/articles/mongodb-transactions-your-very-first-transaction-w)
   - Wrong Claim: MongoDB 4.0 implements snapshot isolation for the transactions.
@@ -16,6 +21,7 @@
 ## Papers (See [here](https://github.com/hengxin/2020-ccf-tencent/tree/master/2020-ccf-tencent-projects/refs))
 - [Tunable Consistency in MongoDB @ VLDB2019](http://www.vldb.org/pvldb/vol12/p2071-schultz.pdf)
   - ***VERY IMPORTANT!!!***
+  - see refs/
   - [Tunable Consistency in MongoDB @ Youtube](https://www.youtube.com/watch?v=x5UuQL9rA1c)
 
 - [GSI:SRDS2005](https://github.com/hengxin/2020-ccf-tencent/blob/master/2020-ccf-tencent-projects/refs/SRDS2005%20Database%20Replication%20Using%20Generalized%20Snapshot%20Isolation.pdf)
