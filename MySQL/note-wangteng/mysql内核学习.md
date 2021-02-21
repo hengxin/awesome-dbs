@@ -27,14 +27,227 @@
 
 # MySQL源码阅读
 * 官方文档
-  * [Extending Mysql 8.0](https://dev.mysql.com/doc/extending-mysql/8.0/en/)
-  * [MySQL Internals](https://dev.mysql.com/doc/internals/en/)
+  * [文档](https://dev.mysql.com/doc/)
+  * [扩展：Extending Mysql 8.0](https://dev.mysql.com/doc/extending-mysql/8.0/en/)
+  * [代码导航：MySQL Internals](https://dev.mysql.com/doc/internals/en/)
 * 资源
+  * [MySQL源码阅读1234](https://www.zhihu.com/people/wenguangliu/posts)
+  * [mysql8.0关键函数和执行流程](https://blog.csdn.net/jygqm/article/details/82620112)
   * [源代码阅读笔记-博客](https://blog.csdn.net/theorytree)
   * [编译运行-阅读入口](https://blog.csdn.net/happylzs2008/article/details/88252821)
   * [源码分析入门](https://blog.csdn.net/feivirus/article/details/83716680?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control)
-<!-- * mysql启动
+  * [src layouts](https://oxnz.github.io/2016/07/20/mysql-primer-source)
+  * [2007年分析书籍：Understanding MySQL Internals](./Understanding.MySQL.Internals.Apr.2007.pdf)
+# 目录
+  * client：客户端工具
+    * `mysql.cc` 命令行工具
+    * `mysqladmin.cc` 数据库维护
+    * `mysqlshow.cc` 数据库展示
+    * ...
+  * storage/myisam：一种存储引擎，其目录结构近似为模板
+    * mi开头的文件较为重要
+    * 文件处理程序：`mi_open.cc,mi_close.cc,...`
+    * 行处理程序：`mi_delete.cc,mi_write.cc,...`
+    * key处理程序：`mi_key.cc,mi_rkey.cc,...`
+  * mysys：MySQL System Library，工具库
+  * sql：SQL语法解析，处理接口，结果检测
+    * parser：`sql_lex.cc,sql_yacc.yy,...`
+    * handler
+  * vio：virtual I/O，不同协议的网络I/O接口
+## 代码流程：
+* 启动
 ```
 sql/main.cc     main()
+```
+* 目录流程
+```
+ User enters "INSERT" statement     /* client */   
+ |
+ Message goes over TCP/IP line      /* vio, various */
+ |
+ Server parses statement            /* sql */
+ |
+ Server calls low-level functions   /* mysys */
+ |
+ Handler stores in file             /* myisam */
+```
+* 执行流程 
+  * `mysql/mysql.cc:main()`：命令行工具
+  ```c++
+  int main(int argc, char *argv[]) {
+
+    if (get_options(argc, (char **)argv)) {  //获取user, pwd等
+        my_end(0);
+        return EXIT_FAILURE;
+    }
+    
+    //连接服务器
+    if (sql_connect(current_host, current_db, current_user, opt_password,opt_silent)) {  				
+    	quick = 1;  // Avoid history
+    	status.exit_status = 1;
+    	mysql_end(-1);
+  	}
+ 
+    status.exit_status = read_and_execute(!status.batch); //读取命令并执行
+ 
+    mysql_end(0); //关闭连接
+  }
+  ```
+  * `mysql/mysql.cc:read_and_execute()`
+  ```c++
+  static int read_and_execute(bool interactive) {
+
+    for (;;) {
+      line = batch_readline(status.line_buff, real_binary_mode);//读取一行
+
+      //将line复制到buffer,检查并执行
+      if (add_line(glob_buffer, line, line_length, &in_string, &ml_comment,
+                 status.line_buff ? status.line_buff->truncated : false))
+      break;
+    }
+  }
+  ```
+  * `mysql/mysql.cc:add_line()`
+  ```c++
+  static bool add_line(String &buffer, char *line, size_t line_length,
+                     char *in_string, bool *ml_comment, bool truncated) {
+
+    for (;;) {
+      line = batch_readline(status.line_buff, real_binary_mode);//读取一行
+
+      //将line复制到buffer,检查并执行
+      if (add_line(glob_buffer, line, line_length, &in_string, &ml_comment,
+                 status.line_buff ? status.line_buff->truncated : false))
+      break;
+    }
+  }
+  ```
+```
+client/mysql.cc   main()
 sql/mysqld.cc     mysqld_main()
-```  -->
+/sql/mysqld.cc
+/sql/sql_parse.cc   do_command() [->] dispatch_command()
+/sql/sql_prepare.cc
+/sql/sql_insert.cc
+/sql/ha_myisam.cc
+/myisam/mi_write.c
+```
+* mysql启动
+```
+
+``` 
+# Understanding MySQL Internals 笔记
+## MySQL Architecture
+* Core Modules
+  * Initialization Module：加载配置，分配内存，初始化结构、变量，加载访问控制表，一系列初始化工作,->
+  * Connection Manager：监听clients，执行网络协议任务,->
+  * Thread Manager：支持线程处理连接,->
+  * Connection Thread：调用Authentication Module，调用Command Dispatcher
+  * Authentication Module
+  * Command Dispatcher：分发command
+  * Logging Module：在dispatch前记录query和command
+  * Query Cache Module：检查是否需要缓存，是否已有该结果
+  * Optimizer：接收Slect query
+  * Table Modification Module：update, insert, table creation, schema-altering query
+  * Table maintenance Module：check, repair等统计数据，碎片整理
+  * Replication Module：涉及到复制的query
+  * Status Reporting Module：回应状态请求
+  * Replication master module：处理线程返回从库请求
+  * Replication slave module：
+  * 
+* query vs command
+  * query：要经过parser，如SELECT, DELETE, INSERT
+  * command：无需parser可执行
+* 每个接收Parser消息的module发送query涉及到的table到Access Control Module，如果成功则交给Table Manager。Table Manager发起一系列操作请求到Storage Engine Module，
+## Classes, Structures
+* THD：线程描述符，包含该线程信息
+  * [THD对象](https://zhuanlan.zhihu.com/p/115054892)
+  * 基类1：MDL_context_owner：MDL(元数据锁) module
+  * 基类2：Query_arena：
+  * 基类3：Open_tables_state：
+  * LEX* lex : parse tree descriptor
+  * LEX_CSTRING m_query_string : includes current query and length
+  * String m_rewritten_query：m_query_string改写后
+
+# 启动流程 in linux
+## sql/mysqld.cc 
+```c++
+1. 设置路径、发送启动消息
+    substitute_progpath(argv);//替换成全路径的程序名
+    sysd::notify_connect();// 在环境变量NOTIFY_SOCKET中查找socket的文件名并连接 
+    sysd::notify()//向Notify Socket发送正在启动的消息
+2. 初始化my_sys函数、资源、变量
+    my_init() // init my_sys library & pthreads
+3. 加载配置，缓存配置
+    load_delaults()：配置文件中读取配置项
+    persisted_variables_cache：持久化的参数配置缓存，采用JSON进行存储
+4. 初始化pfs配置数组
+    init_pfs_instrument_array
+5. 处理需要先设置的选项(参数)
+    handle_early_options
+6. 初始化命令：将命令存储在sql_statement_names全局数组中
+    init_sql_statement_names
+7. 初始化系统变量
+    sys_var_init
+8. 初始化错误日志
+    init_error_log
+9. 调整相关参数
+    adjust_related_options
+10. 初始化performance schema
+    initialize_performance_schema
+11. 初始化Lock Order：Lock Order graph 描述依赖关系
+    LO_init
+12. 设置psi相关服务：thread_service, mutex_service等
+13. 注册服务工具：init_server_psi_keys
+14. 重新初始化锁：my_thread_global_reinit
+15. component_infrastructure_init
+16. register_pfs_notification_service 
+17. register_pfs_resource_group_service 
+18. Resource_group_mgr::init：初始化资源组管理器，
+19. 调用psi_thread_service相关函数
+20. Resource_group_mgr->init：初始化资源组管理器，
+    与资源相关的服务
+	  注册线程创建/断开连接的回调
+	  创建用户级/系统级的资源组对象
+21. 调用psi_thread_service相关函数
+22. mysql_audit_initialize:初始化与audit相关的变量；
+23. Srv_session::module_init：初始化srv_session模块
+24. query_logger.init：查询日志初始化
+25. init_common_variables： 
+    init_thread_environment：初始化与线程相关的锁； 
+    mysql_init_variables：初始化全局变量为缺省值 
+    mysql_bin_log.set_psi_keys完成bin log的初始化，让仪表相关的对bin log可见 
+    mysql_bin_log.init_pthread_objects：初始化bin log与线程相关的锁 
+    get_options，剩余的可选项，binlog，压缩算法，页的大小，线程缓存大小，back_log 
+      Connection_handler_manager::init,初始化连接池
+        Per_thread_connection_handler::init，初始化Per_thread_connection_handler，初始化锁
+    初始化mysql client的plugin 
+    选字符集/collation 
+    日志配置 
+    创建数据目录 
+    表的大小写等
+26. my_init_signals：初始化信号处理 
+27. 线程栈大小检查
+28. Migrate_keyring::init:初始化Migrate_keyring（一种mysql数据搬运模式）相关的，如压缩方式，并且连接到数据源主机 
+    Migrate_keyring::execute  
+29. set_ports:确定tcp端口
+30. init_server_components
+    mdl_init：metadata locking subsystem元数据锁子系统，
+    table_def_init
+    hostname_cache_init
+    my_timer_initialize
+    init_slave_list
+    transaction_cache_init
+    
+寻找、设置、调整参数，从命令行和配置文件中获取设置项
+    
+
+    my_thread_global_init()：初始化线程的环境（初始化一堆资源锁PSI_mutex_key） 
+    my_thread_init()：为线程分配内存，由mysys和debug调用
+
+， 
+```
+# 缩写
+* PSI：performance schema interface，检测性能、资源使用情况
+* PFS：performance storage
+* DQL,DML,DDL,DCL：数据查询，操纵，定义，控制语言
