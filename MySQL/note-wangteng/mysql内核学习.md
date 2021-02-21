@@ -238,15 +238,13 @@ sql/mysqld.cc     mysqld_main()
     my_timer_initialize
     init_slave_list
     transaction_cache_init
-    
-寻找、设置、调整参数，从命令行和配置文件中获取设置项
-    
-
-    my_thread_global_init()：初始化线程的环境（初始化一堆资源锁PSI_mutex_key） 
-    my_thread_init()：为线程分配内存，由mysys和debug调用
-
-， 
+     
 ```
+<!-- 寻找、设置、调整参数，从命令行和配置文件中获取设置项
+    
+
+     my_thread_global_init()：初始化线程的环境（初始化一堆资源锁PSI_mutex_key） 
+     my_thread_init()：为线程分配内存，由mysys和debug调用 -->
 # 缩写
 * PSI：performance schema interface，检测性能、资源使用情况
 * PFS：performance storage
