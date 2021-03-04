@@ -30,31 +30,41 @@
   * [文档](https://dev.mysql.com/doc/)
   * [扩展：Extending Mysql 8.0](https://dev.mysql.com/doc/extending-mysql/8.0/en/)
   * [代码导航：MySQL Internals](https://dev.mysql.com/doc/internals/en/)
-* 资源
+* 网络资源
   * [MySQL源码阅读1234](https://www.zhihu.com/people/wenguangliu/posts)
   * [mysql8.0关键函数和执行流程](https://blog.csdn.net/jygqm/article/details/82620112)
   * [源代码阅读笔记-博客](https://blog.csdn.net/theorytree)
   * [编译运行-阅读入口](https://blog.csdn.net/happylzs2008/article/details/88252821)
   * [源码分析入门](https://blog.csdn.net/feivirus/article/details/83716680?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control)
   * [src layouts](https://oxnz.github.io/2016/07/20/mysql-primer-source)
-  * [2007年分析书籍：Understanding MySQL Internals](./Understanding.MySQL.Internals.Apr.2007.pdf)
+  * [CSDN博主 冰河 - 分布式事务相关文章](https://blog.csdn.net/l1028386804/category_9755213.html?spm=1001.2014.3001.5482)
+  * [淘宝数据库月报](http://mysql.taobao.org/monthly/)
+  * [从源码角度轻松认识mysql整体框架图](https://mp.weixin.qq.com/s?__biz=MzAwNTMxMzg1MA==&mid=2654078593&idx=4&sn=2a033dc472838b0123a403d1d6255077&chksm=80d822d4b7afabc2ae245cac55ee33f07dee162775732d02f2d773587348c02055c425b35538&mpshare=1&scene=23&srcid=0303DcHINzIJ0DtbKeuDixNs&sharer_sharetime=1614758474236&sharer_shareid=dd2be4103c603bc61de89fb0f23e10e6#rd)
+* 书籍
+  * [MySQL运维内参](../ref/MySQL运维内参：MySQL、Galera、Inception核心原理与最佳实践.pdf)
+  * [2007年分析书籍：Understanding MySQL Internals](../ref/Understanding.MySQL.Internals.Apr.2007.pdf)
+* 
 # 目录
   * client：客户端工具
     * `mysql.cc` 命令行工具
     * `mysqladmin.cc` 数据库维护
     * `mysqlshow.cc` 数据库展示
     * ...
-  * storage/myisam：一种存储引擎，其目录结构近似为模板
+  * storage/myisam：一种存储引擎，其目录结构近似为模板，所有存储引擎的源代码在此storage目录
     * mi开头的文件较为重要
     * 文件处理程序：`mi_open.cc,mi_close.cc,...`
     * 行处理程序：`mi_delete.cc,mi_write.cc,...`
     * key处理程序：`mi_key.cc,mi_rkey.cc,...`
   * mysys：MySQL System Library，工具库
-  * sql：SQL语法解析，处理接口，结果检测
+  * sql：mysql服务器主要代码，包含了main
     * parser：`sql_lex.cc,sql_yacc.yy,...`
     * handler
   * vio：virtual I/O，不同协议的网络I/O接口
-## 代码流程：
+  * sql-common：存放部分服务器端和客户端都会用到的代码
+  * unittest：单元测试文件目录
+  * 
+## 代码流程(从client开始，未完成)：
+win的vscode设置c_cpp_properties.json的"compilerPath"为cgwin的g++，使得代码智能显示为 `!_WIN32`
 * 启动
 ```
 sql/main.cc     main()
@@ -132,10 +142,7 @@ sql/mysqld.cc     mysqld_main()
 /sql/ha_myisam.cc
 /myisam/mi_write.c
 ```
-* mysql启动
-```
 
-``` 
 # Understanding MySQL Internals 笔记
 ## MySQL Architecture
 * Core Modules
@@ -168,9 +175,92 @@ sql/mysqld.cc     mysqld_main()
   * LEX* lex : parse tree descriptor
   * LEX_CSTRING m_query_string : includes current query and length
   * String m_rewritten_query：m_query_string改写后
-
+* NET
+* TABLE
+* FIELD
 # 启动流程 in linux
-## sql/mysqld.cc 
+## 精简版 sql/mysqld.cc
+```c++
+int mysqld_main(int argc, char **argv){
+  // 处理配置文件及启动参数等
+  if (load_defaults(...))
+  
+  //继续处理参数变量
+  heo_error = handle_early_options();
+
+  sys_var_init();
+
+  mysql_audit_initialize();
+
+  //日志系统初始化
+  query_logger.init();
+
+  // 初始化很多系统内部变量
+  if (init_common_variables()) 
+
+  /* 信号系统初始化 */
+  my_init_signals();  
+    
+  /* 核心模块启动，包括存储引擎等 */
+  if (init_server_components()) unireg_abort(MYSQLD_ABORT_EXIT);
+
+  /* 网络系统初始化 */
+  if (network_init()) unireg_abort(MYSQLD_ABORT_EXIT);
+
+  /* 状态变量初始化 */
+  init_status_vars();
+  
+  /* Binlog相关检查初始化 */
+  check_binlog_cache_size(nullptr);
+  check_binlog_stmt_cache_size(nullptr);
+  binlog_unsafe_map_init();
+
+  // 开始信号处理线程
+  start_signal_handler();
+
+  // 开始 handle manager线程
+  start_handle_manager();
+
+  //******
+  /* 服务监听线程创建 */
+  setup_conn_event_handler_threads();
+  
+  // Notify the signal handler that we have stopped listening for connections.
+  mysql_mutex_lock(&LOCK_socket_listener_active);
+  socket_listener_active = false;
+  mysql_cond_broadcast(&COND_socket_listener_active);
+  mysql_mutex_unlock(&LOCK_socket_listener_active);
+  
+  // join shutdown thread
+  if (signal_thread_id.thread != 0)
+    ret = my_thread_join(&signal_thread_id, nullptr);
+
+  //退出
+  clean_up(true);
+  sysd::notify("STATUS=Server shutdown complete");
+  mysqld_exit(signal_hand_thr_exit_code);
+}
+```
+* `load_defaults()`
+```c++
+load_delaults()：配置文件中读取配置项
+  my_load_defaults()
+    my_search_option_files()
+      search_default_file_with_ext()：
+        打开配置文件并解析每一行，并确定配置分组。
+        每个参数会由handle_default_option()缓存到内存中
+
+过程中使用到了handle_option_ctx结构体，参数的内存为alloc，参数为m_args，组为group。参数都存入ctx.alloc中(mysqld_main()传入)。
+  struct handle_option_ctx {
+    MEM_ROOT *alloc;
+    My_args *m_args;
+    TYPELIB *group;
+  };
+```
+* `sys_var_init()`
+  * `all_sys_vars`是一个单链表存储所有系统变量，将`all_sys_vars`的所有变量存入哈希表`system_variable_hash`
+  * 
+## 细致版 sql/mysqld.cc 
 ```c++
 1. 设置路径、发送启动消息
     substitute_progpath(argv);//替换成全路径的程序名
@@ -238,14 +328,16 @@ sql/mysqld.cc     mysqld_main()
     my_timer_initialize
     init_slave_list
     transaction_cache_init
-     
-```
-<!-- 寻找、设置、调整参数，从命令行和配置文件中获取设置项
+    
+寻找、设置、调整参数，从命令行和配置文件中获取设置项
     
 
-     my_thread_global_init()：初始化线程的环境（初始化一堆资源锁PSI_mutex_key） 
-     my_thread_init()：为线程分配内存，由mysys和debug调用 -->
+    my_thread_global_init()：初始化线程的环境（初始化一堆资源锁PSI_mutex_key） 
+    my_thread_init()：为线程分配内存，由mysys和debug调用
+
+， 
+```
 # 缩写
-* PSI：performance schema interface，检测性能、资源使用情况
+* PSI：performance schema interface：performance schema(资源,性能使用情况) 接口
 * PFS：performance storage
 * DQL,DML,DDL,DCL：数据查询，操纵，定义，控制语言
