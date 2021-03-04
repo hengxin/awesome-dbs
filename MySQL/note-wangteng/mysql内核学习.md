@@ -242,24 +242,55 @@ int mysqld_main(int argc, char **argv){
 }
 ```
 * `load_defaults()`
-```c++
-load_delaults()：配置文件中读取配置项
-  my_load_defaults()
-    my_search_option_files()
-      search_default_file_with_ext()：
-        打开配置文件并解析每一行，并确定配置分组。
-        每个参数会由handle_default_option()缓存到内存中
-
-过程中使用到了handle_option_ctx结构体，参数的内存为alloc，参数为m_args，组为group。参数都存入ctx.alloc中(mysqld_main()传入)。
-  struct handle_option_ctx {
-    MEM_ROOT *alloc;
-    My_args *m_args;
-    TYPELIB *group;
-  };
-```
+  ```c++
+  load_delaults()：从命令行和默认配置文件中读取配置项并缓存
+    my_load_defaults()
+      my_search_option_files()
+        search_default_file_with_ext()：
+          打开配置文件并解析每一行，并确定配置分组。
+          每个参数会由handle_default_option()缓存到内存中
+  ```
+  * `my_search_option_files()`有个参数为`is_login_file`，对`false`和`true`分别调用一次。最终会把所有的参数放在`load_defaults()`传进来的参数`argv_alloc`。   
+  * `load_defaults()`调用子过程使用到了`handle_option_ctx`结构体传参。
+    ```c++
+    struct handle_option_ctx {
+      MEM_ROOT *alloc;  // 最终缓存参数的地址，为传入的argv_alloc，m_args只是中间介质，相当于alloc分配内存的一块
+      My_args *m_args;  // 参数存储在为m_args
+      TYPELIB *group;   // 组信息
+    };
+    ```
+  * `load_default()`执行后，`argc`和`argv`会更新为所有获取的配置项
+* `handle_early_options()`
+  ```c++
+  static int handle_early_options() {
+    vector<my_option> all_early_options;
+    //遍历所有系统变量，变量的选项为 PARSE_EARLY的放入all_early_options
+    sys_var_add_options(&all_early_options, sys_var::PARSE_EARLY);
+    //将my_long_early_options的成员加入all_early_options
+    for (my_option *opt = my_long_early_options; opt->name != nullptr; opt++)
+      all_early_options.push_back(*opt);
+    
+    //remaining_argc, remaining_argv是更新后的argc和argv重新赋值的变量
+    //handle_options()将根据....未完待续
+    ho_error = handle_options(&remaining_argc, &remaining_argv,
+                            &all_early_options[0], mysqld_get_one_option);
+  }
+  ```
+  * 选项按使用顺序分为`PARSE_EARLY`和`PARSE_NORMAL`两种，`EARLY` 类型的选项在启动时要使用，因此提前处理。
+  * early参数会被放在临时向量`all_early_options`里
+  * `my_option`：存储选项的结构体
+    ```c++
+    struct my_option {
+      const char *name;// 名字
+      int id; //类型
+      void *value;  //值
+      longlong def_value; /**< Default value */
+    }
+    ```
+  * 
 * `sys_var_init()`
   * `all_sys_vars`是一个单链表存储所有系统变量，将`all_sys_vars`的所有变量存入哈希表`system_variable_hash`
-  * 
+  * `handle_options()`
 ## 细致版 sql/mysqld.cc 
 ```c++
 1. 设置路径、发送启动消息
