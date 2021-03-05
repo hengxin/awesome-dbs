@@ -241,23 +241,38 @@ int mysqld_main(int argc, char **argv){
   mysqld_exit(signal_hand_thr_exit_code);
 }
 ```
-* `load_defaults()`
+* `load_defaults()`：从默认配置文件和命令行中读取配置项(option)并缓存
   ```c++
-  load_delaults()：从命令行和默认配置文件中读取配置项并缓存
-    my_load_defaults()
-      my_search_option_files()
-        search_default_file_with_ext()：
-          打开配置文件并解析每一行，并确定配置分组。
-          每个参数会由handle_default_option()缓存到内存中
-  ```
-  * `my_search_option_files()`有个参数为`is_login_file`，对`false`和`true`分别调用一次。最终会把所有的参数放在`load_defaults()`传进来的参数`argv_alloc`。   
-  * `load_defaults()`调用子过程使用到了`handle_option_ctx`结构体传参。
+  //过程中使用argv_alloc存储各种信息:dirs,args等，最后将args复制到argv
+  load_defaults(MYSQL_CONFIG_NAME, load_default_groups, &argc, &argv,&argv_alloc)
+    my_load_defaults(conf_file, groups, argc, argv, alloc,&default_directories)
+      // 初始化默认目录(如/etc)，dirs存储在alloc分配的内存
+      dirs = init_default_directories(alloc)
+      // 搜索所有设置文件，设置信息存入ctx中
+      // false是指定参数is_login_file，若用户指定了--login-path则会使用login-file存储的信息登录
+      my_search_option_files(conf_file, argc, argv, &args_used,
+                                      handle_default_option, (void *)&ctx, dirs,
+                                      false, found_no_defaults)
+        //获取诸如--delaults-file之类的选项
+        get_defaults_options(...)
+        
+        // ***_with_ext()打开配置文件并解析每一行，存储到func_ctx中
+        // func是handle_default_option()函数，负责读取选项
+        // func_ctx是传入的ctx(handle_option_ctx结构体)，存储参数
+        search_default_file_with_ext(func, func_ctx...)
+      
+      最后按：配置文件参数(my_args)+分隔符(arg_sep)+命令行参数(argv)，更新argv个argc
+  ```   
+  * `load_defaults()`调用子过程使用的结构体了。
     ```c++
+    `handle_option_ctx`结构体用来存储参数信息(option+group)并传递
     struct handle_option_ctx {
       MEM_ROOT *alloc;  // 最终缓存参数的地址，为传入的argv_alloc，m_args只是中间介质，相当于alloc分配内存的一块
       My_args *m_args;  // 参数存储在为m_args
       TYPELIB *group;   // 组信息
     };
+    //My_args是类型安全的动态数组，用于表示和存储option
+    typedef Prealloced_array<char *, 100> My_args;
     ```
   * `load_default()`执行后，`argc`和`argv`会更新为所有获取的配置项
 * `handle_early_options()`
