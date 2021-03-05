@@ -182,11 +182,19 @@ sql/mysqld.cc     mysqld_main()
 ## 精简版 sql/mysqld.cc
 ```c++
 int mysqld_main(int argc, char **argv){
+  //->fun()是my_init()函数中调用
+  if(my_init())
+    -> my_thread_global_init()
+    -> my_thread_init()
+
   // 处理配置文件及启动参数等
   if (load_defaults(...))
   
   //继续处理参数变量
   heo_error = handle_early_options();
+
+  //将命令存储在sql_statement_names全局数组里,命令种类参考my_sqlcommand.h
+  init_sql_statement_names();
 
   sys_var_init();
 
@@ -275,37 +283,81 @@ int mysqld_main(int argc, char **argv){
     typedef Prealloced_array<char *, 100> My_args;
     ```
   * `load_default()`执行后，`argc`和`argv`会更新为所有获取的配置项
+
 * `handle_early_options()`
+  * `my_option`：选项结构体
+    ```c++
+    struct my_option {
+      const char *name;// 名字
+      int id; 
+      void *value;  //值
+      ulong var_type; /**< GET_BOOL, GET_ULL, etc */
+      longlong def_value; /**< Default value */
+      ...
+    }
+    ```
+  * `handle_early_options()`
   ```c++
   static int handle_early_options() {
     vector<my_option> all_early_options;
+
     //遍历所有系统变量，变量的选项为 PARSE_EARLY的放入all_early_options
     sys_var_add_options(&all_early_options, sys_var::PARSE_EARLY);
+    
     //将my_long_early_options的成员加入all_early_options
     for (my_option *opt = my_long_early_options; opt->name != nullptr; opt++)
       all_early_options.push_back(*opt);
     
-    //remaining_argc, remaining_argv是更新后的argc和argv重新赋值的变量
-    //handle_options()将根据....未完待续
+    //remaining_argc, remaining_argv是更新后的argc和argv
+    //handle_options()将根据和EARLY匹配的argv选项进行一些设置，如 global_system_variables
     ho_error = handle_options(&remaining_argc, &remaining_argv,
                             &all_early_options[0], mysqld_get_one_option);
   }
   ```
   * 选项按使用顺序分为`PARSE_EARLY`和`PARSE_NORMAL`两种，`EARLY` 类型的选项在启动时要使用，因此提前处理。
   * early参数会被放在临时向量`all_early_options`里
-  * `my_option`：存储选项的结构体
-    ```c++
-    struct my_option {
-      const char *name;// 名字
-      int id; //类型
-      void *value;  //值
-      longlong def_value; /**< Default value */
-    }
-    ```
-  * 
+
+* `init_sql_statement_names()`：遍历`enum_sql_command`中定义的所有SQL命令，然后从`com_status_vars[]`中提取命令名(`string`类型)和长度，保存在全局数组`sql_statement_names`中
+    * `sql_statement_names[]`：全局数组，`LEX_CSTRING[]` 类型
+    * `com_status_vars[]`：全局数组，`SHOW_VAR[]`类型，SQL命令是`com_status_vars`的一部分
+    * `System_status_var`：结构体类型，可表示所有的状态变量的
+    * `sql_statement_names`元素：`{admin_commands,len}`，`{alter_table,11}`，...
+
 * `sys_var_init()`
   * `all_sys_vars`是一个单链表存储所有系统变量，将`all_sys_vars`的所有变量存入哈希表`system_variable_hash`
   * `handle_options()`
+* 数据结构
+  * `Prealloced_array`：class类型，是类型安全的动态数组
+  * `System_status_var`：系统状态变量，包含一些统计信息
+  ```c++
+  struct System_status_var{
+    ulonglong created_tmp_disk_tables;
+    ulonglong created_tmp_tables;
+    ulonglong ha_commit_count;
+    ...
+    ulong com_stat[(uint)SQLCOM_END];
+  }
+  ```
+  * `enum_sql_command`：SQL Commands
+  ```c++
+  enum enum_sql_command {
+    SQLCOM_SELECT,
+    SQLCOM_CREATE_TABLE,
+    SQLCOM_CREATE_INDEX,
+    ...
+    SQLCOM_END
+  };
+  ```
+  * `SHOW_VAR`：表示一种用来SHOW STATUS的变量
+  ```c++
+  // SHOW STATUS Server status variable
+  struct SHOW_VAR {
+    const char *name;
+    char *value;
+    enum enum_mysql_show_type type; //SHOW_INT,SHOW_LONGLONG,...
+    enum enum_mysql_show_scope scope; //SHOW_SCOPE_UNDEF,SHOW_SCOPE_GLOBAL,...
+  };
+  ```
 ## 细致版 sql/mysqld.cc 
 ```c++
 1. 设置路径、发送启动消息
