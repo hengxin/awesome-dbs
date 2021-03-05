@@ -182,7 +182,7 @@ sql/mysqld.cc     mysqld_main()
 ## 精简版 sql/mysqld.cc
 ```c++
 int mysqld_main(int argc, char **argv){
-  //->fun()是my_init()函数中调用
+  //初始化mutexes，`->`是my_init()中的函数调用
   if(my_init())
     -> my_thread_global_init()
     -> my_thread_init()
@@ -198,9 +198,20 @@ int mysqld_main(int argc, char **argv){
 
   sys_var_init();
 
+  //  Init error log subsystem. This does not actually open the log yet.
+  if (init_error_log()) unireg_abort(MYSQLD_ABORT_EXIT);
+  if (!opt_validate_config) adjust_related_options(&requested_open_files);
+
+  // Initialize the resource group subsystem.
+  if (res_grp_mgr->init())
+
+  // Initialize audit interface globals. Audit plugins are inited later.
   mysql_audit_initialize();
 
-  //日志系统初始化
+  //  初始化 server session
+  Srv_session::module_init();
+  
+  // Perform basic query log initialization. 
   query_logger.init();
 
   // 初始化很多系统内部变量
@@ -229,9 +240,26 @@ int mysqld_main(int argc, char **argv){
   // 开始 handle manager线程
   start_handle_manager();
 
+  //线程栈大小检查相关代码
+  int retval = pthread_attr_getguardsize(&connection_attrib, &guardize);
+  ...
+
+  /* Determine default TCP port and unix socket name */
+  set_ports();
+
+  init_server_components()
+
+  // Add server_uuid to the sid_map.
+  int gtid_ret = gtid_state->init();
+
+  if (init_ssl_communication()) unireg_abort(MYSQLD_ABORT_EXIT);
   //******
   /* 服务监听线程创建 */
   setup_conn_event_handler_threads();
+  
+  /* Save pid of this process in a file */
+  if (create_pid_file()) abort = true;
+
   
   // Notify the signal handler that we have stopped listening for connections.
   mysql_mutex_lock(&LOCK_socket_listener_active);
@@ -324,8 +352,65 @@ int mysqld_main(int argc, char **argv){
     * `sql_statement_names`元素：`{admin_commands,len}`，`{alter_table,11}`，...
 
 * `sys_var_init()`
-  * `all_sys_vars`是一个单链表存储所有系统变量，将`all_sys_vars`的所有变量存入哈希表`system_variable_hash`
-  * `handle_options()`
+  * `all_sys_vars`：是`sys_var_chain`类型，全局单链表，存储所有系统变量。
+    ```c++
+    struct sys_var_chain {
+      sys_var *first;
+      sys_var *last;
+    };
+    ```
+    `sys_var`为class类型，具有next属性，定义时通过构造函数加入`all_sys_vars`。   
+    `sys_var`有诸多派生类，如`Sys_var_ulong,Sys_var_bool`，派生类构造函数都调用了`sys_var`的构造函数，在`sql/sys_var.cc`中定义了诸多全局静态变量。因此在编译时`all_sys_vars`已经包含了众多系统变量
+  * `sys_var_init()`
+    ```c++
+    int sys_var_init() {
+
+      //系统变量哈希表，为全局static变量
+      system_variable_hash = new collation_unordered_map<string, sys_var *>(
+          system_charset_info, PSI_INSTRUMENT_ME);
+      ...
+      //将all_sys_vars全部加入哈希表
+      if (mysql_add_sys_var_chain(all_sys_vars.first)) goto error;
+      return 0
+    }
+    ```
+  * 
+
+* `init_common_variables()`：
+  ```c++
+  int init_common_variables() {
+
+    // 初始化线程相关锁，初始化全局变量为缺省值
+    if (init_thread_environment() || mysql_init_variables()) return 1;
+
+    // Init mutexes for the global MYSQL_BIN_LOG objects.
+    mysql_bin_log.init_pthread_objects();
+
+    default_storage_engine = "InnoDB";
+
+    //将status_vars加入all_status_vars
+    if (add_status_vars(status_vars)) return 1;
+
+    // binlog，压缩算法，页的大小，线程缓存大小，back_log等可选项
+    if (get_options(&remaining_argc, &remaining_argv)) return 1; 
+
+    设置 thread_cache_size, host_cache_size
+
+    //初始化mysql client的plugin
+    mysql_client_plugin_init();
+
+    选择字符集
+
+    日志配置
+
+    //创建和初始化数据目录
+    initialize_create_data_directory(mysql_real_data_home)
+
+    表名大小写，等等配置
+  }
+    
+  ```
+
 * 数据结构
   * `Prealloced_array`：class类型，是类型安全的动态数组
   * `System_status_var`：系统状态变量，包含一些统计信息
