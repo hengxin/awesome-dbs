@@ -178,19 +178,36 @@ sql/mysqld.cc     mysqld_main()
 * NET
 * TABLE
 * FIELD
-# 启动流程 in linux
+# generic linux 版的启动流程 
 ## 精简版 sql/mysqld.cc
 ```c++
+记号：`A()->B()`指函数A的实现中调用了函数B
+
+设置： 不定义宏 WITH_PERFSCHEMA_STORAGE_ENGINE
+
 int mysqld_main(int argc, char **argv){
-  //初始化mutexes，`->`是my_init()中的函数调用
+  
+  // 替换argv[0]为完整路径
+  substitute_progpath(argv);
+
+  //初始化mutexes，init my_sys library & pthreads
+  //Initialize my_sys functions, resources and variables
   if(my_init())
     -> my_thread_global_init()
     -> my_thread_init()
 
-  // 处理配置文件及启动参数等
+  // 缓存配置文件及命令行中的options并设置argc和argv
   if (load_defaults(...))
   
-  //继续处理参数变量
+  /* Set data dir directory paths */
+  strmake(mysql_real_data_home, get_relative_path(MYSQL_DATADIR),
+          sizeof(mysql_real_data_home) - 1);
+  
+  // e.g. default_paths["/etc/my.cnf"] = enum_variable_source::GLOBAL;
+  // 建立文件参数，命令行参数对应的变量类型，GLOBAL,MYSQL_USER,COMMAND_LINE,...
+  init_variable_default_paths();
+
+  //处理早期要用到的选项
   heo_error = handle_early_options();
 
   //将命令存储在sql_statement_names全局数组里,命令种类参考my_sqlcommand.h
@@ -249,23 +266,46 @@ int mysqld_main(int argc, char **argv){
 
   init_server_components()
 
+  // 压缩GTID表线程
+  create_compress_gtid_table_thread();
+
+  //Notify any waiters that the server components have been initialized.
+  server_components_initialized();
+
+  sysd::notify("READY=1\nSTATUS=Server is operational\nMAIN_PID=", getpid(),
+               "\n");
+
+  //执行后server可以serve客户端
+  (void)RUN_HOOK(server_state, before_handle_connection, (nullptr));
+
   // Add server_uuid to the sid_map.
   int gtid_ret = gtid_state->init();
 
   if (init_ssl_communication()) unireg_abort(MYSQLD_ABORT_EXIT);
-  //******
-  /* 服务监听线程创建 */
-  setup_conn_event_handler_threads();
   
+  socket_listener_active = true;
+
+  // 监听连接
+  mysqld_socket_acceptor->connection_event_loop();
+  
+  // 以下为结束代码
+  sysd::notify("STOPPING=1\nSTATUS=Server shutdown in progress\n");
+
+  // Call audit plugins of SERVER SHUTDOWN audit class.
+  mysql_audit_notify(MYSQL_AUDIT_SERVER_SHUTDOWN_SHUTDOWN,
+                     MYSQL_AUDIT_SERVER_SHUTDOWN_REASON_SHUTDOWN,
+                     MYSQLD_SUCCESS_EXIT);
+
+  //终止终止compress_gtid_table_thread
+  terminate_compress_gtid_table_thread();
+
+  //保存GTID到gtid_executed table
+  if (gtid_state->save_gtids_of_last_binlog_into_table())
+
+  socket_listener_active = false;
+
   /* Save pid of this process in a file */
   if (create_pid_file()) abort = true;
-
-  
-  // Notify the signal handler that we have stopped listening for connections.
-  mysql_mutex_lock(&LOCK_socket_listener_active);
-  socket_listener_active = false;
-  mysql_cond_broadcast(&COND_socket_listener_active);
-  mysql_mutex_unlock(&LOCK_socket_listener_active);
   
   // join shutdown thread
   if (signal_thread_id.thread != 0)
@@ -277,6 +317,51 @@ int mysqld_main(int argc, char **argv){
   mysqld_exit(signal_hand_thr_exit_code);
 }
 ```
+* `bool my_init()`：
+  ```c++
+  bool my_init() {
+
+    设置创建新文件和目录的默认权限
+    
+    // initialize thread environment(各种互斥锁)
+    // my_errorcheck_mutexattr
+    // mysql_mutex_t THR_LOCK_malloc; THR_LOCK_myisam_mmap;THR_LOCK_myisam;
+    // THR_LOCK_heap;THR_LOCK_malloc;THR_LOCK_open;THR_LOCK_lock;
+    // THR_LOCK_net;THR_LOCK_charset;THR_LOCK_threads;THR_COND_threads;
+    if (my_thread_global_init()) return true;
+
+    //Allocate thread specific memory for the thread, used by mysys and dbug
+    // 为线程分配一个线程变量，存储在全局线程变量THR_mysys中
+    // 每生成一个线程后就要调用，除非调用了my_init()
+    if (my_thread_init()) return true;    
+
+    if(...){
+      //设置文件信息向量FileInfoVector *fivp;
+      MyFileInit();
+    }
+  }
+  ```
+  线程变量
+  ```c++
+  struct st_my_thread_var {
+    my_thread_id id;
+    struct CODE_STATE *dbug;
+  };
+  ```
+  锁
+  ```c++
+  struct my_mutex_t {
+    union u {
+      native_mutex_t m_native; // pthread_mutex_t
+      safe_mutex_t *m_safe_ptr;
+    } m_u;
+  };
+  struct mysql_mutex_t {
+    my_mutex_t m_mutex;
+    struct PSI_mutex *m_psi{nullptr};
+  };
+  ```
+
 * `load_defaults()`：从默认配置文件和命令行中读取配置项(option)并缓存
   ```c++
   //过程中使用argv_alloc存储各种信息:dirs,args等，最后将args复制到argv
@@ -337,9 +422,10 @@ int mysqld_main(int argc, char **argv){
       all_early_options.push_back(*opt);
     
     //remaining_argc, remaining_argv是更新后的argc和argv
-    //handle_options()将根据和EARLY匹配的argv选项进行一些设置，如 global_system_variables
+    //handle_options()将根据和EARLY匹配的argv选项进行一些设置，如 输出版本信息；设置某些系统变量
     ho_error = handle_options(&remaining_argc, &remaining_argv,
                             &all_early_options[0], mysqld_get_one_option);
+      ->识别出option后，调用mysqld_get_one_option()分情况处理
   }
   ```
   * 选项按使用顺序分为`PARSE_EARLY`和`PARSE_NORMAL`两种，`EARLY` 类型的选项在启动时要使用，因此提前处理。
@@ -412,6 +498,7 @@ int mysqld_main(int argc, char **argv){
   ```
 
 * 数据结构
+  * typedef unsigned int PSI_mutex_key;
   * `Prealloced_array`：class类型，是类型安全的动态数组
   * `System_status_var`：系统状态变量，包含一些统计信息
   ```c++
@@ -521,6 +608,9 @@ int mysqld_main(int argc, char **argv){
 ， 
 ```
 # 缩写
-* PSI：performance schema interface：performance schema(资源,性能使用情况) 接口
+* PSI：performance schema interface，用于监控/诊断MySQL服务运行状态
+* 
 * PFS：performance storage
 * DQL,DML,DDL,DCL：数据查询，操纵，定义，控制语言
+# 模块
+* performance schema：mysql的运行状态监控模块，默认是打开的，该模块实现形式为存储引擎，performance_schema 数据库的操作由该engine完成
