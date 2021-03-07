@@ -30,6 +30,8 @@
   * [文档](https://dev.mysql.com/doc/)
   * [扩展：Extending Mysql 8.0](https://dev.mysql.com/doc/extending-mysql/8.0/en/)
   * [代码导航：MySQL Internals](https://dev.mysql.com/doc/internals/en/)
+  * [Source Code Document](https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_COMPONENTS.html)
+
 * 网络资源
   * [MySQL源码阅读1234](https://www.zhihu.com/people/wenguangliu/posts)
   * [mysql8.0关键函数和执行流程](https://blog.csdn.net/jygqm/article/details/82620112)
@@ -190,11 +192,10 @@ int mysqld_main(int argc, char **argv){
   // 替换argv[0]为完整路径
   substitute_progpath(argv);
 
-  //初始化mutexes，init my_sys library & pthreads
   //Initialize my_sys functions, resources and variables
   if(my_init())
-    -> my_thread_global_init()
-    -> my_thread_init()
+    -> my_thread_global_init() // 初始化线程要用到的各种锁
+    -> my_thread_init()   //初始化thread_local id变量
 
   // 缓存配置文件及命令行中的options并设置argc和argv
   if (load_defaults(...))
@@ -203,21 +204,24 @@ int mysqld_main(int argc, char **argv){
   strmake(mysql_real_data_home, get_relative_path(MYSQL_DATADIR),
           sizeof(mysql_real_data_home) - 1);
   
-  // e.g. default_paths["/etc/my.cnf"] = enum_variable_source::GLOBAL;
-  // 建立文件参数，命令行参数对应的变量类型，GLOBAL,MYSQL_USER,COMMAND_LINE,...
+  // 建立映射e.g. default_paths["/etc/my.cnf"] = enum_variable_source::GLOBAL;
   init_variable_default_paths();
 
-  //处理早期要用到的选项
+  //处理早期要用到的选项，根据这些选项进行一些设置
   heo_error = handle_early_options();
 
   //将命令存储在sql_statement_names全局数组里,命令种类参考my_sqlcommand.h
   init_sql_statement_names();
 
+  //将所有系统变量放到hash表system_variable_hash中
   sys_var_init();
 
-  //  Init error log subsystem. This does not actually open the log yet.
+  //  Init error log subsystem. 初始化了各种锁和filtering engine
   if (init_error_log()) unireg_abort(MYSQLD_ABORT_EXIT);
   if (!opt_validate_config) adjust_related_options(&requested_open_files);
+
+  // Initialize Components core subsystem early on
+  if (component_infrastructure_init()) unireg_abort(MYSQLD_ABORT_EXIT);
 
   // Initialize the resource group subsystem.
   if (res_grp_mgr->init())
@@ -397,7 +401,7 @@ int mysqld_main(int argc, char **argv){
     ```
   * `load_default()`执行后，`argc`和`argv`会更新为所有获取的配置项
 
-* `handle_early_options()`
+* `handle_early_options()`：要早用的选项先设置
   * `my_option`：选项结构体
     ```c++
     struct my_option {
@@ -431,12 +435,20 @@ int mysqld_main(int argc, char **argv){
   * 选项按使用顺序分为`PARSE_EARLY`和`PARSE_NORMAL`两种，`EARLY` 类型的选项在启动时要使用，因此提前处理。
   * early参数会被放在临时向量`all_early_options`里
 
-* `init_sql_statement_names()`：遍历`enum_sql_command`中定义的所有SQL命令，然后从`com_status_vars[]`中提取命令名(`string`类型)和长度，保存在全局数组`sql_statement_names`中
-    * `sql_statement_names[]`：全局数组，`LEX_CSTRING[]` 类型
-    * `com_status_vars[]`：全局数组，`SHOW_VAR[]`类型，SQL命令是`com_status_vars`的一部分
-    * `System_status_var`：结构体类型，可表示所有的状态变量的
-    * `sql_statement_names`元素：`{admin_commands,len}`，`{alter_table,11}`，...
-
+* `init_sql_statement_names()`：
+  * `include/my_sqlcommand.h` 文件中定义了 SQL命令，保存在枚举类 `enum_sql_command` 中
+  * `system_variables.h` 文件中**简单**定义了表示所有系统状态变量的结构体 `System_status_var`
+  * `mysqld.cc` 文件中定义了全局数据 `com_status_vars[]`，**具体**定义了命令状态变量
+  * `init_sql_statement_names()` 函数遍历`com_status_vars` 中位于 `enum_sql_command` 里的命令状态变量，保存到全局数组`sql_statement_names`中，每个元素形为`{"alter_db",8}`
+  * `sql_statement_names[]`：全局数组，`LEX_CSTRING[]` 类型，
+  * `LEX_CSTRING`
+    ```c++
+    typedef struct MYSQL_LEX_CSTRING LEX_CSTRING;
+    struct MYSQL_LEX_CSTRING {
+      const char *str;
+      size_t length;
+    };
+    ```
 * `sys_var_init()`
   * `all_sys_vars`：是`sys_var_chain`类型，全局单链表，存储所有系统变量。
     ```c++
@@ -460,8 +472,14 @@ int mysqld_main(int argc, char **argv){
       return 0
     }
     ```
+* `component_infrastructure_init()`：引导 core component subsystem
   * 
-
+  ```c++
+  #define SERVICE_TYPE_NO_CONST(name) mysql_service_ ## name ## _t
+  #define DECLARE_BOOL_METHOD(name,args) DECLARE_METHOD(mysql_service_status_t, name, args)
+  #define DECLARE_METHOD(retval, name, args) retval(*name) args
+  typedef int mysql_service_status_t;//0 is false, non-zero is true.
+  ```
 * `init_common_variables()`：
   ```c++
   int init_common_variables() {
@@ -614,3 +632,7 @@ int mysqld_main(int argc, char **argv){
 * DQL,DML,DDL,DCL：数据查询，操纵，定义，控制语言
 # 模块
 * performance schema：mysql的运行状态监控模块，默认是打开的，该模块实现形式为存储引擎，performance_schema 数据库的操作由该engine完成
+# 概念
+* 系统变量：反映了启动参数，分为全局系统变量和会话系统变量(show variables;)，有些可支持在线热更改(set)。
+* 状态变量：运行时操作统计信息，只允许读，分为全局变量和会话变量(show status;)
+* Component Subsystem：独立于server，用于扩展server的功能，每个component提供若干服务service，components之间通过对方提供的service通信，server可选择加载和卸载指定的component.
