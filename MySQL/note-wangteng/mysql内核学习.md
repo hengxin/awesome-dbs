@@ -473,12 +473,121 @@ int mysqld_main(int argc, char **argv){
     }
     ```
 * `component_infrastructure_init()`：引导 core component subsystem
-  * 
+  * Component Subsystem：定义部件来提供功能
+    * 
+    * 宏定义：
+      ```c++
+      // 服务类型名
+      #define SERVICE_TYPE(name) const SERVICE_TYPE_NO_CONST(name)
+      #define SERVICE_TYPE_NO_CONST(name) mysql_service_ ## name ## _t
+      // 服务实现名
+      #define SERVICE_IMPLEMENTATION(component, service) imp_##component##_##service
+      // 服务实现：service_type object = {}
+      #define BEGIN_SERVICE_IMPLEMENTATION(component, service) \
+        SERVICE_TYPE(service) SERVICE_IMPLEMENTATION(component, service) = {
+      #define END_SERVICE_IMPLEMENTATION() }
+     
+      // 方法定义
+      #define DECLARE_BOOL_METHOD(name,args) DECLARE_METHOD(mysql_service_status_t, name, args)
+      #define DECLARE_METHOD(retval, name, args) retval(*name) args
+      ``` 
+      
+      typedef int mysql_service_status_t;//0 is false, non-zero is true.
+      sql\server_component\CMakeLists.txt中使用TARGET_COMPILE_DEFINITIONS定义了WITH_MYSQL_COMPONENTS_TEST_DRIVER
+       
+    * 定义一种服务：最终会定义一种服务结构体类型，包含一组API用来绑定方法的实现
+      ```c++
+      BEGIN_SERVICE_DEFINITION(greetings)
+      DECLARE_BOOL_METHOD(say_hello, (const char **hello_string));
+      END_SERVICE_DEFINITION(greetings)
+      //展开后
+      typedef struct s_mysql_greetings {
+        mysql_service_status_t (*say_hello)(const char **hello_string);
+      }mysql_service_greetings_t;
+      ```
+    * 实现服务：一个类完成一个服务类型的实现，可实现额外的API，由部件组装
+      ```c++
+      // *_imp.h定义，*_imp.cc实现
+      class english_greeting_service_imp {
+        public:     
+          static DEFINE_BOOL_METHOD(say_hello, (const char **hello_string));
+          static DEFINE_BOOL_METHOD(get_language, (const char **language_string));
+      };
+      class polish_greeting_service_imp {
+        public:
+          static DEFINE_BOOL_METHOD(say_hello, (const char **hello_string));
+          static DEFINE_BOOL_METHOD(get_language, (const char **language_string));
+        };
+      ```
+    * 定义一个部件component，可包含多种服务的实现
+      ```c++
+      /* 源文件 */
+      //初始化函数
+      mysql_service_status_t example_init() { return 0; }
+      mysql_service_status_t example_deinit() { return 0; }
+
+      //定义一个服务实例，包含了服务实现
+      BEGIN_SERVICE_IMPLEMENTATION(example_component1, greetings)
+      english_greeting_service_imp::say_hello, END_SERVICE_IMPLEMENTATION();
+      
+      // example_math是另一种服务
+      BEGIN_SERVICE_IMPLEMENTATION(example_component1, example_math)
+      simple_example_math_imp::calculate_gcd, END_SERVICE_IMPLEMENTATION();
+
+      //定义一个提供服务的索引列表，每项为一个服务索引项mysql_service_ref_t
+      BEGIN_COMPONENT_PROVIDES(example_component1)
+        PROVIDES_SERVICE(example_component1, greetings),
+        PROVIDES_SERVICE(example_component1, example_math),
+      END_COMPONENT_PROVIDES();
+
+      定义依赖：registry
+
+      定义metadata描述部件
+
+      声明一个部件(定义实例)，类型为 mysql_component_t
+
+      ...
+
+      /*展开 */ 
+      // 两个服务实现的实例展开后为：  
+      const mysql_service_greetings_t imp_example_component1_greetings ={
+        english_greeting_service_imp::say_hello,
+      }
+      const mysql_service_example_math_t imp_example_component1_example_math ={
+        simple_example_math_imp::calculate_gcd,
+      }
+      //提供的服务列表展开后
+      static struct mysql_service_ref_t __example_component1_provides[] = {
+        { "greetings" "." "example_component1", const_cast < void *> ((const void *)&SERVICE_IMPLEMENTATION(example_component1, greetings)) }
+        { "example_math" "." "example_component1", const_cast < void *> ((const void *)&SERVICE_IMPLEMENTATION(example_component1, example_math)) }
+      }
+      ``` 
   ```c++
-  #define SERVICE_TYPE_NO_CONST(name) mysql_service_ ## name ## _t
-  #define DECLARE_BOOL_METHOD(name,args) DECLARE_METHOD(mysql_service_status_t, name, args)
-  #define DECLARE_METHOD(retval, name, args) retval(*name) args
-  typedef int mysql_service_status_t;//0 is false, non-zero is true.
+  
+
+  (initialize_minimal_chassis(&srv_registry)
+  
+  //会定义一个service结构体类型，里面包括了一个say_hello()方法
+  BEGIN_SERVICE_DEFINITION(greetings)
+  DECLARE_BOOL_METHOD(say_hello, (const char **hello_string));
+  END_SERVICE_DEFINITION(greetings)
+  
+  typedef struct s_mysql_greetings {
+    mysql_service_status_t (*say_hello)(const char **hello_string);
+  }mysql_service_greetings_t;
+
+  //定义一个实现
+  class english_greeting_service_imp {
+    public:     
+      static DEFINE_BOOL_METHOD(say_hello, (const char **hello_string));
+      static DEFINE_BOOL_METHOD(get_language, (const char **language_string));
+  };
+
+  BEGIN_SERVICE_IMPLEMENTATION(example_component1, greetings)
+  english_greeting_service_imp::say_hello, END_SERVICE_IMPLEMENTATION();
+  const mysql_service_greetings_t imp_example_component1_greetings ={
+    english_greeting_service_imp::say_hello,
+  }
   ```
 * `init_common_variables()`：
   ```c++
@@ -635,4 +744,95 @@ int mysqld_main(int argc, char **argv){
 # 概念
 * 系统变量：反映了启动参数，分为全局系统变量和会话系统变量(show variables;)，有些可支持在线热更改(set)。
 * 状态变量：运行时操作统计信息，只允许读，分为全局变量和会话变量(show status;)
-* Component Subsystem：独立于server，用于扩展server的功能，每个component提供若干服务service，components之间通过对方提供的service通信，server可选择加载和卸载指定的component.
+## Component Subsystem
+通过部件component来提供功能，部件与mysql server独立，用于扩展server的功能。   
+每个component提供若干服务(service)，components之间通过service通信。   
+server可选择加载和卸载指定的component。
+* 编译时会定义一部分宏    
+  例如：`sql\server_component\CMakeLists.txt` 中使用 `TARGET_COMPILE_DEFINITIONS` 定义了`WITH_MYSQL_COMPONENTS_TEST_DRIVER`
+* 宏定义：
+  ```c++
+  // 服务类型名
+  #define SERVICE_TYPE(name) const SERVICE_TYPE_NO_CONST(name)
+  #define SERVICE_TYPE_NO_CONST(name) mysql_service_ ## name ## _t
+  // 服务实现名
+  #define SERVICE_IMPLEMENTATION(component, service) imp_##component##_##service
+  // 服务实现：service_type object = {}
+  #define BEGIN_SERVICE_IMPLEMENTATION(component, service) \
+    SERVICE_TYPE(service) SERVICE_IMPLEMENTATION(component, service) = {
+  #define END_SERVICE_IMPLEMENTATION() }
+ 
+  // 方法定义
+  #define DECLARE_BOOL_METHOD(name,args) DECLARE_METHOD(mysql_service_status_t, name, args)
+  #define DECLARE_METHOD(retval, name, args) retval(*name) args
+  ``` 
+   
+* 定义一种服务：最终会定义一种服务结构体类型，包含一组API用来绑定方法的实现
+  ```c++
+  BEGIN_SERVICE_DEFINITION(greetings)
+  DECLARE_BOOL_METHOD(say_hello, (const char **hello_string));
+  END_SERVICE_DEFINITION(greetings)
+  //展开后
+  typedef struct s_mysql_greetings {
+    mysql_service_status_t (*say_hello)(const char **hello_string);
+  }mysql_service_greetings_t;
+  ```
+
+* 实现服务：一个类完成一个服务类型的实现，可实现额外的API，由部件组装
+  ```c++
+  // *_imp.h定义，*_imp.cc实现
+  class english_greeting_service_imp {
+    public:     
+      static DEFINE_BOOL_METHOD(say_hello, (const char **hello_string));
+      static DEFINE_BOOL_METHOD(get_language, (const char **language_string));
+  };
+  class polish_greeting_service_imp {
+    public:
+      static DEFINE_BOOL_METHOD(say_hello, (const char **hello_string));
+      static DEFINE_BOOL_METHOD(get_language, (const char **language_string));
+    };
+  ```
+
+* 定义一个部件component，可包含多种服务的实现
+  ```c++
+  /* 源文件 */
+  //初始化函数
+  mysql_service_status_t example_init() { return 0; }
+  mysql_service_status_t example_deinit() { return 0; }
+
+  //定义一个服务实例，包含了服务实现
+  BEGIN_SERVICE_IMPLEMENTATION(example_component1, greetings)
+  english_greeting_service_imp::say_hello, END_SERVICE_IMPLEMENTATION();
+  
+  // example_math是另一种服务
+  BEGIN_SERVICE_IMPLEMENTATION(example_component1, example_math)
+  simple_example_math_imp::calculate_gcd, END_SERVICE_IMPLEMENTATION();
+
+  //定义一个提供服务的索引列表，每项为一个服务索引项mysql_service_ref_t
+  BEGIN_COMPONENT_PROVIDES(example_component1)
+    PROVIDES_SERVICE(example_component1, greetings),
+    PROVIDES_SERVICE(example_component1, example_math),
+  END_COMPONENT_PROVIDES();
+
+  定义依赖：registry
+
+  定义metadata描述部件
+
+  声明一个部件(定义实例)，类型为 mysql_component_t
+
+  ...
+
+  /*展开 */ 
+  // 两个服务实现的实例展开后为：  
+  const mysql_service_greetings_t imp_example_component1_greetings ={
+    english_greeting_service_imp::say_hello,
+  }
+  const mysql_service_example_math_t imp_example_component1_example_math ={
+    simple_example_math_imp::calculate_gcd,
+  }
+  //提供的服务列表展开后
+  static struct mysql_service_ref_t __example_component1_provides[] = {
+    { "greetings" "." "example_component1", const_cast < void *> ((const void *)&SERVICE_IMPLEMENTATION(example_component1, greetings)) }
+    { "example_math" "." "example_component1", const_cast < void *> ((const void *)&SERVICE_IMPLEMENTATION(example_component1, example_math)) }
+  }
+  ``` 
