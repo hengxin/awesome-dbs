@@ -3,6 +3,8 @@
 ## Papers
 - [NSDI2021: Fault-tolerant Replication with Pull-based Consensus in MongoDB](../mongodb-papers/NSDI2021%20Fault-Tolerant%20Replication%20with%20Pull-Based%20Consensus%20in%20MongoDB.pdf)
 - [arXiv2021: Design and Verification of a Logless Dynamic Reconfiguration Protocol in MongoDB Replication](../mongodb-papers/arXiv2021%202102.11960%20Design%20and%20Verification%20of%20a%20Logless%20Dynamic%20Reconfiguration%20Protocol%20in%20MongoDB%20Replication.pdf)
+- [VLDB2019: Tunable Consistency in MongoDB](../mongodb-papers/VLDB2019%20Schultz%20Tunable%20Consistency%20in%20MongoDB.pdf)
+  - Section 6: `Supporting a Spectrum of Consistency Levels in a Single Deployment`
 - [VLDB2020: Extreme Modelling in Practice](../mongodb-papers/VLDB2020%20eXtreme%20Modelling%20in%20Practice.pdf)
 
 ## TLA+
