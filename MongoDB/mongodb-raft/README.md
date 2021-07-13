@@ -14,3 +14,6 @@
   - [will62794 / mongo-repl-tla](https://github.com/will62794/mongo-repl-tla)
 - [visualzhou / mongo-repl-tla](https://github.com/visualzhou/mongo-repl-tla)
   - [TLA+ at MongoDB @ reddit](https://www.reddit.com/r/tlaplus/comments/76zule/tla_at_mongodb/)
+
+## Jepsen
+- [Jepsen on Redis Raft](https://jepsen.io/analyses/redis-raft-1b3fbf6)
