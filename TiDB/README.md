@@ -5,6 +5,12 @@
   > (HTAP: Hybrid Transactional/Analytical Processing）的融合型数据库产品，
   > 实现了一键水平伸缩，强一致性的多副本数据安全 (使用Raft协议)，分布式事务，实时 OLAP 等重要特性。
   > 同时兼容 MySQL 协议和生态，迁移便捷，运维成本极低。
+- [pingcap@github](https://github.com/pingcap)
+  - [pingcap/tidb](https://github.com/pingcap/tidb)
+  - [pingcap/tla-plus @ github](https://github.com/pingcap/tla-plus)
+    > TLA+ in TiDB: Raft, Distributed Transactions (Percolator)
+  - [pingcap/tipocket](https://github.com/pingcap/tipocket)
+    > Jepsen-inspired testing tools
 
 ## Roadmap
 - 基础: [PingCAP University](https://university.pingcap.com/categories)
@@ -18,6 +24,3 @@
 - 理论:
   - [VLDB2020 paper](/TiDB/VLDB2020%20TiDB%20A%20Raft-based%20HTAP%20Database.pdf)
   - [Raft](PPT2020%20(TiDB-EdHuang)%20A%20Dance%20on%20Raft.pdf)
-
-  - [pingcap/tla-plus @ github](https://github.com/pingcap/tla-plus)
-    > TLA+ in TiDB: Raft, Distributed Transactions (Percolator)
