@@ -7,6 +7,7 @@
 - [Using lightweight transactions @ DataStax Doc](https://docs.datastax.com/en/cql-oss/3.3/cql/cql_using/useInsertLWT.html)
 - [How do I accomplish lightweight transactions with linearizable consistency @ DataStax Doc](https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/dml/dmlLtwtTransactions.html)
 - [issues about Paxos](https://issues.apache.org/jira/browse/CASSANDRA-5830?jql=text%20~%20%22paxos%22)
+- [Cassandra-Issues-LWT](https://issues.apache.org/jira/browse/CASSANDRA-16784?jql=project%20%3D%20CASSANDRA%20AND%20component%20%3D%20%22Feature%2FLightweight%20Transactions%22)
 ### Testing
 - [Jepsen: Cassandra 2.0.0; 2013-09-24](https://aphyr.com/posts/294-call-me-maybe-cassandra)
 ### Videos
@@ -25,3 +26,5 @@
 
 ### Extension
 - LWT in Theory and Practice
+- [CAS:arXiv2013](refs/arXiv2013%201309.2772%20A%20Practical%20Distributed%20Universal%20Construction%20with%20Unknown%20Participants.pdf)
+- [RAMP:SIGMOD2014](refs/SIGMOD2014%20Scalable%20Atomic%20Visibility%20with%20RAMP%20Transactions.pdf)
