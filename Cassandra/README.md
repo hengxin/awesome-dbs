@@ -10,6 +10,9 @@
 - [Cassandra-Issues-LWT](https://issues.apache.org/jira/browse/CASSANDRA-16784?jql=project%20%3D%20CASSANDRA%20AND%20component%20%3D%20%22Feature%2FLightweight%20Transactions%22)
 ### Testing
 - [Jepsen: Cassandra 2.0.0; 2013-09-24](https://aphyr.com/posts/294-call-me-maybe-cassandra)
+- [PODC 2021 Keynote by Kyle Kingsbury](https://youtu.be/EjNf_kbx36E)
+  - ***26:39 Scylla 4.2-rc3***
+
 ### Videos
 - [The Power of Cassandra Lightweight Transactions](https://youtu.be/KQZKIxRoreE)
 - [Light Weight Transactions Under Stress by Christopher Batey, The Last Pickle @ Cassandra Summit 2016](https://youtu.be/wcxQM3ZN20c)
