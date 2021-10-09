@@ -29,5 +29,6 @@
 
 ### Extension
 - LWT in Theory and Practice
+- [PaxosRMW:arXiv2021](refs/arXiv2021%202103.14701%20Extending%20Classic%20Paxos%20for%20High-performance%20Read-Modify-Write%20Registers.pdf)
 - [CAS:arXiv2013](refs/arXiv2013%201309.2772%20A%20Practical%20Distributed%20Universal%20Construction%20with%20Unknown%20Participants.pdf)
 - [RAMP:SIGMOD2014](refs/SIGMOD2014%20Scalable%20Atomic%20Visibility%20with%20RAMP%20Transactions.pdf)

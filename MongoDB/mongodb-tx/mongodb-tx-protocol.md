@@ -36,8 +36,9 @@
   - Q: What is the transactional model?
 
 ## Articles
-- [MongoDB 事务，复制和分片的关系 (MongoDB中文社区; May 2020)](https://mongoing.com/archives/38461)
+- [MongoDB 事务, 复制和分片的关系; MongoDB中文社区; May 2020](https://mongoing.com/archives/38461)
 > 本文尝试对Mongo的复制和分布式事务的原理进行描述，在必要的地方，对实现的正确性进行论证。
+- [Mongo4.2分布式事务实现Overview](https://mongoing.com/archives/26731)
 
 ## Source Code
 > ***You are expected to fill in this section.***
