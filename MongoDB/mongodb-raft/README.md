@@ -6,6 +6,7 @@
 - [VLDB2019: Tunable Consistency in MongoDB](../mongodb-papers/VLDB2019%20Schultz%20Tunable%20Consistency%20in%20MongoDB.pdf)
   - Section 6: `Supporting a Spectrum of Consistency Levels in a Single Deployment`
 - [VLDB2020: Extreme Modelling in Practice](../mongodb-papers/VLDB2020%20eXtreme%20Modelling%20in%20Practice.pdf)
+- [ACMQueue2017: MongoDB JavaScript Fuzzer](../mongodb-papers/ACM%20Queue2017%20MongoDB%20JavaScript%20Fuzzer.pdf)
 
 ## TLA+
 - [Two attempts to compare a TLA+ spec with a C++ implementation; 2020](https://emptysqua.re/blog/extreme-modelling-in-practice/)
@@ -14,6 +15,8 @@
   - [will62794 / mongo-repl-tla](https://github.com/will62794/mongo-repl-tla)
 - [visualzhou / mongo-repl-tla](https://github.com/visualzhou/mongo-repl-tla)
   - [TLA+ at MongoDB @ reddit](https://www.reddit.com/r/tlaplus/comments/76zule/tla_at_mongodb/)
+- [will62794/mongo-repl-tla-models](https://github.com/will62794/mongo-repl-tla-models)
+
 
 ## Jepsen
 - [Jepsen on Redis Raft](https://jepsen.io/analyses/redis-raft-1b3fbf6)
