@@ -1,7 +1,5 @@
 # People
 
-> Please help to complete the following information.
-
 ## Theory
 - [Leslie Lamport](http://www.lamport.org/)
   - [The Writings of Leslie Lamport](http://lamport.azurewebsites.net/pubs/pubs.html)
