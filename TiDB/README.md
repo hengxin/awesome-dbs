@@ -13,14 +13,20 @@
     > Jepsen-inspired testing tools
 
 ## Roadmap
-- 基础: [PingCAP University](https://university.pingcap.com/categories)
+### TiDB Basics
+- [PingCAP University](https://university.pingcap.com/categories)
   > 以下两条学习路线可以交叉并行, 也可以依次学习。注意: 一定要边学边实践
   - `PCTA` => `PCTP` => `High Performance TiDB`
   - `TiDB 4.0 新手指南` => `TiDB 应用开发指南` => `TiDB 4.0 运维指南`
+- [Book: TiDB in Action](https://book.tidb.io/)
 
-- 进阶: [TiDB_Robot @ bilibili](https://space.bilibili.com/86485707?from=search&seid=14267980155843203005)
+### Advanced
+- [TiDB_Robot @ bilibili](https://space.bilibili.com/86485707?from=search&seid=14267980155843203005)
   > 这里有很多最新的动态与技术介绍
 
-- 理论:
+### Dive into TiDB
+- ***Highly Recommended:*** [TiDB Talent Plan](https://tidb.net/talent-plan)
+
+### More Theory
   - [VLDB2020 paper](/TiDB/VLDB2020%20TiDB%20A%20Raft-based%20HTAP%20Database.pdf)
   - [Raft](PPT2020%20(TiDB-EdHuang)%20A%20Dance%20on%20Raft.pdf)
