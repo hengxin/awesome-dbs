@@ -35,3 +35,6 @@
 - [Lidong Zhou @ Microsoft Research](http://research.microsoft.com/en-us/people/lidongz/)
 - [Haifeng Yu](http://www.comp.nus.edu.sg/~yuhf/)
 - [Brian F. Cooper](http://www.brianfrankcooper.net/)
+
+## Database Systems
+- [Manuel Rigger](https://www.manuelrigger.at/)
