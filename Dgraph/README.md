@@ -15,3 +15,7 @@
 
 ## Community
 - [discuss.dgraph.io](https://discuss.dgraph.io/)
+
+## Applications
+- [Running Stack Overflow on Dgraph](https://dgraph.io/blog/post/sql-vs-dgraph/)
+> To put something concrete up for discussion, we’ll see how data gets arranged in SQL and compare that with how it would be arranged in Dgraph. Folks at Stack Exchange generously provide dumps of their data, and the schema that they use run the site over SQL.
