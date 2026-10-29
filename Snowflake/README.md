@@ -30,7 +30,7 @@ Cloud-based data warehousing service for structured and semi-structured data
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper-Snowflake_SIGMODpdf.pdf](papers/Paper-Snowflake_SIGMODpdf.pdf) | — | Snowflake_SIGMOD.pdf | [来源](http://info.snowflake.net/rs/252-RFO-227/images/Snowflake_SIGMOD.pdf) |
+| [Paper-Snowflake_SIGMODpdf.pdf](papers/Paper-Snowflake_SIGMODpdf.pdf) | — | Snowflake_SIGMODpdf | [来源]() |
 | [VLDB2025-WorkloadInsightsFromtheSnowflakeDataCloudWhatDoProductionAnalyticQueriesReallyLookLike.pdf](papers/VLDB2025-WorkloadInsightsFromtheSnowflakeDataCloudWhatDoProductionAnalyticQueriesReallyLookLike.pdf) | VLDB 2025 | Workload Insights From the Snowflake Data Cloud: What Do Production Analytic Queries Really Look Like? | [来源](https://www.vldb.org/pvldb/vol18/p5126-bress.pdf) |
 
 ### 官方文档与白皮书

@@ -34,4 +34,4 @@ FaunaDB is a cloud-native OLTP database with distributed ACID transactions using
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [VLDB2021-FaunaTemporalGraphDatabase.pdf](papers/VLDB2021-FaunaTemporalGraphDatabase.pdf) | VLDB 2021 | Fauna: Temporal Graph Database | [来源](https://arxiv.org/pdf/2111.00838) |
+| [VLDB2021-FaunaTemporalGraphDatabase.pdf](papers/VLDB2021-FaunaTemporalGraphDatabase.pdf) | — | FaunaTemporalGraphDatabase | [来源]() |

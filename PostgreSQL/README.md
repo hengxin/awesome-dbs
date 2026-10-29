@@ -28,12 +28,14 @@ PostgreSQL is an object-relational database based on Postgres, developed from Un
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf](papers/PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf) | PPT 2020 |  | [来源]() |
+| [PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf](papers/PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf) | — | ExtendingPostgreSQLtoGoogleSpannerArchitecture | [来源]() |
+| [VLDB2012-SerializableSnapshotIsolationinPostgreSQL.pdf](papers/VLDB2012-SerializableSnapshotIsolationinPostgreSQL.pdf) | VLDB 2012 | Serializable Snapshot Isolation in PostgreSQL | [来源](https://vldb.org/pvldb/vol5/p1850_danrkports_vldb2012.pdf) |
 | [VLDB2013-PAQOAPreferenceAwareQueryOptimizerforPostgreSQL.pdf](papers/VLDB2013-PAQOAPreferenceAwareQueryOptimizerforPostgreSQL.pdf) | VLDB 2013 | PAQO: A Preference-Aware Query Optimizer for PostgreSQL | [来源](https://vldb.org/pvldb/vol6/p1334-farnan.pdf) |
 | [VLDB2016-PrecisionPerformanceSurgeryforPostgreSQLLLVMbasedExpressionCompilationJustinTime.pdf](papers/VLDB2016-PrecisionPerformanceSurgeryforPostgreSQLLLVMbasedExpressionCompilationJustinTime.pdf) | VLDB 2016 | Precision Performance Surgery for PostgreSQL: LLVM-based Expression Compilation, Just in Time | [来源](https://vldb.org/pvldb/vol9/p1517-butterstein.pdf) |
 | [VLDB2018-ProvSQLProvenanceandProbabilityManagementinPostgreSQL.pdf](papers/VLDB2018-ProvSQLProvenanceandProbabilityManagementinPostgreSQL.pdf) | VLDB 2018 | ProvSQL:Provenance and Probability Management in PostgreSQL | [来源](https://vldb.org/pvldb/vol11/p2034-senellart.pdf) |
 | [VLDB2021-PostCENNPostgreSQLwithMachineLearningModelsforCardinalityEstimation.pdf](papers/VLDB2021-PostCENNPostgreSQLwithMachineLearningModelsforCardinalityEstimation.pdf) | VLDB 2021 | PostCENN: PostgreSQL with Machine Learning Models for Cardinality Estimation | [来源](https://www.vldb.org/pvldb/vol14/p2715-woltmann.pdf) |
 | [VLDB2023-DeepVQLDeepVideoQueriesonPostgreSQL.pdf](papers/VLDB2023-DeepVQLDeepVideoQueriesonPostgreSQL.pdf) | VLDB 2023 | DeepVQL: Deep Video Queries on PostgreSQL | [来源](https://www.vldb.org/pvldb/vol16/p3910-nam.pdf) |
+| [VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf](VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf) | VLDB 2026 | Lakebase: Serverless Postgres over Open Lake Storage | [来源](https://www.vldb.org/pvldb/vol19/p4385-pandis.pdf) |
 | [VLDB2026-TuningtheLookaheadDistanceforPostgreSQLAsynchronousIO.pdf](papers/VLDB2026-TuningtheLookaheadDistanceforPostgreSQLAsynchronousIO.pdf) | VLDB 2026 | Tuning the Lookahead Distance for PostgreSQL Asynchronous IO | [来源](https://www.vldb.org/pvldb/vol19/p3982-wu.pdf) |
 
 ### 官方文档与白皮书

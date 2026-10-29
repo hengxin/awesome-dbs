@@ -34,8 +34,8 @@ DynamoDB is a managed NoSQL database service provided by Amazon Web Services. As
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper-AmazonDynamoDBDeveloperGuide.pdf](papers/Paper-AmazonDynamoDBDeveloperGuide.pdf) | — | Amazon DynamoDB - Developer Guide | [来源](https://docs.aws.amazon.com/pdfs/amazondynamodb/latest/developerguide/dynamodb-dg.pdf) |
-| [Paper-MicrosoftWordsosp067decandia1doc.pdf](papers/Paper-MicrosoftWordsosp067decandia1doc.pdf) | — | Microsoft Word - sosp067-decandia1.doc | [来源](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) |
+| [Paper-AmazonDynamoDBDeveloperGuide.pdf](papers/Paper-AmazonDynamoDBDeveloperGuide.pdf) | — | AmazonDynamoDBDeveloperGuide | [来源]() |
+| [Paper-MicrosoftWordsosp067decandia1doc.pdf](papers/Paper-MicrosoftWordsosp067decandia1doc.pdf) | — | MicrosoftWordsosp067decandia1doc | [来源]() |
 
 ### 官方文档与白皮书
 

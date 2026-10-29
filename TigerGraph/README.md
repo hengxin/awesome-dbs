@@ -29,8 +29,8 @@ TigerGraph is a distributed, parallel graph DBMS with high availability designed
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [2021-ForresterTEITigerGraphROIReport.pdf](papers/2021-ForresterTEITigerGraphROIReport.pdf) | — |  | [来源]() |
-| [VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf](papers/VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf) | VLDB 2017 | TigerGraph: A Fast and Scalable Graph Database | [来源](https://arxiv.org/pdf/1703.02083) |
+| [2021-ForresterTEITigerGraphROIReport.pdf](papers/2021-ForresterTEITigerGraphROIReport.pdf) | — | ForresterTEITigerGraphROIReport | [来源]() |
+| [VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf](papers/VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf) | — | TigerGraphAFastandScalableGraphDatabase | [来源]() |
 
 ### 官方文档与白皮书
 

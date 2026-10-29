@@ -20,12 +20,6 @@ The EDB Postgres Platform is an enterprise-class data management platform based 
 
 ## 收录资料
 
-### 论文
-
-| 文件 | 发表 | 标题 | 来源 |
-| --- | --- | --- | --- |
-| [VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf](papers/VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf) | VLDB 2026 | Lakebase: Serverless Postgres over Open Lake Storage | [来源](https://www.vldb.org/pvldb/vol19/p4385-pandis.pdf) |
-
 ### 官方文档与白皮书
 
 | 文件 | 标题 | 来源 |

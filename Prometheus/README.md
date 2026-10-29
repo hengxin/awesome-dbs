@@ -27,12 +27,6 @@ Open-source Time Series DBMS and monitoring system
 
 ## 收录资料
 
-### 论文
-
-| 文件 | 发表 | 标题 | 来源 |
-| --- | --- | --- | --- |
-| [VLDB-p1816tellerpdf.pdf](papers/VLDB-p1816tellerpdf.pdf) | VLDB | p1816-teller.pdf | [来源](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf) |
-
 ### 官方文档与白皮书
 
 | 文件 | 标题 | 来源 |

@@ -28,7 +28,7 @@ Oracle database, originally a relational DBMS, has evolved into a converged, mul
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf](papers/VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf) | VLDB 2009 | Hybrid Columnar Compression in Oracle Database 11g | [来源](https://www.vldb.org/pvldb/vol2/vldb09-486.pdf) |
+| [VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf](papers/VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf) | — | HybridColumnarCompressioninOracleDatabase11g | [来源]() |
 
 ### 官方文档与白皮书
 

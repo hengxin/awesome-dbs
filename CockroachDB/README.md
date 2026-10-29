@@ -41,8 +41,8 @@ CockroachDB (sometimes shortened as CRDB) is a free and open source distributed 
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [2019-TheDefinitiveGuidetoCockroachDB.pdf](papers/2019-TheDefinitiveGuidetoCockroachDB.pdf) | — |  | [来源]() |
-| [SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf](papers/SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf) | SIGMOD 2020 |  | [来源]() |
+| [2019-TheDefinitiveGuidetoCockroachDB.pdf](papers/2019-TheDefinitiveGuidetoCockroachDB.pdf) | — | TheDefinitiveGuidetoCockroachDB | [来源]() |
+| [SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf](papers/SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf) | — | CockroachDBTheResilientGeoDistributedSQLDatabase | [来源]() |
 | [VLDB2022-ADemonstrationofMultiRegionCockroachDB.pdf](papers/VLDB2022-ADemonstrationofMultiRegionCockroachDB.pdf) | VLDB 2022 | A Demonstration of Multi-Region CockroachDB | [来源](https://www.vldb.org/pvldb/vol15/p3610-taft.pdf) |
 
 ### 官方文档与白皮书

@@ -31,9 +31,9 @@ A relational database management system that stores data in columns
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper-Columnimprintsasecondaryindexstructure.pdf](papers/Paper-Columnimprintsasecondaryindexstructure.pdf) | — | Column imprints: a secondary index structure | [来源](https://15721.courses.cs.cmu.edu/spring2016/papers/p893-sidirourgos.pdf) |
-| [Paper-P19pdf.pdf](papers/Paper-P19pdf.pdf) | — | P19.pdf | [来源](https://www.cidrdb.org/cidr2005/papers/P19.pdf) |
-| [VLDB-MemoryEfficientHashJoins.pdf](papers/VLDB-MemoryEfficientHashJoins.pdf) | VLDB | Memory-Efficient Hash Joins | [来源](http://www.vldb.org/pvldb/vol8/p353-barber.pdf) |
+| [Paper-Columnimprintsasecondaryindexstructure.pdf](papers/Paper-Columnimprintsasecondaryindexstructure.pdf) | — | Columnimprintsasecondaryindexstructure | [来源]() |
+| [Paper-P19pdf.pdf](papers/Paper-P19pdf.pdf) | — | P19pdf | [来源]() |
+| [VLDB-MemoryEfficientHashJoins.pdf](papers/VLDB-MemoryEfficientHashJoins.pdf) | VLDB 2015 | Memory-Efficient Hash Joins | [来源](https://vldb.org/pvldb/vol8/p353-barber.pdf) |
 | [VLDB2012-MonetDBDataCellOnlineAnalyticsinaStreamingColumnStore.pdf](papers/VLDB2012-MonetDBDataCellOnlineAnalyticsinaStreamingColumnStore.pdf) | VLDB 2012 | MonetDB/DataCell: Online Analytics in a Streaming Column-Store | [来源](https://vldb.org/pvldb/vol5/p1910_eriettaliarou_vldb2012.pdf) |
 
 ### 官方文档与白皮书

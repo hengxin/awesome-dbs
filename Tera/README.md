@@ -18,3 +18,11 @@ Tera is a 100 PBs level, real-time high performance distributed NoSQL database. 
 ## 数据源
 
 - [Database of Databases](https://dbdb.io/db/tera)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [Paper-PowerPoint演示文稿.pdf](papers/Paper-PowerPoint演示文稿.pdf) | — | PowerPoint演示文稿 | [来源]() |

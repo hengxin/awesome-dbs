@@ -35,7 +35,7 @@ ZooKeeper is a distributed, open source coordination service from Apache for dis
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [USENIX-Huntpdf.pdf](papers/USENIX-Huntpdf.pdf) | USENIX | Hunt.pdf | [来源](https://www.usenix.org/legacy/events/atc10/tech/full_papers/Hunt.pdf) |
+| [USENIX-Huntpdf.pdf](papers/USENIX-Huntpdf.pdf) | — | Huntpdf | [来源]() |
 
 ### 官方文档与白皮书
 

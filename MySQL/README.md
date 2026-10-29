@@ -43,4 +43,6 @@ MySQL is an open-source relational database management system. MySQL is used in 
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper-p5sompolskipdf.pdf](papers/Paper-p5sompolskipdf.pdf) | — | p5-sompolski.pdf | [来源](https://15721.courses.cs.cmu.edu/spring2017/papers/21-vectorization1/p5-sompolski.pdf) |
+| [Paper-p5sompolskipdf.pdf](papers/Paper-p5sompolskipdf.pdf) | — | p5sompolskipdf | [来源]() |
+| [VLDB2014-RealizationoftheLowCostandHighPerformanceMySQLCloudDatabase.pdf](papers/VLDB2014-RealizationoftheLowCostandHighPerformanceMySQLCloudDatabase.pdf) | VLDB 2014 | Realization of the Low Cost and High Performance MySQL Cloud Database | [来源](https://vldb.org/pvldb/vol7/p1742-alibaba.pdf) |
+| [VLDB2025-FreelyMovingBetweentheOLTPandOLAPWorldsHermesanHighPerformanceOLAPAcceleratorforMySQL.pdf](papers/VLDB2025-FreelyMovingBetweentheOLTPandOLAPWorldsHermesanHighPerformanceOLAPAcceleratorforMySQL.pdf) | VLDB 2025 | Freely Moving Between the OLTP and OLAP Worlds: Hermes – an High-Performance OLAP Accelerator for MySQL | [来源](https://www.vldb.org/pvldb/vol18/p5113-gubner.pdf) |

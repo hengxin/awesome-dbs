@@ -28,7 +28,7 @@ GraphDB is a distributed RDF graph database that supports SPARQL queries. It is 
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper-lecture07pdf.pdf](papers/Paper-lecture07pdf.pdf) | — | lecture07.pdf | [来源](https://www.cs.helsinki.fi/u/tpkarkka/opetus/12k/dct/lecture07.pdf) |
+| [Paper-lecture07pdf.pdf](papers/Paper-lecture07pdf.pdf) | — | lecture07pdf | [来源]() |
 
 ### 官方文档与白皮书
 

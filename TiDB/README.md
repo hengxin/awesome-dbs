@@ -60,8 +60,8 @@ TiDB is an open-source distributed SQL database that supports Hybrid Transaction
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [PPT2020-ADanceonRaft.pdf](tidb-papers/PPT2020-ADanceonRaft.pdf) | PPT 2020 |  | [来源]() |
-| [VLDB2020-TiDBARaftbasedHTAPDatabase.pdf](tidb-papers/VLDB2020-TiDBARaftbasedHTAPDatabase.pdf) | VLDB 2020 | TiDB: A Raft-based HTAP Database | [来源](https://www.vldb.org/pvldb/vol13/p3072-huang.pdf) |
+| [PPT2020-ADanceonRaft.pdf](tidb-papers/PPT2020-ADanceonRaft.pdf) | — | ADanceonRaft | [来源]() |
+| [VLDB2020-TiDBARaftbasedHTAPDatabase.pdf](papers/VLDB2020-TiDBARaftbasedHTAPDatabase.pdf) | VLDB 2020 | TiDB: A Raft-based HTAP Database | [来源](https://www.vldb.org/pvldb/vol13/p3072-huang.pdf) |
 
 ### 官方文档与白皮书
 

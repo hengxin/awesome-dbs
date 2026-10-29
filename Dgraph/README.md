@@ -48,6 +48,6 @@ Dgraph is a distributed graph database that supports GraphQL. It emphasizes conc
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [ICDE2019-DgraphALargeScaleGraphDatabase.pdf](papers/ICDE2019-DgraphALargeScaleGraphDatabase.pdf) | ICDE 2019 | Dgraph: A Large-Scale Graph Database | [来源](https://arxiv.org/pdf/1904.09612) |
-| [SIGMOD2017-DGraphADistributedGraphDatabase.pdf](papers/SIGMOD2017-DGraphADistributedGraphDatabase.pdf) | SIGMOD 2017 | DGraph: A Distributed Graph Database | [来源](https://arxiv.org/pdf/1704.02761) |
-| [TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf](papers/TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf) | TechnicalReport 2020 |  | [来源]() |
+| [ICDE2019-DgraphALargeScaleGraphDatabase.pdf](papers/ICDE2019-DgraphALargeScaleGraphDatabase.pdf) | — | DgraphALargeScaleGraphDatabase | [来源]() |
+| [SIGMOD2017-DGraphADistributedGraphDatabase.pdf](papers/SIGMOD2017-DGraphADistributedGraphDatabase.pdf) | — | DGraphADistributedGraphDatabase | [来源]() |
+| [TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf](papers/TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf) | — | DgraphSynchronouslyReplicatedTransactionalandDistributedGraph | [来源]() |

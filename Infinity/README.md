@@ -19,3 +19,11 @@ Infinity is a relational DBMS built that provides vector search, full-text searc
 ## 数据源
 
 - [Database of Databases](https://dbdb.io/db/infinity)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2024-AlephFilterToInfinityinConstantTime.pdf](papers/VLDB2024-AlephFilterToInfinityinConstantTime.pdf) | VLDB 2024 | Aleph Filter: To Infinity in Constant Time | [来源](https://www.vldb.org/pvldb/vol17/p3644-dayan.pdf) |

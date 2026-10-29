@@ -29,9 +29,9 @@ Amazon Aurora is a relational database offered as a service in Amazon's AWS. Bas
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf](papers/SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf) | SIGMOD 2017 |  | [来源]() |
-| [SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf](papers/SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf) | — |  | [来源]() |
-| [SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf](papers/SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf) | SIGMOD 2018 |  | [来源]() |
+| [SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf](papers/SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf) | — | AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases | [来源]() |
+| [SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf](papers/SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf) | — | AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits | [来源]() |
+| [SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf](papers/SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf) | — | AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges | [来源]() |
 | [VLDB2024-ResourceManagementinAuroraServerless.pdf](papers/VLDB2024-ResourceManagementinAuroraServerless.pdf) | VLDB 2024 | Resource Management in Aurora Serverless | [来源](https://www.vldb.org/pvldb/vol17/p4038-urgaonkar.pdf) |
 | [VLDB2025-SunStormGeographicallydistributedtransactionsoverAurorastylesystems.pdf](papers/VLDB2025-SunStormGeographicallydistributedtransactionsoverAurorastylesystems.pdf) | VLDB 2025 | SunStorm: Geographically distributed transactions over Aurora-style systems | [来源](https://www.vldb.org/pvldb/vol18/p5555-nilangekar.pdf) |
 

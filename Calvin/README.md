@@ -24,4 +24,4 @@ Calvin is a scalable transactional database system that leverages determinism to
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf](papers/FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf) | FAST | Calvin: Fast Distributed Transactions for Partitioned Database Systems | [来源](http://cs-www.cs.yale.edu/homes/dna/papers/calvin-sigmod12.pdf) |
+| [FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf](papers/FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf) | — | CalvinFastDistributedTransactionsforPartitionedDatabaseSystems | [来源]() |

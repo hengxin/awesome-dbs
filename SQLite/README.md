@@ -30,7 +30,7 @@ Widely used embeddable, in-process RDBMS
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper2015-AJITforSQLite.pdf](papers/Paper2015-AJITforSQLite.pdf) | 2015 | A JIT for SQLite | [来源](https://soft-dev.org/talks/2015/jit-sqlite-truffle.pdf) |
+| [Paper2015-AJITforSQLite.pdf](papers/Paper2015-AJITforSQLite.pdf) | — | AJITforSQLite | [来源]() |
 | [VLDB2015-SQLiteOptimizationwithPhaseChangeMemoryforMobileApplications.pdf](papers/VLDB2015-SQLiteOptimizationwithPhaseChangeMemoryforMobileApplications.pdf) | VLDB 2015 | SQLite Optimization with Phase Change Memory for Mobile Applications | [来源](https://vldb.org/pvldb/vol8/p1454-oh.pdf) |
 | [VLDB2018-SQLStatementLoggingforMakingSQLiteTrulyLite.pdf](papers/VLDB2018-SQLStatementLoggingforMakingSQLiteTrulyLite.pdf) | VLDB 2018 | SQL Statement Logging for Making SQLite Truly Lite | [来源](https://vldb.org/pvldb/vol11/p513-park.pdf) |
 | [VLDB2022-SQLitePastPresentandFuture.pdf](papers/VLDB2022-SQLitePastPresentandFuture.pdf) | VLDB 2022 | SQLite: Past, Present, and Future | [来源](https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf) |

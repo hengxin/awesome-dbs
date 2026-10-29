@@ -31,7 +31,7 @@ Redis ("REmote DIctionary Server") is a networked, in-memory, key-value store th
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf](papers/arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf) | arXiv 2024 | Redis: A High-Performance In-Memory Database | [来源](https://arxiv.org/pdf/2406.07544) |
+| [arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf](papers/arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf) | — | RedisAHighPerformanceInMemoryDatabase | [来源]() |
 
 ### 官方文档与白皮书
 

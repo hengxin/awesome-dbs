@@ -25,6 +25,12 @@ Well established RDBMS
 
 ## 收录资料
 
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [Paper2023-DS21ActianX_04Apdf.pdf](papers/Paper2023-DS21ActianX_04Apdf.pdf) | — | DS21ActianX_04Apdf | [来源]() |
+
 ### 官方文档与白皮书
 
 | 文件 | 标题 | 来源 |

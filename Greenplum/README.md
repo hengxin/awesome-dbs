@@ -32,4 +32,4 @@ Greenplum is an open-source data warehouse. It uses massive parallel processing 
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf](papers/Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf) | 2017 | CMU SCS 15-721 (Spring 2017) :: Query Compilation | [来源](https://15721.courses.cs.cmu.edu/spring2017/slides/20-compilation.pdf) |
+| [Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf](papers/Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf) | — | CMUSCS15721Spring2017QueryCompilation | [来源]() |

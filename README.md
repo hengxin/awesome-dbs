@@ -42,7 +42,7 @@ A List of Awesome Database Systems
 | [DB-Books](DB-Books/) | 书籍与早期白皮书 |
 | [DB-Benchs](DB-Benchs/) | 基准测试报告 |
 | [DB-Logos](DB-Logos/) | 各数据库 Logo |
-| [数据库发展研究报告](数据库发展研究报告/) | 年度数据库发展研究报告 |
+| [数据库发展研究报告](数据库发展研究报告/) | 28 份数据库技术发展研究报告（信通院年度系列、Gartner/IDC 市场报告、学术综述），含[索引文档](数据库发展研究报告/数据库研究报告索引.md) |
 | `Benchmarking/` | 基准测试工具与规范（TPC、LDBC 等） |
 
 ## 资料来源可追溯

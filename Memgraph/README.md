@@ -29,8 +29,8 @@ Memgraph is a native fully distributed in-memory graph database built to handle 
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [2020-Memgraph.pdf](papers/2020-Memgraph.pdf) | — |  | [来源]() |
-| [arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf](papers/arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf) | arXiv 2021 | Memgraph: A High Performance Graph Database | [来源](https://arxiv.org/pdf/2104.04457) |
+| [2020-Memgraph.pdf](papers/2020-Memgraph.pdf) | — | Memgraph | [来源]() |
+| [arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf](papers/arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf) | — | MemgraphAHighPerformanceGraphDatabase | [来源]() |
 
 ### 官方文档与白皮书
 

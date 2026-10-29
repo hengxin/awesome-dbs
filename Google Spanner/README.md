@@ -33,4 +33,4 @@ Spanner is Google's globally distributed NewSQL database management system. It f
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf](papers/OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf) | OSDI 2012 | Spanner: Google's Globally-Distributed Database | [来源](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf) |
+| [OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf](papers/OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf) | — | SpannerGooglesGloballyDistributedDatabase | [来源]() |

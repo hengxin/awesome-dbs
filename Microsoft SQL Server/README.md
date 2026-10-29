@@ -20,6 +20,12 @@ Microsofts flagship relational DBMS
 
 ## 收录资料
 
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2014-FastForeignKeyDetectioninMicrosoftSQLServerPowerPivotforExcel.pdf](VLDB2014-FastForeignKeyDetectioninMicrosoftSQLServerPowerPivotforExcel.pdf) | VLDB 2014 | Fast Foreign-Key Detection in Microsoft SQL Server PowerPivot for Excel | [来源](https://vldb.org/pvldb/vol7/p1417-chen.pdf) |
+
 ### 官方文档与白皮书
 
 | 文件 | 标题 | 来源 |

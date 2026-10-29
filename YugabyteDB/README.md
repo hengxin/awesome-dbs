@@ -51,7 +51,7 @@ YugabyteDB is a transactional distributed SQL database for cloud-native and geo-
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf](papers/arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf) | arXiv 2020 | YugabyteDB: Distributed SQL at Planet Scale | [来源](https://arxiv.org/pdf/2011.00050) |
+| [arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf](papers/arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf) | — | YugabyteDBDistributedSQLatPlanetScale | [来源]() |
 
 ### 官方文档与白皮书
 

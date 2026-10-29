@@ -20,3 +20,11 @@ Galaxybase is a distributed graph database system written in Java.
 
 - [DB-Engines](https://db-engines.com/en/system/Galaxybase)
 - [Database of Databases](https://dbdb.io/db/galaxybase)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2024-GalaxybaseAHighPerformanceNativeDistributedGraphDatabaseforHTAP.pdf](papers/VLDB2024-GalaxybaseAHighPerformanceNativeDistributedGraphDatabaseforHTAP.pdf) | VLDB 2024 | Galaxybase: A High Performance Native Distributed Graph Database for HTAP | [来源](https://www.vldb.org/pvldb/vol17/p3893-tong.pdf) |

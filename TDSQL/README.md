@@ -52,12 +52,12 @@ TDSQL is an abbreviation for TecentDistributed SQL. It is derived from MySQL and
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf](papers/PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf) | — |  | [来源]() |
-| [Paper-腾讯云.pdf](papers/Paper-腾讯云.pdf) | — | 腾讯云 | [来源](https://main.qcloudimg.com/raw/3cc780eb2b03f8ea32878ba3eac47eb0.pdf) |
+| [PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf](papers/PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf) | — | ConceptualModelingonTencentDistributedDatabaseSystems | [来源]() |
+| [Paper-腾讯云.pdf](papers/Paper-腾讯云.pdf) | VLDB 2009 | Believe It or Not: Adding Belief Annotations to Databases | [来源](https://vldb.org/pvldb/vol2/vldb09-115.pdf) |
 | [VLDB2019-ALightweightandEfficientTemporalDatabaseManagementSysteminTDSQL.pdf](papers/VLDB2019-ALightweightandEfficientTemporalDatabaseManagementSysteminTDSQL.pdf) | VLDB 2019 | A Lightweight and Efficient Temporal Database Management System in TDSQL | [来源](https://vldb.org/pvldb/vol12/p2035-lu.pdf) |
 | [VLDB2024-TDSQLTencentDistributedDatabaseSystem.pdf](papers/VLDB2024-TDSQLTencentDistributedDatabaseSystem.pdf) | VLDB 2024 | TDSQL: Tencent Distributed Database System | [来源](https://www.vldb.org/pvldb/vol17/p3869-chen.pdf) |
 | [VLDB2026-ReachingthePinnacleofTPCDSCodesignofArchitectureExecutorandStorageinTDSQL.pdf](papers/VLDB2026-ReachingthePinnacleofTPCDSCodesignofArchitectureExecutorandStorageinTDSQL.pdf) | VLDB 2026 | Reaching the Pinnacle of TPC-DS: Co-design of Architecture, Executor, and Storage in TDSQL | [来源](https://www.vldb.org/pvldb/vol19/p4009-chu.pdf) |
-| [WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf](papers/WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf) | WWW 2019 |  | [来源]() |
+| [WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf](papers/WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf) | — | EfficientTimeintervalDataExtractioninMVCCbasedRDBMS | [来源]() |
 
 ### 官方文档与白皮书
 

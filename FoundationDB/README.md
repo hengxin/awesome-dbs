@@ -31,7 +31,7 @@ FoundationDB is a distributed non-relational database that supports ACID transac
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf](papers/SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf) | SIGMOD 2021 |  | [来源]() |
+| [SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf](papers/SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf) | — | FoundationDBADistributedUnbundledTransactionalKeyValueStore | [来源]() |
 
 ### 官方文档与白皮书
 

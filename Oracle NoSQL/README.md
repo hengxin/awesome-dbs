@@ -26,6 +26,18 @@ A multi-model, scalable, distributed NoSQL database, designed to provide highly 
 
 ## 收录资料
 
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2014-RankJoinQueriesinNoSQLDatabases.pdf](papers/VLDB2014-RankJoinQueriesinNoSQLDatabases.pdf) | VLDB 2014 | Rank Join Queries in NoSQL Databases | [来源](https://vldb.org/pvldb/vol7/p493-ntarmos.pdf) |
+| [VLDB2019-BlockasaValueforSQLoverNoSQL.pdf](papers/VLDB2019-BlockasaValueforSQLoverNoSQL.pdf) | VLDB 2019 | Block as a Value for SQL over NoSQL | [来源](https://vldb.org/pvldb/vol12/p1153-cao.pdf) |
+| [VLDB2020-NativeJSONDatatypeSupportMaturingSQLandNoSQLconvergenceinOracleDatabase.pdf](papers/VLDB2020-NativeJSONDatatypeSupportMaturingSQLandNoSQLconvergenceinOracleDatabase.pdf) | VLDB 2020 | Native JSON Datatype Support: Maturing SQL and NoSQL convergence in Oracle Database | [来源](https://www.vldb.org/pvldb/vol13/p3059-liu.pdf) |
+| [VLDB2021-ADemonstrationofNoDAUnifiedAccesstoNoSQLStores.pdf](VLDB2021-ADemonstrationofNoDAUnifiedAccesstoNoSQLStores.pdf) | VLDB 2021 | A Demonstration of NoDA: Unified Access to NoSQL Stores | [来源](https://www.vldb.org/pvldb/vol14/p2851-koutroumanis.pdf) |
+| [VLDB2024-XStorACloudnativeNoSQLDatabaseServicewithMultimodelSupport.pdf](papers/VLDB2024-XStorACloudnativeNoSQLDatabaseServicewithMultimodelSupport.pdf) | VLDB 2024 | X-Stor: A Cloud-native NoSQL Database Service with Multi-model Support | [来源](https://www.vldb.org/pvldb/vol17/p4025-lei.pdf) |
+| [VLDB2026-AResourcecentricAnalysisandOptimizationofNoSQLWorkloadsusingDistressedResourceVolumeMetric.pdf](papers/VLDB2026-AResourcecentricAnalysisandOptimizationofNoSQLWorkloadsusingDistressedResourceVolumeMetric.pdf) | VLDB 2026 | A Resource-centric Analysis and Optimization of NoSQL Workloads using Distressed Resource Volume Metric | [来源](https://www.vldb.org/pvldb/vol19/p1867-simmhan.pdf) |
+| [VLDB2026-QueryCraftANaturalLanguageDrivenNoSQLDatabaseQueryingSystemPoweredbyLargeLanguageModels.pdf](papers/VLDB2026-QueryCraftANaturalLanguageDrivenNoSQLDatabaseQueryingSystemPoweredbyLargeLanguageModels.pdf) | VLDB 2026 | QueryCraft: A Natural Language-Driven NoSQL Database Querying System Powered by Large Language Models | [来源](https://www.vldb.org/pvldb/vol19/p4754-song.pdf) |
+
 ### 官方文档与白皮书
 
 | 文件 | 标题 | 来源 |

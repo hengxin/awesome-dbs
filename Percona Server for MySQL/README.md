@@ -21,6 +21,17 @@ Enhanced drop-in replacement for MySQL based on XtraDB or TokuDB storage engines
 
 ## 收录资料
 
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2009-AScalablePredictableJoinOperatorforHighlyConcurrentDataWarehouses.pdf](papers/VLDB2009-AScalablePredictableJoinOperatorforHighlyConcurrentDataWarehouses.pdf) | VLDB 2009 | A Scalable, Predictable Join Operator for Highly Concurrent Data Warehouses | [来源](https://vldb.org/pvldb/vol2/vldb09-553.pdf) |
+| [VLDB2009-AWaveletTransformforEfficientConsolidationofSensorRelationswithQualityGuarantees.pdf](papers/VLDB2009-AWaveletTransformforEfficientConsolidationofSensorRelationswithQualityGuarantees.pdf) | VLDB 2009 | A Wavelet Transform for Efficient Consolidation of Sensor Relations with Quality Guarantees | [来源](https://vldb.org/pvldb/vol2/vldb09-612.pdf) |
+| [VLDB2009-SchemaBasedIndependenceAnalysisforXMLUpdates.pdf](papers/VLDB2009-SchemaBasedIndependenceAnalysisforXMLUpdates.pdf) | VLDB 2009 | Schema-Based Independence Analysis for XML Updates | [来源](https://vldb.org/pvldb/vol2/vldb09-684.pdf) |
+| [VLDB2009-StreamsonWiresAQueryCompilerforFPGAs.pdf](papers/VLDB2009-StreamsonWiresAQueryCompilerforFPGAs.pdf) | VLDB 2009 | Streams on Wires - A Query Compiler for FPGAs | [来源](https://vldb.org/pvldb/vol2/vldb09-622.pdf) |
+| [VLDB2009-TaggingStreamDataforRichRealTimeServices.pdf](papers/VLDB2009-TaggingStreamDataforRichRealTimeServices.pdf) | VLDB 2009 | Tagging Stream Data for Rich Real-Time Services | [来源](https://vldb.org/pvldb/vol2/vldb09-24.pdf) |
+| [VLDB2009-ThreadCooperationinMulticoreArchitecturesforFrequencyCountingoverMultipleDataStreams.pdf](papers/VLDB2009-ThreadCooperationinMulticoreArchitecturesforFrequencyCountingoverMultipleDataStreams.pdf) | VLDB 2009 | Thread Cooperation in Multicore Architectures for Frequency Counting over Multiple Data Streams | [来源](https://vldb.org/pvldb/vol2/vldb09-401.pdf) |
+
 ### 官方文档与白皮书
 
 | 文件 | 标题 | 来源 |

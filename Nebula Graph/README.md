@@ -23,3 +23,16 @@ Nebula Graph is an open source distributed graph database system developed by VE
 
 - [DB-Engines](https://db-engines.com/en/system/NebulaGraph)
 - [Database of Databases](https://dbdb.io/db/nebula-graph)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2009-Classbasedgraphanonymizationforsocialnetworkdata.pdf](papers/VLDB2009-Classbasedgraphanonymizationforsocialnetworkdata.pdf) | VLDB 2009 | Class-based graph anonymization for social network data | [来源](https://vldb.org/pvldb/vol2/vldb09-pvldb26.pdf) |
+| [VLDB2009-ComparingStarsOnApproximatingGraphEditDistance.pdf](papers/VLDB2009-ComparingStarsOnApproximatingGraphEditDistance.pdf) | VLDB 2009 | Comparing Stars: On Approximating Graph Edit Distance | [来源](https://vldb.org/pvldb/vol2/vldb09-568.pdf) |
+| [VLDB2009-DistanceJoinPatternMatchQueryInaLargeGraphDatabase.pdf](papers/VLDB2009-DistanceJoinPatternMatchQueryInaLargeGraphDatabase.pdf) | VLDB 2009 | DistanceJoin: Pattern Match Query In a Large Graph Database | [来源](https://vldb.org/pvldb/vol2/vldb09-876.pdf) |
+| [VLDB2009-GraphClusteringBasedonStructuralAttributeSimilarities.pdf](papers/VLDB2009-GraphClusteringBasedonStructuralAttributeSimilarities.pdf) | VLDB 2009 | Graph Clustering Based on Structural/Attribute Similarities | [来源](https://vldb.org/pvldb/vol2/vldb09-175.pdf) |
+| [VLDB2009-MiningGraphPatternsEfficientlyviaRandomizedSummaries.pdf](papers/VLDB2009-MiningGraphPatternsEfficientlyviaRandomizedSummaries.pdf) | VLDB 2009 | Mining Graph Patterns Efficiently via Randomized Summaries | [来源](https://vldb.org/pvldb/vol2/vldb09-80.pdf) |
+| [VLDB2009-OutputSpaceSamplingforGraphPatterns.pdf](papers/VLDB2009-OutputSpaceSamplingforGraphPatterns.pdf) | VLDB 2009 | Output Space Sampling for Graph Patterns | [来源](https://vldb.org/pvldb/vol2/vldb09-713.pdf) |

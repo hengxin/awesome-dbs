@@ -330,11 +330,11 @@
 | Couchbase | 2 | 1 | 3 |
 | Coveo | 0 | 1 | 1 |
 | Databricks | 2 | 1 | 3 |
-| Datastax Enterprise | 0 | 1 | 1 |
+| Datastax Enterprise | 6 | 1 | 7 |
 | Datomic | 0 | 1 | 1 |
 | Dgraph | 3 | 0 | 3 |
 | DuckDB | 6 | 1 | 7 |
-| EDB Postgres | 1 | 1 | 2 |
+| EDB Postgres | 0 | 1 | 1 |
 | Ehcache | 0 | 1 | 1 |
 | Elasticsearch | 0 | 1 | 1 |
 | Essbase | 0 | 1 | 1 |
@@ -345,9 +345,11 @@
 | Firebase Realtime Database | 5 | 0 | 5 |
 | Firebird | 0 | 1 | 1 |
 | FoundationDB | 1 | 1 | 2 |
+| Galaxybase | 1 | 0 | 1 |
 | GBase | 0 | 1 | 1 |
 | GemFire | 0 | 1 | 1 |
-| Google Cloud Datastore | 1 | 0 | 1 |
+| Google Cloud Datastore | 2 | 0 | 2 |
+| Google Cloud Firestore | 1 | 0 | 1 |
 | Google F1 | 2 | 0 | 2 |
 | Google Spanner | 1 | 0 | 1 |
 | GraphDB | 1 | 1 | 2 |
@@ -358,14 +360,16 @@
 | IBM Cloudant | 0 | 1 | 1 |
 | IBM Db2 | 6 | 1 | 7 |
 | Infinispan | 0 | 1 | 1 |
+| Infinity | 1 | 0 | 1 |
 | InfluxDB | 0 | 1 | 1 |
 | Informix | 0 | 1 | 1 |
-| Ingres | 0 | 1 | 1 |
+| Ingres | 1 | 1 | 2 |
 | Interbase | 0 | 1 | 1 |
 | InterSystems IRIS | 0 | 1 | 1 |
 | JanusGraph | 0 | 1 | 1 |
 | Kdb | 0 | 1 | 1 |
 | LevelDB | 0 | 1 | 1 |
+| LinDB | 1 | 0 | 1 |
 | LMDB | 0 | 1 | 1 |
 | MariaDB | 0 | 1 | 1 |
 | MarkLogic | 0 | 1 | 1 |
@@ -373,18 +377,19 @@
 | Meilisearch | 0 | 1 | 1 |
 | Memcached | 0 | 1 | 1 |
 | Memgraph | 2 | 1 | 3 |
-| Microsoft Access | 6 | 1 | 7 |
-| Microsoft Azure AI Search | 0 | 1 | 1 |
+| Microsoft Access | 5 | 1 | 6 |
+| Microsoft Azure AI Search | 3 | 1 | 4 |
 | Microsoft Azure Cosmos DB | 2 | 1 | 3 |
-| Microsoft Azure Data Explorer | 0 | 1 | 1 |
-| Microsoft Azure SQL Database | 0 | 1 | 1 |
-| Microsoft Azure Synapse Analytics | 2 | 1 | 3 |
-| Microsoft Azure Table Storage | 6 | 0 | 6 |
+| Microsoft Azure Data Explorer | 6 | 1 | 7 |
+| Microsoft Azure SQL Database | 8 | 1 | 9 |
+| Microsoft Azure Synapse Analytics | 6 | 1 | 7 |
+| Microsoft Azure Table Storage | 7 | 0 | 7 |
 | Microsoft Fabric | 3 | 1 | 4 |
-| Microsoft SQL Server | 0 | 1 | 1 |
+| Microsoft SQL Server | 1 | 1 | 2 |
 | MonetDB | 4 | 1 | 5 |
 | MongoDB | 15 | 1 | 16 |
-| MySQL | 1 | 0 | 1 |
+| MySQL | 3 | 0 | 3 |
+| Nebula Graph | 6 | 0 | 6 |
 | NebulaGraph | 0 | 1 | 1 |
 | Neo4j | 2 | 1 | 3 |
 | OceanBase | 4 | 1 | 5 |
@@ -392,14 +397,14 @@
 | openGauss / GaussDB | 6 | 1 | 7 |
 | OpenSearch | 0 | 1 | 1 |
 | Oracle | 1 | 1 | 2 |
-| Oracle NoSQL | 0 | 1 | 1 |
-| Percona Server for MySQL | 0 | 1 | 1 |
+| Oracle NoSQL | 7 | 1 | 8 |
+| Percona Server for MySQL | 6 | 1 | 7 |
 | PlanetScale | 0 | 1 | 1 |
 | PostGIS | 0 | 1 | 1 |
-| PostgreSQL | 7 | 1 | 8 |
+| PostgreSQL | 9 | 1 | 10 |
 | PouchDB | 0 | 1 | 1 |
 | Presto | 3 | 0 | 3 |
-| Prometheus | 1 | 1 | 2 |
+| Prometheus | 0 | 1 | 1 |
 | Qdrant | 0 | 1 | 1 |
 | QuestDB | 0 | 1 | 1 |
 | RavenDB | 0 | 1 | 1 |
@@ -408,7 +413,7 @@
 | RethinkDB | 0 | 1 | 1 |
 | Riak KV | 0 | 1 | 1 |
 | RocksDB | 2 | 0 | 2 |
-| SAP Adaptive Server | 6 | 1 | 7 |
+| SAP Adaptive Server | 8 | 1 | 9 |
 | SAP HANA | 6 | 1 | 7 |
 | SAP IQ | 0 | 1 | 1 |
 | SAP SQL Anywhere | 0 | 1 | 1 |
@@ -423,6 +428,7 @@
 | StarRocks | 0 | 1 | 1 |
 | TDengine | 0 | 1 | 1 |
 | Tencent TDSQL | 6 | 1 | 7 |
+| Tera | 1 | 0 | 1 |
 | Teradata | 3 | 1 | 4 |
 | TiDB | 2 | 1 | 3 |
 | TigerGraph | 2 | 1 | 3 |
@@ -438,34 +444,34 @@
 | WiredTiger | 0 | 1 | 1 |
 | YugabyteDB | 1 | 1 | 2 |
 
-已下载论文 **196** 篇，官方文档/白皮书 **130** 份。
+已下载论文 **254** 篇，官方文档/白皮书 **130** 份。
 
 ### 论文清单
 
 | 数据库 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- | --- |
 | Aerospike | VLDB2016-AerospikeArchitectureofaRealTimeOperationalDBMS.pdf | VLDB 2016 | Aerospike: Architecture of a Real-Time Operational DBMS | [来源](https://vldb.org/pvldb/vol9/p1389-srinivasan.pdf) |
-| Alibaba Cloud PolarDB | FAST2020-POLARDBMeetsComputationalStorageEfficientlySupportAnalyticalWorkloadsinCloudNativeRelationalDatabase.pdf | FAST 2020 |  | [来源]() |
+| Alibaba Cloud PolarDB | FAST2020-POLARDBMeetsComputationalStorageEfficientlySupportAnalyticalWorkloadsinCloudNativeRelationalDatabase.pdf | — | POLARDBMeetsComputationalStorageEfficientlySupportAnalyticalWorkloadsinCloudNativeRelationalDatabase | [来源]() |
 | Alibaba Cloud PolarDB | VLDB2018-PolarFSAnUltralowLatencyandFailureResilientDistributedFileSystemforSharedStorageCloudDatabase.pdf | VLDB 2018 | PolarFS: An Ultra-low Latency and Failure Resilient Distributed File System for Shared Storage Cloud Database | [来源](https://vldb.org/pvldb/vol11/p1849-cao.pdf) |
 | Alibaba Cloud PolarDB | VLDB2023-PolarDBSCCACloudNativeDatabaseEnsuringLowLatencyforStronglyConsistentReads.pdf | VLDB 2023 | PolarDB-SCC: A Cloud-Native Database Ensuring Low Latency for Strongly Consistent Reads | [来源](https://www.vldb.org/pvldb/vol16/p3754-chen.pdf) |
 | Alibaba Cloud PolarDB | VLDB2025-FromScaleUptoScaleOutPolarDBsJourneytoAchieving2BilliontpmC.pdf | VLDB 2025 | From Scale-Up to Scale-Out: PolarDB’s Journey to Achieving 2 Billion tpmC | [来源](https://www.vldb.org/pvldb/vol18/p5059-chen.pdf) |
-| Amazon Aurora | SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf | SIGMOD 2017 |  | [来源]() |
-| Amazon Aurora | SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf | — |  | [来源]() |
-| Amazon Aurora | SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf | SIGMOD 2018 |  | [来源]() |
+| Amazon Aurora | SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf | — | AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases | [来源]() |
+| Amazon Aurora | SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf | — | AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits | [来源]() |
+| Amazon Aurora | SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf | — | AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges | [来源]() |
 | Amazon Aurora | VLDB2024-ResourceManagementinAuroraServerless.pdf | VLDB 2024 | Resource Management in Aurora Serverless | [来源](https://www.vldb.org/pvldb/vol17/p4038-urgaonkar.pdf) |
 | Amazon Aurora | VLDB2025-SunStormGeographicallydistributedtransactionsoverAurorastylesystems.pdf | VLDB 2025 | SunStorm: Geographically distributed transactions over Aurora-style systems | [来源](https://www.vldb.org/pvldb/vol18/p5555-nilangekar.pdf) |
 | Amazon DocumentDB | VLDB2015-SchemaAgnosticIndexingwithAzureDocumentDB.pdf | VLDB 2015 | Schema-Agnostic Indexing with Azure DocumentDB | [来源](https://vldb.org/pvldb/vol8/p1668-shukla.pdf) |
-| Amazon DynamoDB | Paper-AmazonDynamoDBDeveloperGuide.pdf | — | Amazon DynamoDB - Developer Guide | [来源](https://docs.aws.amazon.com/pdfs/amazondynamodb/latest/developerguide/dynamodb-dg.pdf) |
-| Amazon DynamoDB | Paper-MicrosoftWordsosp067decandia1doc.pdf | — | Microsoft Word - sosp067-decandia1.doc | [来源](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) |
+| Amazon DynamoDB | Paper-AmazonDynamoDBDeveloperGuide.pdf | — | AmazonDynamoDBDeveloperGuide | [来源]() |
+| Amazon DynamoDB | Paper-MicrosoftWordsosp067decandia1doc.pdf | — | MicrosoftWordsosp067decandia1doc | [来源]() |
 | Amazon Redshift | VLDB2020-FastandEffectiveDistributionKeyRecommendationforAmazonRedshift.pdf | VLDB 2020 | Fast and Effective Distribution-Key Recommendation for Amazon Redshift | [来源](https://www.vldb.org/pvldb/vol13/p2411-parchas.pdf) |
 | Amazon Redshift | VLDB2021-TheevolutionofAmazonRedshift.pdf | VLDB 2021 | The evolution of Amazon Redshift | [来源](https://www.vldb.org/pvldb/vol14/p3162-pandis.pdf) |
 | Amazon Redshift | VLDB2024-WhyTPCIsNotEnoughAnAnalysisoftheAmazonRedshiftFleet.pdf | VLDB 2024 | Why TPC Is Not Enough: An Analysis of the Amazon Redshift Fleet | [来源](https://www.vldb.org/pvldb/vol17/p3694-saxena.pdf) |
 | Amazon Redshift | VLDB2026-IncrementalQueryOptimizerStatisticsinAmazonRedshift.pdf | VLDB 2026 | Incremental Query Optimizer Statistics in Amazon Redshift | [来源](https://www.vldb.org/pvldb/vol19/p3941-pfeil.pdf) |
-| Apache Cassandra | SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf | SIGMOD 2014 |  | [来源]() |
+| Apache Cassandra | SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf | — | ScalableAtomicVisibilitywithRAMPTransactions | [来源]() |
 | Apache Cassandra | VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf | VLDB 2015 | Understanding the Causes of Consistency Anomalies in Apache Cassandra | [来源](https://vldb.org/pvldb/vol8/p810-fan.pdf) |
 | Apache Cassandra | VLDB2022-TriememtablesinCassandra.pdf | VLDB 2022 | Trie memtables in Cassandra | [来源](https://www.vldb.org/pvldb/vol15/p3359-lambov.pdf) |
-| Apache Cassandra | arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf | arXiv 2013 |  | [来源]() |
-| Apache Cassandra | arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf | arXiv 2021 |  | [来源]() |
+| Apache Cassandra | arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf | — | 13092772APracticalDistributedUniversalConstructionwithUnknownParticipants | [来源]() |
+| Apache Cassandra | arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf | — | 210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters | [来源]() |
 | Apache Drill | VLDB2015-SmartDrillDownANewDataExplorationOperator.pdf | VLDB 2015 | Smart Drill-Down: A New Data Exploration Operator | [来源](https://vldb.org/pvldb/vol8/p1928-joglekar.pdf) |
 | Apache Flink | VLDB2017-StateManagementinApacheFlinkÆConsistentStatefulDistributedStreamProcessing.pdf | VLDB 2017 | State Management in Apache Flink¬Æ: Consistent Stateful Distributed Stream Processing | [来源](https://vldb.org/pvldb/vol10/p1718-carbone.pdf) |
 | Apache Flink | VLDB2021-WatermarksinStreamProcessingSystemsSemanticsandComparativeAnalysisofApacheFlinkandGoogleCloudDataflow.pdf | VLDB 2021 | Watermarks in Stream Processing Systems: Semantics and Comparative Analysis of Apache Flink and Google Cloud Dataflow | [来源](https://www.vldb.org/pvldb/vol14/p3135-begoli.pdf) |
@@ -487,12 +493,12 @@
 | Apache Spark | VLDB2021-DebuggingMissingAnswersforSparkQueriesoverNestedDatawithBreadcrumb.pdf | VLDB 2021 | Debugging Missing Answers for Spark Queries over Nested Data with Breadcrumb | [来源](https://www.vldb.org/pvldb/vol14/p2731-diestelkamper.pdf) |
 | Apache Spark | VLDB2021-SparkCruiseWorkloadOptimizationinManagedSparkClustersatMicrosoft.pdf | VLDB 2021 | SparkCruise: Workload Optimization in Managed Spark Clusters at Microsoft | [来源](https://www.vldb.org/pvldb/vol14/p3122-roy.pdf) |
 | Apache Spark | VLDB2023-TowardsGeneralandEfficientOnlineTuningforSpark.pdf | VLDB 2023 | Towards General and Efficient Online Tuning for Spark | [来源](https://www.vldb.org/pvldb/vol16/p3570-li.pdf) |
-| Apache ZooKeeper | USENIX-Huntpdf.pdf | USENIX | Hunt.pdf | [来源](https://www.usenix.org/legacy/events/atc10/tech/full_papers/Hunt.pdf) |
-| Calvin | FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf | FAST | Calvin: Fast Distributed Transactions for Partitioned Database Systems | [来源](http://cs-www.cs.yale.edu/homes/dna/papers/calvin-sigmod12.pdf) |
+| Apache ZooKeeper | USENIX-Huntpdf.pdf | — | Huntpdf | [来源]() |
+| Calvin | FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf | — | CalvinFastDistributedTransactionsforPartitionedDatabaseSystems | [来源]() |
 | ClickHouse | VLDB2024-ClickHouseLightningFastAnalyticsforEveryone.pdf | VLDB 2024 | ClickHouse - Lightning Fast Analytics for Everyone | [来源](https://www.vldb.org/pvldb/vol17/p3731-schulze.pdf) |
 | CloudKit | VLDB2018-CloudKitStructuredStorageforMobileApplications.pdf | VLDB 2018 | CloudKit: Structured Storage for Mobile Applications | [来源](https://vldb.org/pvldb/vol11/p540-shraer.pdf) |
-| CockroachDB | 2019-TheDefinitiveGuidetoCockroachDB.pdf | — |  | [来源]() |
-| CockroachDB | SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf | SIGMOD 2020 |  | [来源]() |
+| CockroachDB | 2019-TheDefinitiveGuidetoCockroachDB.pdf | — | TheDefinitiveGuidetoCockroachDB | [来源]() |
+| CockroachDB | SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf | — | CockroachDBTheResilientGeoDistributedSQLDatabase | [来源]() |
 | CockroachDB | VLDB2022-ADemonstrationofMultiRegionCockroachDB.pdf | VLDB 2022 | A Demonstration of Multi-Region CockroachDB | [来源](https://www.vldb.org/pvldb/vol15/p3610-taft.pdf) |
 | Coherence | VLDB2025-CacheCoherenceOverDisaggregatedMemory.pdf | VLDB 2025 | Cache Coherence Over Disaggregated Memory | [来源](https://www.vldb.org/pvldb/vol18/p2978-wang.pdf) |
 | Coherence | VLDB2025-OpenMELUnsupervisedMultimodalEntityLinkingUsingNoiseFreeExpandedQueriesandGlobalCoherence.pdf | VLDB 2025 | OpenMEL: Unsupervised Multimodal Entity Linking Using Noise-Free Expanded Queries and Global Coherence | [来源](https://www.vldb.org/pvldb/vol18/p2454-zhu.pdf) |
@@ -500,30 +506,38 @@
 | Couchbase | VLDB2022-MagmaAhighdatadensitystorageengineusedinCouchbase.pdf | VLDB 2022 | Magma: A high data density storage engine used in Couchbase | [来源](https://www.vldb.org/pvldb/vol15/p3496-lakshman.pdf) |
 | Databricks | VLDB2026-AutoLiquidAutonomicDataLayoutOptimizationfortheDatabricksLakehouse.pdf | VLDB 2026 | AutoLiquid: Autonomic Data Layout Optimization for the Databricks Lakehouse | [来源](https://www.vldb.org/pvldb/vol19/p4023-liang.pdf) |
 | Databricks | VLDB2026-UltronHistoryBasedQueryOptimizationatDatabricks.pdf | VLDB 2026 | Ultron: History-Based Query Optimization at Databricks | [来源](https://www.vldb.org/pvldb/vol19/p4358-marcus.pdf) |
-| Dgraph | ICDE2019-DgraphALargeScaleGraphDatabase.pdf | ICDE 2019 | Dgraph: A Large-Scale Graph Database | [来源](https://arxiv.org/pdf/1904.09612) |
-| Dgraph | SIGMOD2017-DGraphADistributedGraphDatabase.pdf | SIGMOD 2017 | DGraph: A Distributed Graph Database | [来源](https://arxiv.org/pdf/1704.02761) |
-| Dgraph | TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf | TechnicalReport 2020 |  | [来源]() |
-| DuckDB | Paper-CIDR2020raasveldtmuehleisenduckdbpdf.pdf | — | CIDR2020-raasveldt-muehleisen-duckdb.pdf | [来源](https://duckdb.org/pdf/CIDR2020-raasveldt-muehleisen-duckdb.pdf) |
-| DuckDB | Paper-DuckDBanEmbeddableAnalyticalDatabase.pdf | — | DuckDB: an Embeddable Analytical Database | [来源](https://duckdb.org/pdf/SIGMOD2019-demo-duckdb.pdf) |
-| DuckDB | Paper2023-DuckDBFOSDEM.pdf | 2023 | DuckDB - FOSDEM | [来源](https://archive.fosdem.org/2023/schedule/event/python_duckdb/attachments/slides/5854/export/events/attachments/python_duckdb/slides/5854/Presentation_Slides.pdf) |
+| Datastax Enterprise | VLDB2014-EnterpriseSearchintheBigDataEraRecentDevelopmentsandOpenChallenges.pdf | VLDB 2014 | Enterprise Search in the Big Data Era: Recent Developments and Open Challenges | [来源](https://vldb.org/pvldb/vol7/p1717-li.pdf) |
+| Datastax Enterprise | VLDB2014-TheImpactofColumnarInMemoryDatabasesonEnterpriseSystems.pdf | VLDB 2014 | The Impact of Columnar In-Memory Databases on Enterprise Systems | [来源](https://vldb.org/pvldb/vol7/p1722-plattner.pdf) |
+| Datastax Enterprise | VLDB2019-AQuerySystemforEfficientlyInvestigatingComplexAttackBehaviorsforEnterpriseSecurity.pdf | VLDB 2019 | A Query System for Efficiently Investigating Complex Attack Behaviors for Enterprise Security | [来源](https://vldb.org/pvldb/vol12/p1802-gao.pdf) |
+| Datastax Enterprise | VLDB2021-TaniumRevealAFederatedSearchEngineforQueryingUnstructuredFileDataonLargeEnterpriseNetworks.pdf | VLDB 2021 | Tanium Reveal: A Federated Search Engine for Querying Unstructured File Data on Large Enterprise Networks | [来源](https://www.vldb.org/pvldb/vol14/p3096-stoddard.pdf) |
+| Datastax Enterprise | VLDB2024-AutomatingtheEnterprisewithFoundationModels.pdf | VLDB 2024 | Automating the Enterprise with Foundation Models | [来源](https://www.vldb.org/pvldb/vol17/p2805-wornow.pdf) |
+| Datastax Enterprise | VLDB2024-KGFabricAScalableKnowledgeGraphWarehouseforEnterpriseDataInterconnection.pdf | VLDB 2024 | KGFabric: A Scalable Knowledge Graph Warehouse for Enterprise Data Interconnection | [来源](https://www.vldb.org/pvldb/vol17/p3841-yi.pdf) |
+| Dgraph | ICDE2019-DgraphALargeScaleGraphDatabase.pdf | — | DgraphALargeScaleGraphDatabase | [来源]() |
+| Dgraph | SIGMOD2017-DGraphADistributedGraphDatabase.pdf | — | DGraphADistributedGraphDatabase | [来源]() |
+| Dgraph | TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf | — | DgraphSynchronouslyReplicatedTransactionalandDistributedGraph | [来源]() |
+| DuckDB | Paper-CIDR2020raasveldtmuehleisenduckdbpdf.pdf | — | CIDR2020raasveldtmuehleisenduckdbpdf | [来源]() |
+| DuckDB | Paper-DuckDBanEmbeddableAnalyticalDatabase.pdf | — | DuckDBanEmbeddableAnalyticalDatabase | [来源]() |
+| DuckDB | Paper2023-DuckDBFOSDEM.pdf | — | DuckDBFOSDEM | [来源]() |
 | DuckDB | VLDB2022-DuckDBWasmFastAnalyticalProcessingfortheWeb.pdf | VLDB 2022 | DuckDB-Wasm: Fast Analytical Processing for the Web | [来源](https://www.vldb.org/pvldb/vol15/p3574-kohn.pdf) |
 | DuckDB | VLDB2023-DuckPGQBringingSQLPGQtoDuckDB.pdf | VLDB 2023 | DuckPGQ: Bringing SQL/PGQ to DuckDB | [来源](https://www.vldb.org/pvldb/vol16/p4034-wolde.pdf) |
 | DuckDB | VLDB2025-BeyondQuackingDeepIntegrationofLanguageModelsandRAGintoDuckDB.pdf | VLDB 2025 | Beyond Quacking: Deep Integration of Language Models and RAG into DuckDB | [来源](https://www.vldb.org/pvldb/vol18/p5415-mhedhbi.pdf) |
-| EDB Postgres | VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf | VLDB 2026 | Lakebase: Serverless Postgres over Open Lake Storage | [来源](https://www.vldb.org/pvldb/vol19/p4385-pandis.pdf) |
-| Fauna | VLDB2021-FaunaTemporalGraphDatabase.pdf | VLDB 2021 | Fauna: Temporal Graph Database | [来源](https://arxiv.org/pdf/2111.00838) |
+| Fauna | VLDB2021-FaunaTemporalGraphDatabase.pdf | — | FaunaTemporalGraphDatabase | [来源]() |
 | Firebase Realtime Database | VLDB2011-AnalyticsfortheRealTimeWeb.pdf | VLDB 2011 | Analytics for the RealTime Web | [来源](https://vldb.org/pvldb/vol4/p1391-grinev.pdf) |
 | Firebase Realtime Database | VLDB2013-RealtimeAnalysisofInformationDiffusioninSocialMedia.pdf | VLDB 2013 | Realtime Analysis of Information Diffusion in Social Media | [来源](https://vldb.org/pvldb/vol6/p1416-taxidou.pdf) |
 | Firebase Realtime Database | VLDB2020-RealtimeIndexFreeSingleSourceSimRankProcessingonWebScaleGraphs.pdf | VLDB 2020 | Realtime Index-Free Single Source SimRank Processing on Web-Scale Graphs | [来源](https://vldb.org/pvldb/vol13/p966-shi.pdf) |
 | Firebase Realtime Database | VLDB2020-RealtimeTopkPersonalizedPageRankoverLargeGraphsonGPUs.pdf | VLDB 2020 | Realtime Top-k Personalized PageRank over Large Graphs on GPUs | [来源](https://vldb.org/pvldb/vol13/p15-shi.pdf) |
 | Firebase Realtime Database | VLDB2022-MetasNextgenerationRealtimeMonitoringandAnalyticsPlatform.pdf | VLDB 2022 | Meta's Next-generation Realtime Monitoring and Analytics Platform | [来源](https://www.vldb.org/pvldb/vol15/p3522-mo.pdf) |
-| FoundationDB | SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf | SIGMOD 2021 |  | [来源]() |
+| FoundationDB | SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf | — | FoundationDBADistributedUnbundledTransactionalKeyValueStore | [来源]() |
+| Galaxybase | VLDB2024-GalaxybaseAHighPerformanceNativeDistributedGraphDatabaseforHTAP.pdf | VLDB 2024 | Galaxybase: A High Performance Native Distributed Graph Database for HTAP | [来源](https://www.vldb.org/pvldb/vol17/p3893-tong.pdf) |
 | Google Cloud Datastore | VLDB2011-UsingPaxostoBuildaScalableConsistentandHighlyAvailableDatastore.pdf | VLDB 2011 | Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore | [来源](https://vldb.org/pvldb/vol4/p243-rao.pdf) |
+| Google Cloud Datastore | VLDB2024-TransparentMigrationfromDatastoretoFirestore.pdf | VLDB 2024 | Transparent Migration from Datastore to Firestore | [来源](https://www.vldb.org/pvldb/vol17/p3960-davisson.pdf) |
+| Google Cloud Firestore | VLDB2026-TheLiveDatabaseFirestoresScalableandConsistentRealtimeQueries.pdf | VLDB 2026 | The Live Database: Firestore’s Scalable and Consistent Realtime Queries | [来源](https://www.vldb.org/pvldb/vol19/p4130-jacobsson.pdf) |
 | Google F1 | VLDB2013-F1ADistributedSQLDatabaseThatScales.pdf | VLDB 2013 | F1: A Distributed SQL Database That Scales | [来源](https://vldb.org/pvldb/vol6/p1068-shute.pdf) |
 | Google F1 | VLDB2018-F1QueryDeclarativeQueryingatScale.pdf | VLDB 2018 | F1 Query: Declarative Querying at Scale | [来源](https://vldb.org/pvldb/vol11/p1835-samwel.pdf) |
-| Google Spanner | OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf | OSDI 2012 | Spanner: Google's Globally-Distributed Database | [来源](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf) |
-| GraphDB | Paper-lecture07pdf.pdf | — | lecture07.pdf | [来源](https://www.cs.helsinki.fi/u/tpkarkka/opetus/12k/dct/lecture07.pdf) |
+| Google Spanner | OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf | — | SpannerGooglesGloballyDistributedDatabase | [来源]() |
+| GraphDB | Paper-lecture07pdf.pdf | — | lecture07pdf | [来源]() |
 | Graphite | VLDB2020-GraphiteANUMAawareHPCSystemforGraphAnalyticsBasedonanewMPIXParallelismModel.pdf | VLDB 2020 | Graphite: A NUMA-aware HPC System for Graph Analytics Based on a new MPI * X Parallelism Model | [来源](https://vldb.org/pvldb/vol13/p783-mofrad.pdf) |
-| Greenplum | Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf | 2017 | CMU SCS 15-721 (Spring 2017) :: Query Compilation | [来源](https://15721.courses.cs.cmu.edu/spring2017/slides/20-compilation.pdf) |
+| Greenplum | Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf | — | CMUSCS15721Spring2017QueryCompilation | [来源]() |
 | Hazelcast | VLDB2021-HazelcastJetLowlatencyStreamProcessingatthe9999thPercentile.pdf | VLDB 2021 | Hazelcast Jet: Low-latency Stream Processing at the 99.99th Percentile | [来源](https://www.vldb.org/pvldb/vol14/p3110-katsifodimos.pdf) |
 | IBM Db2 | VLDB2009-AnObjectPlacementAdvisorforDB2UsingSolidStateStorage.pdf | VLDB 2009 | An Object Placement Advisor for DB2 Using Solid State Storage | [来源](https://vldb.org/pvldb/vol2/vldb09-853.pdf) |
 | IBM Db2 | VLDB2009-EfficientIndexCompressioninDB2LUW.pdf | VLDB 2009 | Efficient Index Compression in DB2 LUW | [来源](https://vldb.org/pvldb/vol2/vldb09-798.pdf) |
@@ -531,19 +545,43 @@
 | IBM Db2 | VLDB2013-DB2withBLUAccelerationSoMuchMorethanJustaColumnStore.pdf | VLDB 2013 | DB2 with BLU Acceleration: So Much More than Just a Column Store | [来源](https://vldb.org/pvldb/vol6/p1080-barber.pdf) |
 | IBM Db2 | VLDB2019-SynergisticGraphandSQLAnalyticsInsideIBMDb2.pdf | VLDB 2019 | Synergistic Graph and SQL Analytics Inside IBM Db2 | [来源](https://vldb.org/pvldb/vol12/p1782-tian.pdf) |
 | IBM Db2 | VLDB2020-Db2EventStoreAPurposeBuiltIoTDatabaseEngine.pdf | VLDB 2020 | Db2 Event Store: A Purpose-Built IoT Database Engine | [来源](https://www.vldb.org/pvldb/vol13/p3299-garcia-arellano.pdf) |
-| Memgraph | 2020-Memgraph.pdf | — |  | [来源]() |
-| Memgraph | arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf | arXiv 2021 | Memgraph: A High Performance Graph Database | [来源](https://arxiv.org/pdf/2104.04457) |
+| Infinity | VLDB2024-AlephFilterToInfinityinConstantTime.pdf | VLDB 2024 | Aleph Filter: To Infinity in Constant Time | [来源](https://www.vldb.org/pvldb/vol17/p3644-dayan.pdf) |
+| Ingres | Paper2023-DS21ActianX_04Apdf.pdf | — | DS21ActianX_04Apdf | [来源]() |
+| LinDB | VLDB-p1816tellerpdf.pdf | — | p1816tellerpdf | [来源]() |
+| Memgraph | 2020-Memgraph.pdf | — | Memgraph | [来源]() |
+| Memgraph | arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf | — | MemgraphAHighPerformanceGraphDatabase | [来源]() |
 | Microsoft Access | VLDB2009-CorrelationMapsACompressedAccessMethodforExploitingSoftFunctionalDependencies.pdf | VLDB 2009 | Correlation Maps: A Compressed Access Method for Exploiting Soft Functional Dependencies | [来源](https://vldb.org/pvldb/vol2/vldb09-199.pdf) |
 | Microsoft Access | VLDB2009-FullFidelityFlexibleObjectOrientedXMLAccess.pdf | VLDB 2009 | Full-Fidelity Flexible Object-Oriented XML Access | [来源](https://vldb.org/pvldb/vol2/vldb09-216.pdf) |
 | Microsoft Access | VLDB2020-RDFFramesKnowledgeGraphAccessforMachineLearningTools.pdf | VLDB 2020 | RDFFrames: Knowledge Graph Access for Machine Learning Tools | [来源](https://www.vldb.org/pvldb/vol13/p2889-mohamed.pdf) |
 | Microsoft Access | VLDB2020-SieveAMiddlewareApproachtoScalableAccessControlforDatabaseManagementSystems.pdf | VLDB 2020 | Sieve: A Middleware Approach to Scalable Access Control for Database Management Systems | [来源](https://www.vldb.org/pvldb/vol13/p2424-pappachan.pdf) |
-| Microsoft Access | VLDB2021-ADemonstrationofNoDAUnifiedAccesstoNoSQLStores.pdf | VLDB 2021 | A Demonstration of NoDA: Unified Access to NoSQL Stores | [来源](https://www.vldb.org/pvldb/vol14/p2851-koutroumanis.pdf) |
 | Microsoft Access | VLDB2021-ApproachingDRAMperformancebyusingmicrosecondlatencyflashmemoryforsmallsizedrandomreadaccessesanewaccessmethoda.pdf | VLDB 2021 | Approaching DRAM performance by using microsecond-latency flash memory for small-sized random read accesses: a new access method and its graph applications | [来源](https://www.vldb.org/pvldb/vol14/p1311-suzuki.pdf) |
+| Microsoft Azure AI Search | VLDB2009-HAMSTERUsingSearchClicklogsforSchemaandTaxonomyMatching.pdf | VLDB 2009 | HAMSTER: Using Search Clicklogs for Schema and Taxonomy Matching | [来源](https://vldb.org/pvldb/vol2/vldb09-124.pdf) |
+| Microsoft Azure AI Search | VLDB2009-SimilaritySearchonBregmanDivergenceTowardsNonMetricIndexing.pdf | VLDB 2009 | Similarity Search on Bregman Divergence: Towards Non-Metric Indexing | [来源](https://vldb.org/pvldb/vol2/vldb09-468.pdf) |
+| Microsoft Azure AI Search | VLDB2026-HighlyScalableSQLAzureMVCCVersionCleaner.pdf | VLDB 2026 | Highly Scalable SQL Azure MVCC Version Cleaner | [来源](https://www.vldb.org/pvldb/vol19/p3916-gandikota.pdf) |
 | Microsoft Azure Cosmos DB | VLDB2021-TheCosmosBigDataPlatformatMicrosoftOveraDecadeofProgressandaDecadetoLookForward.pdf | VLDB 2021 | The Cosmos Big Data Platform at Microsoft: Over a Decade of Progress and a Decade to Look Forward | [来源](https://www.vldb.org/pvldb/vol14/p3148-jindal.pdf) |
 | Microsoft Azure Cosmos DB | VLDB2025-CostEffectiveLowLatencyVectorSearchwithAzureCosmosDB.pdf | VLDB 2025 | Cost-Effective, Low Latency Vector Search with Azure Cosmos DB | [来源](https://www.vldb.org/pvldb/vol18/p5166-upreti.pdf) |
+| Microsoft Azure Data Explorer | VLDB2017-FlashViewAnInteractiveVisualExplorerforRawData.pdf | VLDB 2017 | FlashView: An Interactive Visual Explorer for Raw Data | [来源](https://vldb.org/pvldb/vol10/p1869-pang.pdf) |
+| Microsoft Azure Data Explorer | VLDB2018-MustaCHEAMultipleClusteringHierarchiesExplorer.pdf | VLDB 2018 | MustaCHE: A Multiple Clustering Hierarchies Explorer | [来源](https://vldb.org/pvldb/vol11/p2058-neto.pdf) |
+| Microsoft Azure Data Explorer | VLDB2018-X2QYourPersonalExamplebasedGraphExplorer.pdf | VLDB 2018 | X2Q: Your Personal Example-based Graph Explorer | [来源](https://vldb.org/pvldb/vol11/p2026-lissandrini.pdf) |
+| Microsoft Azure Data Explorer | VLDB2020-HDAGExplorerASystemforHierarchicalDAGSummarizationandExploration.pdf | VLDB 2020 | HDAG-Explorer: A System for Hierarchical DAG Summarization and Exploration | [来源](https://www.vldb.org/pvldb/vol13/p2973-zhu.pdf) |
+| Microsoft Azure Data Explorer | VLDB2021-KDVExplorerANearRealTimeKernelDensityVisualizationSystemforSpatialAnalysis.pdf | VLDB 2021 | KDV-Explorer: A Near Real-Time Kernel Density Visualization System for Spatial Analysis | [来源](https://www.vldb.org/pvldb/vol14/p2655-chan.pdf) |
+| Microsoft Azure Data Explorer | VLDB2023-CMExplorerDissectingDataIngestionProblems.pdf | VLDB 2023 | CM-Explorer: Dissecting Data Ingestion Problems | [来源](https://www.vldb.org/pvldb/vol16/p3958-bylois.pdf) |
+| Microsoft Azure SQL Database | VLDB2009-DBToasterASQLCompilerforHighPerformanceDeltaProcessinginMainMemoryDatabases.pdf | VLDB 2009 | DBToaster: A SQL Compiler for High-Performance Delta Processing in Main-Memory Databases | [来源](https://vldb.org/pvldb/vol2/vldb09-1042.pdf) |
+| Microsoft Azure SQL Database | VLDB2009-LaconicSchemaMappingsComputingtheCorewithSQLQueries.pdf | VLDB 2009 | Laconic Schema Mappings: Computing the Core with SQL Queries | [来源](https://vldb.org/pvldb/vol2/vldb09-595.pdf) |
+| Microsoft Azure SQL Database | VLDB2009-SQLMapReduceApracticalapproachtoselfdescribingpolymorphicandparallelizableuserdefinedfunctions.pdf | VLDB 2009 | SQL/MapReduce: A practical approach to self-describing, polymorphic, and parallelizable user-defined functions | [来源](https://vldb.org/pvldb/vol2/vldb09-464.pdf) |
+| Microsoft Azure SQL Database | VLDB2014-SQLAAExecutingSQLonanAsymmetricArchitecture.pdf | VLDB 2014 | SQL/AA: Executing SQL on an Asymmetric Architecture | [来源](https://vldb.org/pvldb/vol7/p1625-to.pdf) |
+| Microsoft Azure SQL Database | VLDB2014-SQLonHadoopFullCircleBacktoSharedNothingDatabaseArchitectures.pdf | VLDB 2014 | SQL-on-Hadoop: Full Circle Back to Shared-Nothing Database Architectures | [来源](https://vldb.org/pvldb/vol7/p1295-floratou.pdf) |
+| Microsoft Azure SQL Database | VLDB2019-ConstantTimeRecoveryinAzureSQLDatabase.pdf | VLDB 2019 | Constant Time Recovery in Azure SQL Database | [来源](https://vldb.org/pvldb/vol12/p2143-antonopoulos.pdf) |
+| Microsoft Azure SQL Database | VLDB2022-MoneyballProactiveAutoScalinginMicrosoftAzureSQLDatabaseServerless.pdf | VLDB 2022 | Moneyball: Proactive Auto-Scaling in Microsoft Azure SQL Database Serverless | [来源](https://www.vldb.org/pvldb/vol15/p1279-poppe.pdf) |
+| Microsoft Azure SQL Database | VLDB2025-MDMVCCMultiversionConcurrencyControlforSchemaChangesinAzureSQLDatabase.pdf | VLDB 2025 | MD-MVCC: Multi-version Concurrency Control for Schema Changes in Azure SQL Database | [来源](https://www.vldb.org/pvldb/vol18/p4791-antonopoulos.pdf) |
+| Microsoft Azure Synapse Analytics | VLDB2014-DimmWittedAStudyofMainMemoryStatisticalAnalytics.pdf | VLDB 2014 | DimmWitted: A Study of Main-Memory Statistical Analytics | [来源](https://vldb.org/pvldb/vol7/p1283-zhang.pdf) |
+| Microsoft Azure Synapse Analytics | VLDB2014-ErrorboundedSamplingforAnalyticsonBigSparseData.pdf | VLDB 2014 | Error-bounded Sampling for Analytics on Big Sparse Data | [来源](https://vldb.org/pvldb/vol7/p1508-yan.pdf) |
+| Microsoft Azure Synapse Analytics | VLDB2014-LargeScaleGraphAnalyticsinAster6BringingContexttoBigDataDiscovery.pdf | VLDB 2014 | Large-Scale Graph Analytics in Aster 6: Bringing Context to Big Data Discovery | [来源](https://vldb.org/pvldb/vol7/p1405-simmen.pdf) |
+| Microsoft Azure Synapse Analytics | VLDB2014-VERTEXICAYourRelationalFriendforGraphAnalytics.pdf | VLDB 2014 | VERTEXICA: Your Relational Friend for Graph Analytics! | [来源](https://vldb.org/pvldb/vol7/p1669-jindal.pdf) |
 | Microsoft Azure Synapse Analytics | VLDB2020-POLARISTheDistributedSQLEngineinAzureSynapse.pdf | VLDB 2020 | POLARIS: The Distributed SQL Engine in Azure Synapse | [来源](https://www.vldb.org/pvldb/vol13/p3204-saborit.pdf) |
 | Microsoft Azure Synapse Analytics | VLDB2021-HyperspaceTheIndexingSubsystemofAzureSynapse.pdf | VLDB 2021 | Hyperspace: The Indexing Subsystem of Azure Synapse | [来源](https://www.vldb.org/pvldb/vol14/p3043-potharaju.pdf) |
 | Microsoft Azure Table Storage | VLDB2009-AnsweringTableAugmentationQueriesfromUnstructuredListsontheWeb.pdf | VLDB 2009 | Answering Table Augmentation Queries from Unstructured Lists on the Web | [来源](https://vldb.org/pvldb/vol2/vldb09-652.pdf) |
+| Microsoft Azure Table Storage | VLDB2018-TableUnionSearchonOpenData.pdf | VLDB 2018 | Table Union Search on Open Data | [来源](https://vldb.org/pvldb/vol11/p813-nargesian.pdf) |
 | Microsoft Azure Table Storage | VLDB2020-TableExtractionandUnderstandingforScientificandEnterpriseApplications.pdf | VLDB 2020 | Table Extraction and Understanding for Scientific and Enterprise Applications | [来源](https://www.vldb.org/pvldb/vol13/p3433-burdick.pdf) |
 | Microsoft Azure Table Storage | VLDB2024-LakeCompassAnEndtoEndSystemforTableMaintenanceSearchandAnalysisinDataLakes.pdf | VLDB 2024 | LakeCompass: An End-to-End System for Table Maintenance, Search and Analysis in Data Lakes | [来源](https://www.vldb.org/pvldb/vol17/p4381-chai.pdf) |
 | Microsoft Azure Table Storage | VLDB2025-BIRDIENaturalLanguageDrivenTableDiscoveryUsingDifferentiableSearchIndex.pdf | VLDB 2025 | BIRDIE: Natural Language-Driven Table Discovery Using Differentiable Search Index | [来源](https://www.vldb.org/pvldb/vol18/p2070-gao.pdf) |
@@ -552,27 +590,36 @@
 | Microsoft Fabric | VLDB2020-ResilientDBGlobalScaleResilientBlockchainFabric.pdf | VLDB 2020 | ResilientDB: Global Scale Resilient Blockchain Fabric | [来源](https://vldb.org/pvldb/vol13/p868-gupta.pdf) |
 | Microsoft Fabric | VLDB2020-ScalableResilientandConfigurablePermissionedBlockchainFabric.pdf | VLDB 2020 | Scalable, Resilient and Configurable Permissioned Blockchain Fabric | [来源](https://www.vldb.org/pvldb/vol13/p2893-rahnama.pdf) |
 | Microsoft Fabric | VLDB2026-HermesatScalePoweringDistributedQuerieswithaUnifiedMemoryFabric.pdf | VLDB 2026 | Hermes at Scale: Powering Distributed Queries with a Unified Memory Fabric | [来源](https://www.vldb.org/pvldb/vol19/p3969-gubner.pdf) |
-| MonetDB | Paper-Columnimprintsasecondaryindexstructure.pdf | — | Column imprints: a secondary index structure | [来源](https://15721.courses.cs.cmu.edu/spring2016/papers/p893-sidirourgos.pdf) |
-| MonetDB | Paper-P19pdf.pdf | — | P19.pdf | [来源](https://www.cidrdb.org/cidr2005/papers/P19.pdf) |
-| MonetDB | VLDB-MemoryEfficientHashJoins.pdf | VLDB | Memory-Efficient Hash Joins | [来源](http://www.vldb.org/pvldb/vol8/p353-barber.pdf) |
+| Microsoft SQL Server | VLDB2014-FastForeignKeyDetectioninMicrosoftSQLServerPowerPivotforExcel.pdf | VLDB 2014 | Fast Foreign-Key Detection in Microsoft SQL Server PowerPivot for Excel | [来源](https://vldb.org/pvldb/vol7/p1417-chen.pdf) |
+| MonetDB | Paper-Columnimprintsasecondaryindexstructure.pdf | — | Columnimprintsasecondaryindexstructure | [来源]() |
+| MonetDB | Paper-P19pdf.pdf | — | P19pdf | [来源]() |
+| MonetDB | VLDB-MemoryEfficientHashJoins.pdf | VLDB 2015 | Memory-Efficient Hash Joins | [来源](https://vldb.org/pvldb/vol8/p353-barber.pdf) |
 | MonetDB | VLDB2012-MonetDBDataCellOnlineAnalyticsinaStreamingColumnStore.pdf | VLDB 2012 | MonetDB/DataCell: Online Analytics in a Streaming Column-Store | [来源](https://vldb.org/pvldb/vol5/p1910_eriettaliarou_vldb2012.pdf) |
-| MongoDB | ACMQueue2017-MongoDBJavaScriptFuzzer.pdf | ACM Queue 2017 |  | [来源]() |
-| MongoDB | CACM2017-MongoDBJavaScriptFuzzer.pdf | CACM 2017 |  | [来源]() |
-| MongoDB | ICDE2020-DecidingWhentoTradeDataFreshnessforPerformanceinMongoDBasaService.pdf | ICDE 2020 |  | [来源]() |
-| MongoDB | MasterThesis2017-JohannesBaumSerializabilityCheckingforMongoDBClients.pdf | Master Thesis 2017 |  | [来源]() |
-| MongoDB | MasterThesis2019-QuantitativePerformanceEvaluationofCloudBasedMySQLRelationalVsMongoDBNoSQLDatabasewithYCSB.pdf | Master Thesis 2019 |  | [来源]() |
-| MongoDB | NSDI2021-FaultTolerantReplicationwithPullBasedConsensusinMongoDB.pdf | NSDI 2021 |  | [来源]() |
-| MongoDB | SIGMOD2019-TyulenevImplementationofClusterwideLogicalClockandCausalConsistencyinMongoDB.pdf | SIGMOD 2019 |  | [来源]() |
-| MongoDB | StrangeloopTLA2019-ABugLifeFixingaMongoDBReplicationProtocolBugwithTLAplus.pdf | — |  | [来源]() |
+| MongoDB | ACMQueue2017-MongoDBJavaScriptFuzzer.pdf | — | MongoDBJavaScriptFuzzer | [来源]() |
+| MongoDB | CACM2017-MongoDBJavaScriptFuzzer.pdf | — | MongoDBJavaScriptFuzzer | [来源]() |
+| MongoDB | ICDE2020-DecidingWhentoTradeDataFreshnessforPerformanceinMongoDBasaService.pdf | — | DecidingWhentoTradeDataFreshnessforPerformanceinMongoDBasaService | [来源]() |
+| MongoDB | MasterThesis2017-JohannesBaumSerializabilityCheckingforMongoDBClients.pdf | — | JohannesBaumSerializabilityCheckingforMongoDBClients | [来源]() |
+| MongoDB | MasterThesis2019-QuantitativePerformanceEvaluationofCloudBasedMySQLRelationalVsMongoDBNoSQLDatabasewithYCSB.pdf | — | QuantitativePerformanceEvaluationofCloudBasedMySQLRelationalVsMongoDBNoSQLDatabasewithYCSB | [来源]() |
+| MongoDB | NSDI2021-FaultTolerantReplicationwithPullBasedConsensusinMongoDB.pdf | — | FaultTolerantReplicationwithPullBasedConsensusinMongoDB | [来源]() |
+| MongoDB | SIGMOD2019-TyulenevImplementationofClusterwideLogicalClockandCausalConsistencyinMongoDB.pdf | — | TyulenevImplementationofClusterwideLogicalClockandCausalConsistencyinMongoDB | [来源]() |
+| MongoDB | StrangeloopTLA2019-ABugLifeFixingaMongoDBReplicationProtocolBugwithTLAplus.pdf | — | ABugLifeFixingaMongoDBReplicationProtocolBugwithTLAplus | [来源]() |
 | MongoDB | VLDB2019-AdaptingTPCCBenchmarktoMeasurePerformanceofMultiDocumentTransactionsinMongoDB.pdf | VLDB 2019 | Adapting TPC-C Benchmark to Measure Performance of Multi-Document Transactions in MongoDB | [来源](https://vldb.org/pvldb/vol12/p2254-kamsky.pdf) |
-| MongoDB | VLDB2019-SchultzTunableConsistencyinMongoDB.pdf | VLDB 2019 | Tunable Consistency in MongoDB | [来源](https://vldb.org/pvldb/vol12/p2071-schultz.pdf) |
-| MongoDB | VLDB2020-eXtremeModellinginPractice.pdf | VLDB 2020 |  | [来源]() |
+| MongoDB | VLDB2019-SchultzTunableConsistencyinMongoDB.pdf | — | SchultzTunableConsistencyinMongoDB | [来源]() |
+| MongoDB | VLDB2020-eXtremeModellinginPractice.pdf | VLDB 2020 | eXtreme Modelling in Practice | [来源](https://vldb.org/pvldb/vol13/p1346-schvimer.pdf) |
 | MongoDB | VLDB2025-DesignandModularVerificationofDistributedTransactionsinMongoDB.pdf | VLDB 2025 | Design and Modular Verification of Distributed Transactions in MongoDB | [来源](https://www.vldb.org/pvldb/vol18/p5045-schultz.pdf) |
-| MongoDB | arXiv2016-160309291ExpressivityandComplexityofMongoDBExtendedVersion.pdf | arXiv 2016 |  | [来源]() |
-| MongoDB | arXiv2020-200408425AutomatedSystemPerformanceTestingatMongoDB.pdf | arXiv 2020 |  | [来源]() |
-| MongoDB | arXiv2021-210211960DesignandVerificationofaLoglessDynamicReconfigurationProtocolinMongoDBReplication.pdf | arXiv 2021 |  | [来源]() |
-| MySQL | Paper-p5sompolskipdf.pdf | — | p5-sompolski.pdf | [来源](https://15721.courses.cs.cmu.edu/spring2017/papers/21-vectorization1/p5-sompolski.pdf) |
-| Neo4j | TechnicalReport2016-SnapshotIsolationforNeo4j.pdf | TechnicalReport 2016 |  | [来源]() |
+| MongoDB | arXiv2016-160309291ExpressivityandComplexityofMongoDBExtendedVersion.pdf | — | 160309291ExpressivityandComplexityofMongoDBExtendedVersion | [来源]() |
+| MongoDB | arXiv2020-200408425AutomatedSystemPerformanceTestingatMongoDB.pdf | — | 200408425AutomatedSystemPerformanceTestingatMongoDB | [来源]() |
+| MongoDB | arXiv2021-210211960DesignandVerificationofaLoglessDynamicReconfigurationProtocolinMongoDBReplication.pdf | — | 210211960DesignandVerificationofaLoglessDynamicReconfigurationProtocolinMongoDBReplication | [来源]() |
+| MySQL | Paper-p5sompolskipdf.pdf | — | p5sompolskipdf | [来源]() |
+| MySQL | VLDB2014-RealizationoftheLowCostandHighPerformanceMySQLCloudDatabase.pdf | VLDB 2014 | Realization of the Low Cost and High Performance MySQL Cloud Database | [来源](https://vldb.org/pvldb/vol7/p1742-alibaba.pdf) |
+| MySQL | VLDB2025-FreelyMovingBetweentheOLTPandOLAPWorldsHermesanHighPerformanceOLAPAcceleratorforMySQL.pdf | VLDB 2025 | Freely Moving Between the OLTP and OLAP Worlds: Hermes – an High-Performance OLAP Accelerator for MySQL | [来源](https://www.vldb.org/pvldb/vol18/p5113-gubner.pdf) |
+| Nebula Graph | VLDB2009-Classbasedgraphanonymizationforsocialnetworkdata.pdf | VLDB 2009 | Class-based graph anonymization for social network data | [来源](https://vldb.org/pvldb/vol2/vldb09-pvldb26.pdf) |
+| Nebula Graph | VLDB2009-ComparingStarsOnApproximatingGraphEditDistance.pdf | VLDB 2009 | Comparing Stars: On Approximating Graph Edit Distance | [来源](https://vldb.org/pvldb/vol2/vldb09-568.pdf) |
+| Nebula Graph | VLDB2009-DistanceJoinPatternMatchQueryInaLargeGraphDatabase.pdf | VLDB 2009 | DistanceJoin: Pattern Match Query In a Large Graph Database | [来源](https://vldb.org/pvldb/vol2/vldb09-876.pdf) |
+| Nebula Graph | VLDB2009-GraphClusteringBasedonStructuralAttributeSimilarities.pdf | VLDB 2009 | Graph Clustering Based on Structural/Attribute Similarities | [来源](https://vldb.org/pvldb/vol2/vldb09-175.pdf) |
+| Nebula Graph | VLDB2009-MiningGraphPatternsEfficientlyviaRandomizedSummaries.pdf | VLDB 2009 | Mining Graph Patterns Efficiently via Randomized Summaries | [来源](https://vldb.org/pvldb/vol2/vldb09-80.pdf) |
+| Nebula Graph | VLDB2009-OutputSpaceSamplingforGraphPatterns.pdf | VLDB 2009 | Output Space Sampling for Graph Patterns | [来源](https://vldb.org/pvldb/vol2/vldb09-713.pdf) |
+| Neo4j | TechnicalReport2016-SnapshotIsolationforNeo4j.pdf | — | SnapshotIsolationforNeo4j | [来源]() |
 | Neo4j | VLDB2026-Provlepsis4jQueryingFutureGraphsinNeo4j.pdf | VLDB 2026 | Provlepsis4j: Querying Future Graphs in Neo4j | [来源](https://www.vldb.org/pvldb/vol19/p4770-gkartzios.pdf) |
 | OceanBase | VLDB2022-OceanBaseA707MilliontpmCDistributedRelationalDatabaseSystem.pdf | VLDB 2022 | OceanBase: A 707 Million tpmC Distributed Relational Database System | [来源](https://www.vldb.org/pvldb/vol15/p3385-xu.pdf) |
 | OceanBase | VLDB2023-OceanBasePaeticaAHybridSharednothingSharedeverythingDatabaseforSupportingSingleMachineandDistributedCluster.pdf | VLDB 2023 | OceanBase Paetica: A Hybrid Shared-nothing/Shared-everything Database for Supporting Single Machine and Distributed Cluster | [来源](https://www.vldb.org/pvldb/vol16/p3728-xu.pdf) |
@@ -584,76 +631,76 @@
 | openGauss / GaussDB | VLDB2024-GaussDBACloudNativeMultiPrimaryDatabasewithComputeMemoryStorageDisaggregation.pdf | VLDB 2024 | GaussDB: A Cloud-Native Multi-Primary Database with Compute-Memory-Storage Disaggregation | [来源](https://www.vldb.org/pvldb/vol17/p3786-li.pdf) |
 | openGauss / GaussDB | VLDB2025-GRewriterPracticalQueryRewritingwithAutomaticRuleSetExpansioninGaussDB.pdf | VLDB 2025 | GRewriter: Practical Query Rewriting with Automatic Rule Set Expansion in GaussDB | [来源](https://www.vldb.org/pvldb/vol18/p4991-jiang.pdf) |
 | openGauss / GaussDB | VLDB2026-NoSilverBulletBoostingGaussDBPerformanceonthe30TBTPCHWorkload.pdf | VLDB 2026 | No Silver Bullet: Boosting GaussDB Performance on the 30TB TPC-H Workload | [来源](https://www.vldb.org/pvldb/vol19/p4036-zeyl.pdf) |
-| Oracle | VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf | VLDB 2009 | Hybrid Columnar Compression in Oracle Database 11g | [来源](https://www.vldb.org/pvldb/vol2/vldb09-486.pdf) |
-| PostgreSQL | PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf | PPT 2020 |  | [来源]() |
+| Oracle | VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf | — | HybridColumnarCompressioninOracleDatabase11g | [来源]() |
+| Oracle NoSQL | VLDB2014-RankJoinQueriesinNoSQLDatabases.pdf | VLDB 2014 | Rank Join Queries in NoSQL Databases | [来源](https://vldb.org/pvldb/vol7/p493-ntarmos.pdf) |
+| Oracle NoSQL | VLDB2019-BlockasaValueforSQLoverNoSQL.pdf | VLDB 2019 | Block as a Value for SQL over NoSQL | [来源](https://vldb.org/pvldb/vol12/p1153-cao.pdf) |
+| Oracle NoSQL | VLDB2020-NativeJSONDatatypeSupportMaturingSQLandNoSQLconvergenceinOracleDatabase.pdf | VLDB 2020 | Native JSON Datatype Support: Maturing SQL and NoSQL convergence in Oracle Database | [来源](https://www.vldb.org/pvldb/vol13/p3059-liu.pdf) |
+| Oracle NoSQL | VLDB2021-ADemonstrationofNoDAUnifiedAccesstoNoSQLStores.pdf | VLDB 2021 | A Demonstration of NoDA: Unified Access to NoSQL Stores | [来源](https://www.vldb.org/pvldb/vol14/p2851-koutroumanis.pdf) |
+| Oracle NoSQL | VLDB2024-XStorACloudnativeNoSQLDatabaseServicewithMultimodelSupport.pdf | VLDB 2024 | X-Stor: A Cloud-native NoSQL Database Service with Multi-model Support | [来源](https://www.vldb.org/pvldb/vol17/p4025-lei.pdf) |
+| Oracle NoSQL | VLDB2026-AResourcecentricAnalysisandOptimizationofNoSQLWorkloadsusingDistressedResourceVolumeMetric.pdf | VLDB 2026 | A Resource-centric Analysis and Optimization of NoSQL Workloads using Distressed Resource Volume Metric | [来源](https://www.vldb.org/pvldb/vol19/p1867-simmhan.pdf) |
+| Oracle NoSQL | VLDB2026-QueryCraftANaturalLanguageDrivenNoSQLDatabaseQueryingSystemPoweredbyLargeLanguageModels.pdf | VLDB 2026 | QueryCraft: A Natural Language-Driven NoSQL Database Querying System Powered by Large Language Models | [来源](https://www.vldb.org/pvldb/vol19/p4754-song.pdf) |
+| Percona Server for MySQL | VLDB2009-AScalablePredictableJoinOperatorforHighlyConcurrentDataWarehouses.pdf | VLDB 2009 | A Scalable, Predictable Join Operator for Highly Concurrent Data Warehouses | [来源](https://vldb.org/pvldb/vol2/vldb09-553.pdf) |
+| Percona Server for MySQL | VLDB2009-AWaveletTransformforEfficientConsolidationofSensorRelationswithQualityGuarantees.pdf | VLDB 2009 | A Wavelet Transform for Efficient Consolidation of Sensor Relations with Quality Guarantees | [来源](https://vldb.org/pvldb/vol2/vldb09-612.pdf) |
+| Percona Server for MySQL | VLDB2009-SchemaBasedIndependenceAnalysisforXMLUpdates.pdf | VLDB 2009 | Schema-Based Independence Analysis for XML Updates | [来源](https://vldb.org/pvldb/vol2/vldb09-684.pdf) |
+| Percona Server for MySQL | VLDB2009-StreamsonWiresAQueryCompilerforFPGAs.pdf | VLDB 2009 | Streams on Wires - A Query Compiler for FPGAs | [来源](https://vldb.org/pvldb/vol2/vldb09-622.pdf) |
+| Percona Server for MySQL | VLDB2009-TaggingStreamDataforRichRealTimeServices.pdf | VLDB 2009 | Tagging Stream Data for Rich Real-Time Services | [来源](https://vldb.org/pvldb/vol2/vldb09-24.pdf) |
+| Percona Server for MySQL | VLDB2009-ThreadCooperationinMulticoreArchitecturesforFrequencyCountingoverMultipleDataStreams.pdf | VLDB 2009 | Thread Cooperation in Multicore Architectures for Frequency Counting over Multiple Data Streams | [来源](https://vldb.org/pvldb/vol2/vldb09-401.pdf) |
+| PostgreSQL | PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf | — | ExtendingPostgreSQLtoGoogleSpannerArchitecture | [来源]() |
+| PostgreSQL | VLDB2012-SerializableSnapshotIsolationinPostgreSQL.pdf | VLDB 2012 | Serializable Snapshot Isolation in PostgreSQL | [来源](https://vldb.org/pvldb/vol5/p1850_danrkports_vldb2012.pdf) |
 | PostgreSQL | VLDB2013-PAQOAPreferenceAwareQueryOptimizerforPostgreSQL.pdf | VLDB 2013 | PAQO: A Preference-Aware Query Optimizer for PostgreSQL | [来源](https://vldb.org/pvldb/vol6/p1334-farnan.pdf) |
 | PostgreSQL | VLDB2016-PrecisionPerformanceSurgeryforPostgreSQLLLVMbasedExpressionCompilationJustinTime.pdf | VLDB 2016 | Precision Performance Surgery for PostgreSQL: LLVM-based Expression Compilation, Just in Time | [来源](https://vldb.org/pvldb/vol9/p1517-butterstein.pdf) |
 | PostgreSQL | VLDB2018-ProvSQLProvenanceandProbabilityManagementinPostgreSQL.pdf | VLDB 2018 | ProvSQL:Provenance and Probability Management in PostgreSQL | [来源](https://vldb.org/pvldb/vol11/p2034-senellart.pdf) |
 | PostgreSQL | VLDB2021-PostCENNPostgreSQLwithMachineLearningModelsforCardinalityEstimation.pdf | VLDB 2021 | PostCENN: PostgreSQL with Machine Learning Models for Cardinality Estimation | [来源](https://www.vldb.org/pvldb/vol14/p2715-woltmann.pdf) |
 | PostgreSQL | VLDB2023-DeepVQLDeepVideoQueriesonPostgreSQL.pdf | VLDB 2023 | DeepVQL: Deep Video Queries on PostgreSQL | [来源](https://www.vldb.org/pvldb/vol16/p3910-nam.pdf) |
+| PostgreSQL | VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf | VLDB 2026 | Lakebase: Serverless Postgres over Open Lake Storage | [来源](https://www.vldb.org/pvldb/vol19/p4385-pandis.pdf) |
 | PostgreSQL | VLDB2026-TuningtheLookaheadDistanceforPostgreSQLAsynchronousIO.pdf | VLDB 2026 | Tuning the Lookahead Distance for PostgreSQL Asynchronous IO | [来源](https://www.vldb.org/pvldb/vol19/p3982-wu.pdf) |
 | Presto | VLDB2024-PrestosHistorybasedQueryOptimizer.pdf | VLDB 2024 | Presto’s History-based Query Optimizer | [来源](https://www.vldb.org/pvldb/vol17/p4077-shankhdhar.pdf) |
 | Presto | VLDB2026-FromPrestotoPrestissimoAVeloxPoweredModernizationJourney.pdf | VLDB 2026 | From Presto to Prestissimo: A Velox-Powered Modernization Journey | [来源](https://www.vldb.org/pvldb/vol19/p4399-dutta.pdf) |
 | Presto | VLDB2026-SQLNativeVectorSearchatBillionScaleinPresto.pdf | VLDB 2026 | SQL-Native Vector Search at Billion Scale in Presto | [来源](https://www.vldb.org/pvldb/vol19/p4182-xu.pdf) |
-| Prometheus | VLDB-p1816tellerpdf.pdf | VLDB | p1816-teller.pdf | [来源](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf) |
-| Redis | arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf | arXiv 2024 | Redis: A High-Performance In-Memory Database | [来源](https://arxiv.org/pdf/2406.07544) |
+| Redis | arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf | — | RedisAHighPerformanceInMemoryDatabase | [来源]() |
 | RocksDB | VLDB2025-AreJoinsoverLSMtreesReadyTakeRocksDBasanExample.pdf | VLDB 2025 | Are Joins over LSM-trees Ready: Take RocksDB as an Example | [来源](https://www.vldb.org/pvldb/vol18/p1077-luo.pdf) |
 | RocksDB | VLDB2026-HowMuchCanRocksDBChewAchievingNearZeroWriteStallswithSustainableRocksDB.pdf | VLDB 2026 | How Much Can RocksDB Chew? Achieving Near-Zero Write Stalls with Sustainable RocksDB | [来源](https://www.vldb.org/pvldb/vol19/p3202-shin.pdf) |
 | SAP Adaptive Server | VLDB2014-AdaptiveQueryProcessingonRAWData.pdf | VLDB 2014 | Adaptive Query Processing on RAW Data | [来源](https://vldb.org/pvldb/vol7/p1119-karpathiotakis.pdf) |
 | SAP Adaptive Server | VLDB2014-ScalableandAdaptiveOnlineJoins.pdf | VLDB 2014 | Scalable and Adaptive Online Joins | [来源](https://vldb.org/pvldb/vol7/p441-elseidy.pdf) |
+| SAP Adaptive Server | VLDB2020-ParallelGraphAlgorithmsinConstantAdaptiveRoundsTheorymeetsPractice.pdf | VLDB 2020 | Parallel Graph Algorithms in Constant Adaptive Rounds: Theory meets Practice | [来源](https://www.vldb.org/pvldb/vol13/p3588-behnezhad.pdf) |
 | SAP Adaptive Server | VLDB2021-AdaptiveCodeGenerationforDataIntensiveAnalytics.pdf | VLDB 2021 | Adaptive Code Generation for Data-Intensive Analytics | [来源](https://www.vldb.org/pvldb/vol14/p929-zhang.pdf) |
 | SAP Adaptive Server | VLDB2021-BreakingDownMemoryWallsAdaptiveMemoryManagementinLSMbasedStorageSystems.pdf | VLDB 2021 | Breaking Down Memory Walls: Adaptive Memory Management in LSM-based Storage Systems | [来源](https://www.vldb.org/pvldb/vol14/p241-luo.pdf) |
 | SAP Adaptive Server | VLDB2026-BreakingtheIsolationFreshnessTradeoffJointAdaptiveStorageOptimizationforHTAPSystems.pdf | VLDB 2026 | Breaking the Isolation-Freshness Trade-off: Joint Adaptive Storage Optimization for HTAP Systems | [来源](https://www.vldb.org/pvldb/vol19/p1142-ding.pdf) |
 | SAP Adaptive Server | VLDB2026-ReStoreinActionAdaptiveMultiTierStorageManagementviaIntelligentDataMigrationPolicy.pdf | VLDB 2026 | ReStore-in-Action: Adaptive Multi-Tier Storage Management via Intelligent Data Migration Policy | [来源](https://www.vldb.org/pvldb/vol19/p4702-zhang.pdf) |
+| SAP Adaptive Server | VLDB2026-SankofaOnlineQueryadaptiveDynamicGraphSummaries.pdf | VLDB 2026 | Sankofa: Online Query-adaptive Dynamic Graph Summaries | [来源](https://www.vldb.org/pvldb/vol19/p2908-karras.pdf) |
 | SAP HANA | VLDB2013-SAPHANATheEvolutionfromaModernMainMemoryDataPlatformtoanEnterpriseApplicationPlatform.pdf | VLDB 2013 | SAP HANA: The Evolution from a Modern Main-Memory Data Platform to an Enterprise Application Platform | [来源](https://vldb.org/pvldb/vol6/p1184-sikka.pdf) |
 | SAP HANA | VLDB2017-ParallelReplicationacrossFormatsinSAPHANAforScalingOutMixedOLTPOLAPWorkloads.pdf | VLDB 2017 | Parallel Replication across Formats in SAP HANA for Scaling Out Mixed OLTP/OLAP Workloads | [来源](https://vldb.org/pvldb/vol10/p1598-han.pdf) |
 | SAP HANA | VLDB2019-NativeStoreExtensionforSAPHANA.pdf | VLDB 2019 | Native Store Extension for SAP HANA | [来源](https://vldb.org/pvldb/vol12/p2047-sherkat.pdf) |
 | SAP HANA | VLDB2019-SAPHANAgoesprivateFromPrivacyResearchtoPrivacyAwareEnterpriseAnalytics.pdf | VLDB 2019 | SAP HANA goes private - From Privacy Research to Privacy Aware Enterprise Analytics | [来源](https://vldb.org/pvldb/vol12/p1998-kessler.pdf) |
 | SAP HANA | VLDB2024-AnExaminationofCXLMemoryUseCasesforInMemoryDatabaseManagementSystemsusingSAPHANA.pdf | VLDB 2024 | An Examination of CXL Memory Use Cases for In-Memory Database Management Systems using SAP HANA | [来源](https://www.vldb.org/pvldb/vol17/p3827-ahn.pdf) |
 | SAP HANA | VLDB2025-TheHANANativeQueryEngineforLakehouseSystems.pdf | VLDB 2025 | The HANA Native Query Engine for Lakehouse Systems | [来源](https://www.vldb.org/pvldb/vol18/p4831-ritter.pdf) |
-| ScyllaDB | arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf | arXiv 2023 | ScyllaDB: A Shard-per-Core NoSQL Database | [来源](https://arxiv.org/pdf/2308.12953) |
+| ScyllaDB | arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf | — | ScyllaDBAShardperCoreNoSQLDatabase | [来源]() |
 | SingleStore | VLDB2024-SingleStoreVAnIntegratedVectorDatabaseSysteminSingleStore.pdf | VLDB 2024 | SingleStore-V: An Integrated Vector Database System in SingleStore | [来源](https://www.vldb.org/pvldb/vol17/p3772-chen.pdf) |
-| Snowflake | Paper-Snowflake_SIGMODpdf.pdf | — | Snowflake_SIGMOD.pdf | [来源](http://info.snowflake.net/rs/252-RFO-227/images/Snowflake_SIGMOD.pdf) |
+| Snowflake | Paper-Snowflake_SIGMODpdf.pdf | — | Snowflake_SIGMODpdf | [来源]() |
 | Snowflake | VLDB2025-WorkloadInsightsFromtheSnowflakeDataCloudWhatDoProductionAnalyticQueriesReallyLookLike.pdf | VLDB 2025 | Workload Insights From the Snowflake Data Cloud: What Do Production Analytic Queries Really Look Like? | [来源](https://www.vldb.org/pvldb/vol18/p5126-bress.pdf) |
 | Sphinx | VLDB2020-SPHINXASystemforMetapathbasedEntityExplorationinHeterogeneousInformationNetworks.pdf | VLDB 2020 | SPHINX: A System for Metapath-based Entity Exploration in Heterogeneous Information Networks | [来源](https://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf) |
 | Sphinx | VLDB2025-SphinxASuccinctPerfectHashIndexforx86.pdf | VLDB 2025 | Sphinx: A Succinct Perfect Hash Index for x86 | [来源](https://www.vldb.org/pvldb/vol18/p4424-maghrebi.pdf) |
-| SQLite | Paper2015-AJITforSQLite.pdf | 2015 | A JIT for SQLite | [来源](https://soft-dev.org/talks/2015/jit-sqlite-truffle.pdf) |
+| SQLite | Paper2015-AJITforSQLite.pdf | — | AJITforSQLite | [来源]() |
 | SQLite | VLDB2015-SQLiteOptimizationwithPhaseChangeMemoryforMobileApplications.pdf | VLDB 2015 | SQLite Optimization with Phase Change Memory for Mobile Applications | [来源](https://vldb.org/pvldb/vol8/p1454-oh.pdf) |
 | SQLite | VLDB2018-SQLStatementLoggingforMakingSQLiteTrulyLite.pdf | VLDB 2018 | SQL Statement Logging for Making SQLite Truly Lite | [来源](https://vldb.org/pvldb/vol11/p513-park.pdf) |
 | SQLite | VLDB2022-SQLitePastPresentandFuture.pdf | VLDB 2022 | SQLite: Past, Present, and Future | [来源](https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf) |
-| Tencent TDSQL | PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf | — |  | [来源]() |
-| Tencent TDSQL | Paper-腾讯云.pdf | — | 腾讯云 | [来源](https://main.qcloudimg.com/raw/3cc780eb2b03f8ea32878ba3eac47eb0.pdf) |
+| Tencent TDSQL | PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf | — | ConceptualModelingonTencentDistributedDatabaseSystems | [来源]() |
+| Tencent TDSQL | Paper-腾讯云.pdf | VLDB 2009 | Believe It or Not: Adding Belief Annotations to Databases | [来源](https://vldb.org/pvldb/vol2/vldb09-115.pdf) |
 | Tencent TDSQL | VLDB2019-ALightweightandEfficientTemporalDatabaseManagementSysteminTDSQL.pdf | VLDB 2019 | A Lightweight and Efficient Temporal Database Management System in TDSQL | [来源](https://vldb.org/pvldb/vol12/p2035-lu.pdf) |
 | Tencent TDSQL | VLDB2024-TDSQLTencentDistributedDatabaseSystem.pdf | VLDB 2024 | TDSQL: Tencent Distributed Database System | [来源](https://www.vldb.org/pvldb/vol17/p3869-chen.pdf) |
 | Tencent TDSQL | VLDB2026-ReachingthePinnacleofTPCDSCodesignofArchitectureExecutorandStorageinTDSQL.pdf | VLDB 2026 | Reaching the Pinnacle of TPC-DS: Co-design of Architecture, Executor, and Storage in TDSQL | [来源](https://www.vldb.org/pvldb/vol19/p4009-chu.pdf) |
-| Tencent TDSQL | WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf | WWW 2019 |  | [来源]() |
+| Tencent TDSQL | WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf | — | EfficientTimeintervalDataExtractioninMVCCbasedRDBMS | [来源]() |
+| Tera | Paper-PowerPoint演示文稿.pdf | — | PowerPoint演示文稿 | [来源]() |
 | Teradata | VLDB2016-HybridRowColumnPartitioninginTeradata.pdf | VLDB 2016 | Hybrid Row-Column Partitioning in Teradata | [来源](https://vldb.org/pvldb/vol9/p1353-alKateb.pdf) |
 | Teradata | VLDB2019-IndatabaseDistributedMachineLearningDemonstrationusingTeradataSQLEngine.pdf | VLDB 2019 | In-database Distributed Machine Learning: Demonstration using Teradata SQL Engine | [来源](https://vldb.org/pvldb/vol12/p1854-sandha.pdf) |
 | Teradata | VLDB2021-NotBlackBoxAnymoreEnablingAnalyticsAwareOptimizationsinTeradataVantage.pdf | VLDB 2021 | Not Black-Box Anymore! Enabling Analytics-Aware Optimizations in Teradata Vantage | [来源](https://www.vldb.org/pvldb/vol14/p2959-eltabakh.pdf) |
-| TiDB | PPT2020-ADanceonRaft.pdf | PPT 2020 |  | [来源]() |
+| TiDB | PPT2020-ADanceonRaft.pdf | — | ADanceonRaft | [来源]() |
 | TiDB | VLDB2020-TiDBARaftbasedHTAPDatabase.pdf | VLDB 2020 | TiDB: A Raft-based HTAP Database | [来源](https://www.vldb.org/pvldb/vol13/p3072-huang.pdf) |
-| TigerGraph | 2021-ForresterTEITigerGraphROIReport.pdf | — |  | [来源]() |
-| TigerGraph | VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf | VLDB 2017 | TigerGraph: A Fast and Scalable Graph Database | [来源](https://arxiv.org/pdf/1703.02083) |
+| TigerGraph | 2021-ForresterTEITigerGraphROIReport.pdf | — | ForresterTEITigerGraphROIReport | [来源]() |
+| TigerGraph | VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf | — | TigerGraphAFastandScalableGraphDatabase | [来源]() |
 | Vertica | VLDB2012-TheVerticaAnalyticDatabaseCStore7YearsLater.pdf | VLDB 2012 | The Vertica Analytic Database: C-Store 7 Years Later | [来源](https://vldb.org/pvldb/vol5/p1790_andrewlamb_vldb2012.pdf) |
-| VoltDB | Paper-GuidetoPerformanceandCustomization.pdf | — | Guide to Performance and Customization | [来源](https://downloads.voltdb.com/documentation/PerfGuide.pdf) |
-| VoltDB | Paper-UsingVoltDB.pdf | — | Using VoltDB | [来源](http://downloads.voltdb.com/documentation/UsingVoltDB.pdf) |
-| VoltDB | Paper2016-WhatsReallyNewwithNewSQL.pdf | 2016 | What's Really New with NewSQL? | [来源](https://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf) |
-| VoltDB | Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf | 2017 | hv-white-paper-voltdb-technical-overview.pdf | [来源](https://www.voltactivedata.com/wp-content/uploads/2017/03/hv-white-paper-voltdb-technical-overview.pdf) |
-| YugabyteDB | arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf | arXiv 2020 | YugabyteDB: Distributed SQL at Planet Scale | [来源](https://arxiv.org/pdf/2011.00050) |
-
-## 未能获取的资料
-
-以下资料在抓取时链接失效或站点拒绝自动访问。这些条目已在对应数据库目录的 README 中标注，未以任何方式伪造内容。
-
-| 数据库 | 预期文件 | 原因 | 来源链接 |
-| --- | --- | --- | --- |
-| Amazon Aurora | Paper-p1041verbitskipdf.pdf | HTTP 403 | [https://www.allthingsdistributed.com/files/p1041-verbitski.pdf](https://www.allthingsdistributed.com/files/p1041-verbitski.pdf) |
-| ClickHouse | Paper-string_optimizationpdf.pdf | HTTP 404 | [https://presentations.clickhouse.com/meetup19/string_optimization.pdf](https://presentations.clickhouse.com/meetup19/string_optimization.pdf) |
-| Coherence | Paper-oracletangosolgenpresentation072406pdf.pdf | HTTP 403 | [https://www.oracle.com/us/corporate/acquisitions/tangosol/oracle-tangosol-gen-presentation-072406.pdf](https://www.oracle.com/us/corporate/acquisitions/tangosol/oracle-tangosol-gen-presentation-072406.pdf) |
-| Google Spanner | Google-spannerosdi2012pdf.pdf | URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway> | [https://static.googleusercontent.com/media/research.google.com/en/archive/spanner-osdi2012.pdf](https://static.googleusercontent.com/media/research.google.com/en/archive/spanner-osdi2012.pdf) |
-| Ingres | Paper-stonebraker1976pdf.pdf | HTTP 404 | [https://sites.fas.harvard.edu/~cs265/papers/stonebraker-1976.pdf](https://sites.fas.harvard.edu/~cs265/papers/stonebraker-1976.pdf) |
-| Ingres | Paper2023-DS21ActianX_04Apdf.pdf | HTTP 403 | [https://www.actian.com/wp-content/uploads/2023/12/DS21-ActianX_04A.pdf](https://www.actian.com/wp-content/uploads/2023/12/DS21-ActianX_04A.pdf) |
-| Neo4j | Paper-neo4jgraphdatabasesawspdf.pdf | HTTP 403 | [https://d0.awsstatic.com/whitepapers/Database/neo4j-graph-databases-aws.pdf](https://d0.awsstatic.com/whitepapers/Database/neo4j-graph-databases-aws.pdf) |
-| RavenDB | Paper-InsideRavenDB40pdf.pdf | URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway> | [https://github.com/ravendb/book/releases/download/v4.0.27-rc/Inside.RavenDB.4.0.pdf](https://github.com/ravendb/book/releases/download/v4.0.27-rc/Inside.RavenDB.4.0.pdf) |
-| RethinkDB | Paper-rethinkdbwhitepaperpdf.pdf | HTTP 404 | [http://www.cs.toronto.edu/~ryanjohn/teaching/csc2531-f11/rethinkdb-whitepaper.pdf](http://www.cs.toronto.edu/~ryanjohn/teaching/csc2531-f11/rethinkdb-whitepaper.pdf) |
-| TDSQL | Paper-NameBrightComingSoon.pdf | ValueError: not a PDF (content-type='text/html; charset=utf-8', html body) | [http://www.nwpu-bioinformatics.com/ER2018/file/Conceptual%20Modeling%20on%20Tencents%20Distributed%20Database%20Systems.pdf](http://www.nwpu-bioinformatics.com/ER2018/file/Conceptual%20Modeling%20on%20Tencents%20Distributed%20Database%20Systems.pdf) |
+| VoltDB | Paper-GuidetoPerformanceandCustomization.pdf | — | GuidetoPerformanceandCustomization | [来源]() |
+| VoltDB | Paper-UsingVoltDB.pdf | — | UsingVoltDB | [来源]() |
+| VoltDB | Paper2016-WhatsReallyNewwithNewSQL.pdf | — | WhatsReallyNewwithNewSQL | [来源]() |
+| VoltDB | Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf | — | hvwhitepapervoltdbtechnicaloverviewpdf | [来源]() |
+| YugabyteDB | arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf | — | YugabyteDBDistributedSQLatPlanetScale | [来源]() |

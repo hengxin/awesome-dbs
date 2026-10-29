@@ -42,7 +42,7 @@ ScyllaDB is an open-source distributed wide-column NoSQL database offering high 
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf](papers/arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf) | arXiv 2023 | ScyllaDB: A Shard-per-Core NoSQL Database | [来源](https://arxiv.org/pdf/2308.12953) |
+| [arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf](papers/arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf) | — | ScyllaDBAShardperCoreNoSQLDatabase | [来源]() |
 
 ### 官方文档与白皮书
 

@@ -25,3 +25,4 @@ Automatically scaling NoSQL Database as a Service (DBaaS) on the Google Cloud Pl
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
 | [VLDB2011-UsingPaxostoBuildaScalableConsistentandHighlyAvailableDatastore.pdf](papers/VLDB2011-UsingPaxostoBuildaScalableConsistentandHighlyAvailableDatastore.pdf) | VLDB 2011 | Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore | [来源](https://vldb.org/pvldb/vol4/p243-rao.pdf) |
+| [VLDB2024-TransparentMigrationfromDatastoretoFirestore.pdf](papers/VLDB2024-TransparentMigrationfromDatastoretoFirestore.pdf) | VLDB 2024 | Transparent Migration from Datastore to Firestore | [来源](https://www.vldb.org/pvldb/vol17/p3960-davisson.pdf) |

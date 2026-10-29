@@ -29,10 +29,10 @@ VoltDB is a commercial in-memory DBMS that is scalable and ACID-compliant. VoltD
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [Paper-GuidetoPerformanceandCustomization.pdf](papers/Paper-GuidetoPerformanceandCustomization.pdf) | — | Guide to Performance and Customization | [来源](https://downloads.voltdb.com/documentation/PerfGuide.pdf) |
-| [Paper-UsingVoltDB.pdf](papers/Paper-UsingVoltDB.pdf) | — | Using VoltDB | [来源](http://downloads.voltdb.com/documentation/UsingVoltDB.pdf) |
-| [Paper2016-WhatsReallyNewwithNewSQL.pdf](papers/Paper2016-WhatsReallyNewwithNewSQL.pdf) | 2016 | What's Really New with NewSQL? | [来源](https://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf) |
-| [Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf](papers/Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf) | 2017 | hv-white-paper-voltdb-technical-overview.pdf | [来源](https://www.voltactivedata.com/wp-content/uploads/2017/03/hv-white-paper-voltdb-technical-overview.pdf) |
+| [Paper-GuidetoPerformanceandCustomization.pdf](papers/Paper-GuidetoPerformanceandCustomization.pdf) | — | GuidetoPerformanceandCustomization | [来源]() |
+| [Paper-UsingVoltDB.pdf](papers/Paper-UsingVoltDB.pdf) | — | UsingVoltDB | [来源]() |
+| [Paper2016-WhatsReallyNewwithNewSQL.pdf](papers/Paper2016-WhatsReallyNewwithNewSQL.pdf) | — | WhatsReallyNewwithNewSQL | [来源]() |
+| [Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf](papers/Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf) | — | hvwhitepapervoltdbtechnicaloverviewpdf | [来源]() |
 
 ### 官方文档与白皮书
 

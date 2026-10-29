@@ -19,3 +19,11 @@ LinDB is a distributed time-series DBMS written in Go. It is optimized especiall
 ## 数据源
 
 - [Database of Databases](https://dbdb.io/db/lindb)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB-p1816tellerpdf.pdf](papers/VLDB-p1816tellerpdf.pdf) | — | p1816tellerpdf | [来源]() |

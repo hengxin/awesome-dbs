@@ -70,11 +70,11 @@ Apache Cassandra is a free and open source NoSQL distributed database management
 
 | 文件 | 发表 | 标题 | 来源 |
 | --- | --- | --- | --- |
-| [SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf](refs/SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf) | SIGMOD 2014 |  | [来源]() |
-| [VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf](refs/VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf) | VLDB 2015 | Understanding the Causes of Consistency Anomalies in Apache Cassandra | [来源](https://vldb.org/pvldb/vol8/p810-fan.pdf) |
-| [VLDB2022-TriememtablesinCassandra.pdf](refs/VLDB2022-TriememtablesinCassandra.pdf) | VLDB 2022 | Trie memtables in Cassandra | [来源](https://www.vldb.org/pvldb/vol15/p3359-lambov.pdf) |
-| [arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf](refs/arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf) | arXiv 2013 |  | [来源]() |
-| [arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf](refs/arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf) | arXiv 2021 |  | [来源]() |
+| [SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf](refs/SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf) | — | ScalableAtomicVisibilitywithRAMPTransactions | [来源]() |
+| [VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf](papers/VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf) | VLDB 2015 | Understanding the Causes of Consistency Anomalies in Apache Cassandra | [来源](https://vldb.org/pvldb/vol8/p810-fan.pdf) |
+| [VLDB2022-TriememtablesinCassandra.pdf](papers/VLDB2022-TriememtablesinCassandra.pdf) | VLDB 2022 | Trie memtables in Cassandra | [来源](https://www.vldb.org/pvldb/vol15/p3359-lambov.pdf) |
+| [arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf](refs/arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf) | — | 13092772APracticalDistributedUniversalConstructionwithUnknownParticipants | [来源]() |
+| [arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf](refs/arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf) | — | 210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters | [来源]() |
 
 ### 官方文档与白皮书
 
