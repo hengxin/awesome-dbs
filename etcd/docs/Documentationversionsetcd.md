@@ -1,0 +1,760 @@
+# Documentation versions | etcd
+
+- 来源: https://etcd.io/docs/
+- 归档时间: 2026-10-29
+- 说明: 官方文档页面的 Markdown 快照（由 HTML 转换，格式为自动生成）
+
+---
+
+etcd
+- Docs
+- Blog
+- Community
+- Install
+- Versions - v3.8
+- v3.7
+- v3.6
+- v3.5
+- v3.4
+- v3.3
+- v3.2
+- v3.1
+- v2.3
+- Versions - v3.8-DRAFT - Tasks - Operator Tasks - How to Set Up a Demo etcd Cluster
+- How to conduct leader election in etcd cluster
+- How to check Cluster status
+- How to save the database
+- How to Add and Remove Members
+- Developer Tasks - Reading from etcd
+- Writing to etcd
+- How to get keys by prefix
+- How to delete keys
+- How to make multiple writes in a transaction
+- How to watch keys
+- How to create lease
+- How to create locks
+- Quickstart
+- Demo
+- Install
+- Feature Gates
+- FAQ
+- Libraries and tools
+- Metrics - latest
+- Reporting bugs
+- Tuning
+- Discovery service protocol
+- Logging conventions
+- Golang modules
+- Learning - Data model
+- etcd client design
+- etcd learner design
+- etcd v3 authentication design
+- etcd API
+- etcd persistent storage files
+- etcd API guarantees
+- etcd versus other key-value stores
+- Glossary
+- Developer guide - Discovery service protocol
+- Set up a local cluster
+- Interacting with etcd
+- Why gRPC gateway
+- gRPC naming and discovery
+- Embedding etcd in a Go Application
+- System limits
+- etcd features
+- API reference
+- API reference: concurrency
+- Operations guide - Authentication Guides - Role-based access control
+- Authentication
+- Configuration options
+- Transport security model
+- Clustering Guide
+- Run etcd clusters as a Kubernetes StatefulSet
+- Run etcd clusters inside containers
+- Failure modes
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Monitoring etcd
+- Performance
+- Design of runtime reconfiguration
+- Runtime reconfiguration
+- Supported platforms
+- Versioning
+- Data Corruption
+- Benchmarks - Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Benchmarking etcd v3
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.1.0
+- Downgrading - Downgrading etcd clusters and applications
+- Downgrade etcd from v3.7 to v3.6
+- Downgrade etcd from v3.6 to v3.5
+- Downgrade etcd from 3.5 to 3.4
+- Upgrading - Upgrading etcd clusters and applications
+- Upgrade etcd from v3.6 to v3.7
+- Upgrade etcd from v3.5 to v3.6
+- Upgrade etcd from 3.4 to 3.5
+- Upgrade etcd from 3.3 to 3.4
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 2.3 to 3.0
+- Triage - Issue triage guidelines
+- PR management
+- v3.7 - Tasks - Operator Tasks - How to Set Up a Demo etcd Cluster
+- How to conduct leader election in etcd cluster
+- How to check Cluster status
+- How to save the database
+- How to Add and Remove Members
+- Developer Tasks - Reading from etcd
+- Writing to etcd
+- How to get keys by prefix
+- How to delete keys
+- How to make multiple writes in a transaction
+- How to watch keys
+- How to create lease
+- How to create locks
+- Quickstart
+- Demo
+- Install
+- Feature Gates
+- FAQ
+- Libraries and tools
+- Metrics - latest
+- Reporting bugs
+- Tuning
+- Discovery service protocol
+- Logging conventions
+- Golang modules
+- Learning - Data model
+- etcd client design
+- etcd learner design
+- etcd v3 authentication design
+- etcd API
+- etcd persistent storage files
+- etcd API guarantees
+- etcd versus other key-value stores
+- Glossary
+- Developer guide - Discovery service protocol
+- Set up a local cluster
+- Interacting with etcd
+- Why gRPC gateway
+- gRPC naming and discovery
+- Embedding etcd in a Go Application
+- System limits
+- etcd features
+- API reference
+- API reference: concurrency
+- Operations guide - Authentication Guides - Role-based access control
+- Authentication
+- Configuration options
+- Transport security model
+- Clustering Guide
+- Run etcd clusters as a Kubernetes StatefulSet
+- Run etcd clusters inside containers
+- Failure modes
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Monitoring etcd
+- Performance
+- Design of runtime reconfiguration
+- Runtime reconfiguration
+- Supported platforms
+- Versioning
+- Data Corruption
+- Benchmarks - Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Benchmarking etcd v3
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.1.0
+- Downgrading - Downgrading etcd clusters and applications
+- Downgrade etcd from v3.7 to v3.6
+- Downgrade etcd from v3.6 to v3.5
+- Downgrade etcd from 3.5 to 3.4
+- Upgrading - Upgrading etcd clusters and applications
+- Upgrade etcd from v3.6 to v3.7
+- Upgrade etcd from v3.5 to v3.6
+- Upgrade etcd from 3.4 to 3.5
+- Upgrade etcd from 3.3 to 3.4
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 2.3 to 3.0
+- Triage - Issue triage guidelines
+- PR management
+- v3.6 - Tasks - Operator Tasks - How to Set Up a Demo etcd Cluster
+- How to conduct leader election in etcd cluster
+- How to check Cluster status
+- How to save the database
+- How to Add and Remove Members
+- Developer Tasks - Reading from etcd
+- Writing to etcd
+- How to get keys by prefix
+- How to delete keys
+- How to make multiple writes in a transaction
+- How to watch keys
+- How to create lease
+- How to create locks
+- Quickstart
+- Demo
+- Install
+- Feature Gates
+- FAQ
+- Libraries and tools
+- Metrics - latest
+- Reporting bugs
+- Tuning
+- Discovery service protocol
+- Logging conventions
+- Golang modules
+- Learning - Data model
+- etcd client design
+- etcd learner design
+- etcd v3 authentication design
+- etcd API
+- etcd persistent storage files
+- etcd API guarantees
+- etcd versus other key-value stores
+- Glossary
+- Developer guide - Discovery service protocol
+- Set up a local cluster
+- Interacting with etcd
+- Why gRPC gateway
+- gRPC naming and discovery
+- Embedding etcd in a Go Application
+- System limits
+- etcd features
+- API reference
+- API reference: concurrency
+- Operations guide - Authentication Guides - Role-based access control
+- Authentication
+- Configuration options
+- Transport security model
+- Clustering Guide
+- Run etcd clusters as a Kubernetes StatefulSet
+- Run etcd clusters inside containers
+- Failure modes
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Monitoring etcd
+- Performance
+- Design of runtime reconfiguration
+- Runtime reconfiguration
+- Supported platforms
+- Versioning
+- Data Corruption
+- Benchmarks - Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Benchmarking etcd v3
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.1.0
+- Downgrading - Downgrading etcd clusters and applications
+- Downgrade etcd from v3.6 to v3.5
+- Downgrade etcd from 3.5 to 3.4
+- Upgrading - Upgrading etcd clusters and applications
+- Upgrade etcd from v3.5 to v3.6
+- Upgrade etcd from 3.4 to 3.5
+- Upgrade etcd from 3.3 to 3.4
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 2.3 to 3.0
+- Triage - Issue triage guidelines
+- PR management
+- v3.5 - Quickstart
+- Demo
+- Tutorials - How to Set Up a Demo etcd Cluster
+- Reading from etcd
+- Writing to etcd
+- How to get keys by prefix
+- How to delete keys
+- How to make multiple writes in a transaction
+- How to watch keys
+- How to create lease
+- How to create locks
+- How to conduct leader election in etcd cluster
+- How to check Cluster status
+- How to save the database
+- How to Add and Remove Members
+- Install
+- FAQ
+- Libraries and tools
+- Metrics - latest
+- Reporting bugs
+- Tuning
+- Discovery service protocol
+- Logging conventions
+- Golang modules
+- Learning - Data model
+- etcd client design
+- etcd learner design
+- etcd v3 authentication design
+- etcd API
+- etcd persistent storage files
+- etcd API guarantees
+- etcd versus other key-value stores
+- Glossary
+- Developer guide - Discovery service protocol
+- Set up a local cluster
+- Interacting with etcd
+- Why gRPC gateway
+- gRPC naming and discovery
+- Embedding etcd in a Go Application
+- System limits
+- etcd features
+- API reference
+- API reference: concurrency
+- Operations guide - Authentication Guides - Role-based access control
+- Authentication
+- Configuration options
+- Transport security model
+- Clustering Guide
+- Run etcd clusters as a Kubernetes StatefulSet
+- Run etcd clusters inside containers
+- Failure modes
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Monitoring etcd
+- Performance
+- Design of runtime reconfiguration
+- Runtime reconfiguration
+- Supported platforms
+- Versioning
+- Data Corruption
+- Benchmarks - Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Benchmarking etcd v3
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.1.0
+- Downgrading - Downgrading etcd clusters and applications
+- Downgrade etcd from 3.5 to 3.4
+- Upgrading - Upgrading etcd clusters and applications
+- Upgrade etcd from 3.4 to 3.5
+- Upgrade etcd from 3.3 to 3.4
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 2.3 to 3.0
+- Triage - Issue triage guidelines
+- PR management
+- v3.4 - Quickstart
+- Overview
+- Demo
+- Install
+- FAQ
+- How to migrate etcd from v2store to v3store
+- Libraries and tools
+- Metrics - v3.4.0
+- v3.4.1
+- v3.4.10
+- v3.4.11
+- v3.4.12
+- v3.4.13
+- v3.4.2
+- v3.4.3
+- v3.4.4
+- v3.4.5
+- v3.4.6
+- v3.4.7
+- v3.4.8
+- v3.4.9
+- Reporting bugs
+- Tuning
+- Discovery service protocol
+- Logging conventions
+- Learning - Data model
+- etcd client design
+- etcd learner design
+- etcd v3 authentication design
+- etcd3 API
+- etcd API guarantees
+- etcd versus other key-value stores
+- Glossary
+- Developer guide - Discovery service protocol
+- Set up a local cluster
+- Interacting with etcd
+- Why gRPC gateway
+- gRPC naming and discovery
+- System limits
+- etcd features
+- API reference
+- API reference: concurrency
+- Operations guide - Configuration options
+- Role-based access control
+- Transport security model
+- Clustering Guide
+- Run etcd clusters inside containers
+- Failure modes
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Performance
+- Design of runtime reconfiguration
+- Runtime reconfiguration
+- Supported platforms
+- Migrate applications from using API v2 to API v3
+- Versioning
+- Data Corruption
+- Monitoring etcd
+- Benchmarks - Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Benchmarking etcd v3
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.1.0
+- Upgrading - Upgrading etcd clusters and applications
+- Upgrade etcd from 3.4 to 3.5
+- Upgrade etcd from 3.3 to 3.4
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 2.3 to 3.0
+- Platforms - Amazon Web Services
+- Container Linux with systemd
+- FreeBSD
+- Triage - Issue Triage Guidelines
+-
+- v3.3 - Install
+- Metrics - v3.3.0
+- v3.3.1
+- v3.3.10
+- v3.3.11
+- v3.3.12
+- v3.3.13
+- v3.3.14
+- v3.3.15
+- v3.3.16
+- v3.3.17
+- v3.3.18
+- v3.3.19
+- v3.3.2
+- v3.3.20
+- v3.3.21
+- v3.3.22
+- v3.3.23
+- v3.3.24
+- v3.3.3
+- v3.3.4
+- v3.3.5
+- v3.3.6
+- v3.3.7
+- v3.3.8
+- v3.3.9
+- Libraries and tools
+- Benchmarks - Benchmarking etcd v2.1.0
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v3
+- Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Demo
+- Developer guide - Discovery service protocol
+- etcd API Reference
+- etcd concurrency API Reference
+- Experimental APIs and features
+- gRPC naming and discovery
+- Interacting with etcd
+- Set up a local cluster
+- System limits
+- Why gRPC gateway
+- Discovery service protocol
+- etcd v3 API
+- Frequently Asked Questions (FAQ)
+- Learning - etcd client architecture
+- Client feature matrix
+- Data model
+- etcd v3 authentication design
+- etcd versus other key-value stores
+- etcd3 API
+- Glossary
+- KV API guarantees
+- Learner
+- Logging conventions
+- Operations guide - Monitoring etcd
+- Versioning
+- Clustering Guide
+- Configuration flags
+- Design of runtime reconfiguration
+- Disaster recovery
+- etcd gateway
+- Failure modes
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Migrate applications from using API v2 to API v3
+- Performance
+- Role-based access control
+- Run etcd clusters inside containers
+- Runtime reconfiguration
+- Supported systems
+- Transport security model
+- Platforms - Amazon Web Services
+- Container Linux with systemd
+- FreeBSD
+- Production users
+- Reporting bugs
+- Tuning
+- Upgrading - Upgrade etcd from 2.3 to 3.0
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.3 to 3.4
+- Upgrade etcd from 3.4 to 3.5
+- Upgrading etcd clusters and applications
+- v3.2 - Libraries and tools
+- Benchmarks - Benchmarking etcd v2.1.0
+- Benchmarking etcd v2.2.0
+- Benchmarking etcd v2.2.0-rc
+- Benchmarking etcd v2.2.0-rc-memory
+- Benchmarking etcd v3-demo
+- Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Data model
+- Demo
+- Developer guide - Discovery service protocol
+- etcd API reference
+- etcd concurrency API Reference
+- Experimental APIs and features
+- gRPC gateway
+- gRPC naming and discovery
+- Interacting with etcd
+- Set up a local cluster
+- System limits
+- etcd dev internal - Discovery service protocol
+- Logging conventions
+- etcd operations guide - Authentication Guide
+- Clustering Guide
+- Configuration flags
+- Design of runtime reconfiguration
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Migrate applications from using API v2 to API v3
+- Monitoring etcd
+- Performance
+- Run etcd clusters inside containers
+- Runtime reconfiguration
+- Security model
+- Supported platforms
+- Understand failures
+- Versioning
+- etcd upgrades - Upgrade etcd from 2.3 to 3.0
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.3 to 3.4
+- Upgrading etcd clusters and applications
+- etcd v3 authentication design
+- etcd versus other key-value stores
+- etcd3 API
+- Frequently Asked Questions (FAQ)
+- Glossary
+- Install
+- KV API guarantees
+- Metrics - v3.2.0
+- v3.2.1
+- v3.2.10
+- v3.2.11
+- v3.2.12
+- v3.2.13
+- v3.2.14
+- v3.2.15
+- v3.2.16
+- v3.2.17
+- v3.2.18
+- v3.2.19
+- v3.2.2
+- v3.2.20
+- v3.2.21
+- v3.2.22
+- v3.2.23
+- v3.2.24
+- v3.2.25
+- v3.2.3
+- v3.2.4
+- v3.2.5
+- v3.2.6
+- v3.2.7
+- v3.2.8
+- v3.2.9
+- Platforms - Amazon Web Services
+- FreeBSD
+- Run etcd on Container Linux with systemd
+- Production users
+- Reporting bugs
+- RFC - etcd v3 API
+- Tuning
+- v3.1 - Data model
+- Demo
+- etcd benchmarks - etcd v2.1.0-alpha benchmarks
+- etcd v2.2.0 benchmarks
+- etcd v2.2.0-rc benchmarks
+- etcd v2.2.0-rc-memory benchmarks
+- etcd v3-demo benchmarks
+- Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- etcd developer guide - Discovery service protocol
+- etcd API Reference
+- Experimental APIs and features
+- gRPC Gateway
+- gRPC naming and discovery
+- Interacting with etcd
+- Setup a local cluster
+- System limits
+- etcd internal dev - Discovery service protocol
+- Logging conventions
+- etcd operations guide - Clustering Guide
+- Configuration flags
+- Design of runtime reconfiguration
+- Disaster recovery
+- etcd gateway
+- gRPC proxy
+- Hardware recommendations
+- Maintenance
+- Migrate applications from using API v2 to API v3
+- Monitoring etcd
+- Performance
+- Run etcd clusters inside containers
+- Runtime reconfiguration
+- Security model
+- Supported platforms
+- Understand failures
+- Versioning
+- etcd3 API
+- Frequently Asked Questions (FAQ)
+- Glossary
+- Install
+- KV API guarantees
+- Libraries and tools
+- Metrics - v3.1.0
+- v3.1.1
+- v3.1.10
+- v3.1.11
+- v3.1.12
+- v3.1.13
+- v3.1.14
+- v3.1.15
+- v3.1.16
+- v3.1.17
+- v3.1.18
+- v3.1.19
+- v3.1.2
+- v3.1.20
+- v3.1.3
+- v3.1.4
+- v3.1.5
+- v3.1.6
+- v3.1.7
+- v3.1.8
+- v3.1.9
+- Platforms - FreeBSD
+- Production users
+- Reporting bugs
+- RFC - etcd v3 API
+- Tuning
+- Upgrading etcd clusters and applications - Upgrade etcd from 2.3 to 3.0
+- Upgrade etcd from 3.0 to 3.1
+- Upgrade etcd from 3.1 to 3.2
+- Upgrade etcd from 3.2 to 3.3
+- Upgrade etcd from 3.3 to 3.4
+- Why etcd
+- v2.3 - Administration
+- Authentication Guide
+- Backward Compatibility
+- Benchmarks - Benchmarking etcd v2.2.0
+- etcd 2.1.0-alpha benchmarks
+- etcd 2.2.0-rc benchmarks
+- etcd 2.2.0-rc memory benchmarks
+- etcd 3 demo benchmarks
+- Storage Memory Usage Benchmark
+- Watch Memory Usage Benchmark
+- Clustering Guide
+- Configuration Flags
+- Design of Runtime Reconfiguration
+- Development
+- Discovery Service Protocol
+- Error Code
+- etcd API
+- etcd v3 API
+- FAQ
+- Glossary
+- Libraries and Tools
+- Members API
+- Metrics
+- Miscellaneous APIs
+- Platforms - FreeBS
+- Production Users
+- Proxy
+- Reporting Bugs
+- Running etcd under Docker
+- Runtime Reconfiguration
+- Security Model
+- Snapshot Migration
+- Tuning
+- Upgrade etcd from 2.1 to 2.2
+- Upgrade etcd from 2.1 to 2.2
+- Upgrade etcd from 2.2 to 2.3
+- v2 Auth and Security
+- Versioning
+View page source
+Edit this page
+[Create child page](https://github.com/etcd-io/website/new/main/content/en/docs?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60get-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A)
+[Create documentation issue](https://github.com/etcd-io/website/issues/new?title=Documentation%20versions)
+Create project issue
+- Versions
+# Documentation versions
+Welcome to the docs for etcd! The following doc versions are available:
+- v3.8 docs
+- v3.7 docs
+- v3.6 docs
+- v3.5 docs
+- v3.4 docs
+- v3.3 docs
+- v3.2 docs
+- v3.1 docs
+- v2.3 docs
+## Feedback
+Was this page helpful?
+Yes
+No Glad to hear it! Please tell us how we can improve .
+Sorry to hear that. Please tell us how we can improve .
+Last modified April 26, 2021: Docsy theme (#244) (86b070b)
+-
+-
+-
+-
+-
+©
+2013–2026
+etcd Authors
+Terms |
+Privacy |
+Trademarks |
+License
+All Rights Reserved

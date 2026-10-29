@@ -278,3 +278,11 @@ TSWLatexianTemp*
 
 # Mac Hidden File
 .DS_Store
+## 本地采集工具与中间数据（不入库）
+.tools/
+__pycache__/
+*.pyc
+
+## 采集过程的临时产物
+*.tmp
+*.part

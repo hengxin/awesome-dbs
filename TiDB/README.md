@@ -29,4 +29,41 @@
 
 ### More Theory
   - [VLDB2020 paper](/TiDB/VLDB2020%20TiDB%20A%20Raft-based%20HTAP%20Database.pdf)
-  - [Raft](PPT2020%20(TiDB-EdHuang)%20A%20Dance%20on%20Raft.pdf)
+  - [Raft](PPT2020-ADanceonRaft.pdf)
+
+TiDB is an open-source distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL compatible and features horizontal scalability, strong consistency, and high availability.
+
+## 基本信息
+
+- **数据库类型**: SQL、向量、OLAP
+- **所属机构**: PingCAP, Inc.
+- **许可证**: Apache v2
+- **首次发布**: 2016
+
+## 官网与文档
+
+- [官网](https://pingcap.com/)
+- [官网](https://www.pingcap.com)
+- [官方文档](https://docs.pingcap.com)
+- [官方文档](https://docs.pingcap.com/tidb/stable/)
+- [GitHub](https://github.com/pingcap/tidb)
+
+## 数据源
+
+- [DB-Engines](https://db-engines.com/en/system/TiDB)
+- [Database of Databases](https://dbdb.io/db/tidb)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [PPT2020-ADanceonRaft.pdf](tidb-papers/PPT2020-ADanceonRaft.pdf) | PPT 2020 |  | [来源]() |
+| [VLDB2020-TiDBARaftbasedHTAPDatabase.pdf](tidb-papers/VLDB2020-TiDBARaftbasedHTAPDatabase.pdf) | VLDB 2020 | TiDB: A Raft-based HTAP Database | [来源](https://www.vldb.org/pvldb/vol13/p3072-huang.pdf) |
+
+### 官方文档与白皮书
+
+| 文件 | 标题 | 来源 |
+| --- | --- | --- |
+| [HomeTiDBDocs.md](docs/HomeTiDBDocs.md) | Home \| TiDB Docs | [来源](https://docs.pingcap.com) |

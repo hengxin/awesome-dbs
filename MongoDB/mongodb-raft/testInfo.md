@@ -51,7 +51,7 @@ Each of the following TLA+ did different simplifications($\to$) to different mod
 
 [arXiv2011 1111.2826 Concurrent Development of Model and Implementation](https://arxiv.org/abs/1111.2826)
 
-[VLDB2020: Extreme Modelling in Practice](../mongodb-papers/VLDB2020%20eXtreme%20Modelling%20in%20Practice.pdf)
+[VLDB2020: Extreme Modelling in Practice](../mongodb-papers/VLDB2020-eXtremeModellinginPractice.pdf)
 	
 - 工作：实践了论文 [arXiv2011](https://arxiv.org/abs/1111.2826) 中的两个案例学习，其一为使用MBTC(“model-based trace-checking")来检验MongoDB复制协议的TLA+规约 [RaftMongo.tla](https://github.com/mongodb/mongo/tree/master/src/mongo/tla_plus/RaftMongo)
 - 方法：执行手写测试来获取执行trace，然后判断trace是否满足TLA+规约。
@@ -64,7 +64,7 @@ Each of the following TLA+ did different simplifications($\to$) to different mod
 ## Fuzzing Testing
 mongodb目前为止发现bug最多的工具
 
-[paper](../mongodb-papers/ACM%20Queue2017%20MongoDB%20JavaScript%20Fuzzer.pdf)
+[paper](../mongodb-papers/ACM%20Queue2017-MongoDBJavaScriptFuzzer.pdf)
 
 [src: JStest](https://github.com/mongodb/mongo/tree/master/jstests)
 

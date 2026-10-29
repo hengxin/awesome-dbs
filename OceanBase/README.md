@@ -18,3 +18,42 @@
 
 ## books
 - [大规模分布式存储系统: 原理解析与架构实战 (杨传辉)]()
+
+OceanBase is an open source distributed relational DBMS which is fully compatible with MySQL. It handles HTAP mixed loads with one set of computing engines at the same time.
+
+## 基本信息
+
+- **数据库类型**: SQL、向量、文档、宽列
+- **所属机构**: OceanBase previously Alibaba and Ant Group
+- **许可证**: Mulan PubL v2
+- **首次发布**: 2010
+
+## 官网与文档
+
+- [官网](https://en.oceanbase.com/)
+- [官网](https://www.oceanbase.com)
+- [官方文档](https://en.oceanbase.com/docs)
+- [官方文档](https://en.oceanbase.com/docs/oceanbase-database)
+- [GitHub](https://github.com/oceanbase/oceanbase)
+
+## 数据源
+
+- [DB-Engines](https://db-engines.com/en/system/OceanBase)
+- [Database of Databases](https://dbdb.io/db/oceanbase)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [VLDB2022-OceanBaseA707MilliontpmCDistributedRelationalDatabaseSystem.pdf](papers/VLDB2022-OceanBaseA707MilliontpmCDistributedRelationalDatabaseSystem.pdf) | VLDB 2022 | OceanBase: A 707 Million tpmC Distributed Relational Database System | [来源](https://www.vldb.org/pvldb/vol15/p3385-xu.pdf) |
+| [VLDB2023-OceanBasePaeticaAHybridSharednothingSharedeverythingDatabaseforSupportingSingleMachineandDistributedCluster.pdf](papers/VLDB2023-OceanBasePaeticaAHybridSharednothingSharedeverythingDatabaseforSupportingSingleMachineandDistributedCluster.pdf) | VLDB 2023 | OceanBase Paetica: A Hybrid Shared-nothing/Shared-everything Database for Supporting Single Machine and Distributed Cluster | [来源](https://www.vldb.org/pvldb/vol16/p3728-xu.pdf) |
+| [VLDB2026-ATreeStructuredTwoPhaseCommitFrameworkforOceanBaseOptimizingScalabilityandConsistency.pdf](papers/VLDB2026-ATreeStructuredTwoPhaseCommitFrameworkforOceanBaseOptimizingScalabilityandConsistency.pdf) | VLDB 2026 | A Tree-Structured Two-Phase Commit Framework for OceanBase: Optimizing Scalability and Consistency | [来源](https://www.vldb.org/pvldb/vol19/p4250-xu.pdf) |
+| [VLDB2026-OceanBaseBacchusaHighPerformanceandScalableCloudNativeSharedStorageArchitectureforMultiCloud.pdf](papers/VLDB2026-OceanBaseBacchusaHighPerformanceandScalableCloudNativeSharedStorageArchitectureforMultiCloud.pdf) | VLDB 2026 | OceanBase Bacchus: a High-Performance and Scalable Cloud-Native Shared Storage Architecture for Multi-Cloud | [来源](https://www.vldb.org/pvldb/vol19/p4089-xu.pdf) |
+
+### 官方文档与白皮书
+
+| 文件 | 标题 | 来源 |
+| --- | --- | --- |
+| [OceanBaseDocumentationCenter.md](docs/OceanBaseDocumentationCenter.md) | OceanBase Documentation Center | [来源](https://en.oceanbase.com/docs) |

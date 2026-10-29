@@ -1,0 +1,8 @@
+# Redis: Data Types and Architecture
+
+- 来源: https://redis.io/docs/latest/develop/data-types/
+- 类型: whitepaper ( 2018)
+- 归档时间: 2026-10-29
+- 说明: 原文为网页格式，未下载 PDF（ValueError: not a PDF (content-type='text/html', html body)）
+
+> 官方文档以网页形式发布，此处仅保存元数据与来源链接（未做正文镜像）。

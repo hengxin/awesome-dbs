@@ -26,3 +26,39 @@
     - 两阶段提交协议
     - 全局分布式死锁检测
 - [腾讯会议核心数据库TDSQL，如何做到快速无损在线扩容 (知乎专栏)][https://zhuanlan.zhihu.com/p/139290689]
+
+TDSQL is an abbreviation for TecentDistributed SQL. It is derived from MySQL and aimed at providing digital payment services for government and financial companies. TDSQL supports a strong consistency model based on Raft. Data are partitioned horizontally based on the partition key and auto sharding is enabled to facilitate data migration. TDSQL can be deployed on both private cloud and public…
+
+## 基本信息
+
+- **数据库类型**: SQL
+- **所属机构**: Tencent
+- **首次发布**: 2012
+
+## 官网与文档
+
+- [官网](https://cloud.tencent.com/product/tdsql)
+- [官方文档](https://cloud.tencent.com/document/product/557)
+
+## 数据源
+
+- [Database of Databases](https://dbdb.io/db/tdsql)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf](papers/PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf) | — |  | [来源]() |
+| [Paper-腾讯云.pdf](papers/Paper-腾讯云.pdf) | — | 腾讯云 | [来源](https://main.qcloudimg.com/raw/3cc780eb2b03f8ea32878ba3eac47eb0.pdf) |
+| [VLDB2019-ALightweightandEfficientTemporalDatabaseManagementSysteminTDSQL.pdf](papers/VLDB2019-ALightweightandEfficientTemporalDatabaseManagementSysteminTDSQL.pdf) | VLDB 2019 | A Lightweight and Efficient Temporal Database Management System in TDSQL | [来源](https://vldb.org/pvldb/vol12/p2035-lu.pdf) |
+| [VLDB2024-TDSQLTencentDistributedDatabaseSystem.pdf](papers/VLDB2024-TDSQLTencentDistributedDatabaseSystem.pdf) | VLDB 2024 | TDSQL: Tencent Distributed Database System | [来源](https://www.vldb.org/pvldb/vol17/p3869-chen.pdf) |
+| [VLDB2026-ReachingthePinnacleofTPCDSCodesignofArchitectureExecutorandStorageinTDSQL.pdf](papers/VLDB2026-ReachingthePinnacleofTPCDSCodesignofArchitectureExecutorandStorageinTDSQL.pdf) | VLDB 2026 | Reaching the Pinnacle of TPC-DS: Co-design of Architecture, Executor, and Storage in TDSQL | [来源](https://www.vldb.org/pvldb/vol19/p4009-chu.pdf) |
+| [WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf](papers/WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf) | WWW 2019 |  | [来源]() |
+
+### 官方文档与白皮书
+
+| 文件 | 标题 | 来源 |
+| --- | --- | --- |
+| [TencentTDSQL.md](docs/TencentTDSQL.md) | Tencent TDSQL | [来源](https://cloud.tencent.com/document/product/557) |

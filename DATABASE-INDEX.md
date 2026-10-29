@@ -1,0 +1,568 @@
+# Database Index
+
+由 [DB-Engines Ranking](https://db-engines.com/en/ranking) 与 [Database of Databases](https://dbdb.io/) 两个数据源整理生成。
+
+- 数据库总数: **164**
+- 数据来源: DB-Engines Ranking (2026-10) + Database of Databases (2026-10-28 快照, 1,228 个系统) + 项目内既有目录
+- 标记说明: ⚠️链接失效 = 抓取时返回 404; ⚠️需登录 = 站点拒绝自动访问; ⚠️本次不可达 = 网络不可达
+
+## 目录
+
+## 类型分布
+
+| 类型 | 数量 |
+| --- | ---: |
+| SQL | 81 |
+| OLAP | 16 |
+| 文档 | 56 |
+| KV | 30 |
+| 宽列 | 11 |
+| 图 | 25 |
+| 时序 | 21 |
+| 向量 | 22 |
+| 搜索 | 23 |
+| 空间 | 39 |
+| RDF | 1 |
+| XML | 1 |
+| 内容 | 1 |
+| 多值 | 2 |
+| 层次 | 1 |
+
+## 数据库总表
+
+| # | 名称 | 目录 | 官方链接 | GitHub | 类型 | 所属机构 | 许可证 | 首次发布 | 数据源 |
+| ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 4D | [4D](./4D/) | [官网](https://us.4d.com) | — | SQL | 4D, Inc | Proprietary | 1984 | [DB-Engines](https://db-engines.com/en/system/4D) [DBDB](https://dbdb.io/db/4d) |
+| 2 | Adabas | [Adabas](./Adabas/) | [官网](https://www.softwareag.com/en/adabas-natural)  ⚠️本次网络不可达 | — | 多值 | Software AG | Proprietary | — | [DB-Engines](https://db-engines.com/en/system/Adabas) [DBDB](https://dbdb.io/db/adabas) |
+| 3 | Aerospike | [Aerospike](./Aerospike/) | [官网](https://aerospike.com) | [repo](https://github.com/aerospike/aerospike-server) | 文档、KV、图、空间 | Aerospike | AGPL v3 | 2012 | [DB-Engines](https://db-engines.com/en/system/Aerospike) [DBDB](https://dbdb.io/db/aerospike) |
+| 4 | Algolia | [Algolia](./Algolia/) | [官网](https://www.algolia.com/) | — | 搜索 | — | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Algolia) |
+| 5 | Alibaba Cloud PolarDB | [PolarDB](./PolarDB/) | [官网](https://www.alibabacloud.com/en/product/polardb?_p_lc=1) | [repo](https://github.com/polardb/PolarDB-for-PostgreSQL) | SQL | Alibaba | 商业或开源（DB-Engines 未给出具体许可证） | 2017 | [DB-Engines](https://db-engines.com/en/system/Alibaba+Cloud+PolarDB) [DBDB](https://dbdb.io/db/polardb) |
+| 6 | Amazon Aurora | [Amazon Aurora](./Amazon Aurora/) | [官网](https://aws.amazon.com/rds/aurora) | — | SQL、文档、向量、空间 | Amazon | 商业或开源（DB-Engines 未给出具体许可证） | 2015 | [DB-Engines](https://db-engines.com/en/system/Amazon+Aurora) [DBDB](https://dbdb.io/db/aurora) |
+| 7 | Amazon CloudSearch | [Amazon CloudSearch](./Amazon CloudSearch/) | [官网](https://aws.amazon.com/cloudsearch/) | — | 搜索 | Amazon | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Amazon+CloudSearch) |
+| 8 | Amazon DocumentDB | [Amazon DocumentDB](./Amazon DocumentDB/) | [官网](https://aws.amazon.com/documentdb/) | — | 文档 | — | 商业或开源（DB-Engines 未给出具体许可证） | 2019 | [DB-Engines](https://db-engines.com/en/system/Amazon+DocumentDB) |
+| 9 | Amazon DynamoDB | [Amazon DynamoDB](./Amazon DynamoDB/) | [官网](https://aws.amazon.com/dynamodb) | [repo](https://github.com/awslabs/dynamodb-transactions) | 文档、KV | Amazon | Proprietary | 2012 | [DB-Engines](https://db-engines.com/en/system/Amazon+DynamoDB) [DBDB](https://dbdb.io/db/dynamodb) |
+| 10 | Amazon Neptune | [Amazon Neptune](./Amazon Neptune/) | [官网](https://aws.amazon.com/neptune/) | — | 图 | Amazon | 商业或开源（DB-Engines 未给出具体许可证） | 2017 | [DB-Engines](https://db-engines.com/en/system/Amazon+Neptune) |
+| 11 | Amazon Redshift | [Amazon Redshift](./Amazon Redshift/) | [官网](https://aws.amazon.com/redshift/) | — | SQL | Amazon (based on PostgreSQL ) | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Amazon+Redshift) |
+| 12 | Amazon SimpleDB | [Amazon SimpleDB](./Amazon SimpleDB/) | [官网](https://aws.amazon.com/simpledb/) | — | KV | Amazon | 商业或开源（DB-Engines 未给出具体许可证） | 2007 | [DB-Engines](https://db-engines.com/en/system/Amazon+SimpleDB) |
+| 13 | Apache Accumulo | [Apache Accumulo](./Apache Accumulo/) | [官网](https://accumulo.apache.org/) | [repo](https://github.com/apache/accumulo) | 宽列 | — | 商业或开源（DB-Engines 未给出具体许可证） | 2008 | [DB-Engines](https://db-engines.com/en/system/Apache+Accumulo) |
+| 14 | Apache Cassandra | [Cassandra](./Cassandra/) | [官网](https://cassandra.apache.org/_/index.html) | [repo](https://github.com/apache/cassandra) | 宽列 | — | Apache v2 | 2008 | [DBDB](https://dbdb.io/db/cassandra) |
+| 15 | Apache CouchDB | [CouchDB](./CouchDB/) | [官网](https://couchdb.apache.org) | [repo](https://github.com/apache/couchdb) | 文档、空间 | Apache Software Foundation Apache top-level project, originally developed by Damien Katz, a former Lotus Notes developer | Apache v2 | 2005 | [DB-Engines](https://db-engines.com/en/system/CouchDB) [DBDB](https://dbdb.io/db/couchdb) |
+| 16 | Apache Derby | [Apache Derby](./Apache Derby/) | [官网](https://db.apache.org/derby/) | — | SQL | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 1997 | [DB-Engines](https://db-engines.com/en/system/Apache+Derby) |
+| 17 | Apache Drill | [Apache Drill](./Apache Drill/) | [官网](https://drill.apache.org/) | — | SQL、文档 | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Apache+Drill) |
+| 18 | Apache Druid | [Apache Druid](./Apache Druid/) | [官网](https://druid.apache.org/) | [repo](https://github.com/apache/druid) | SQL、时序 | Apache Software Foundation and contributors | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Apache+Druid) |
+| 19 | Apache Flink | [Apache Flink](./Apache Flink/) | [官网](https://flink.apache.org/) | [repo](https://github.com/apache/flink) | SQL | Apache Software Foundation and contributors | 商业或开源（DB-Engines 未给出具体许可证） | — | [DB-Engines](https://db-engines.com/en/system/Apache+Flink) |
+| 20 | Apache HBase | [Apache HBase](./Apache HBase/) | [官网](https://hbase.apache.org/) | [repo](https://github.com/apache/hbase) | 宽列 | Apache Software Foundation Apache top-level project, originally developed by Powerset | 商业或开源（DB-Engines 未给出具体许可证） | 2008 | [DB-Engines](https://db-engines.com/en/system/Apache+HBase) |
+| 21 | Apache Hive | [Apache Hive](./Apache Hive/) | [官网](https://hive.apache.org/) | [repo](https://github.com/apache/hive) | SQL | Apache Software Foundation initially developed by Facebook | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Apache+Hive) |
+| 22 | Apache Ignite | [Apache Ignite](./Apache Ignite/) | [官网](https://ignite.apache.org/) | [repo](https://github.com/apache/ignite) | SQL、KV | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2015 | [DB-Engines](https://db-engines.com/en/system/Apache+Ignite) |
+| 23 | Apache Impala | [Apache Impala](./Apache Impala/) | [官网](https://impala.apache.org/) | — | SQL、文档 | Apache Software Foundation Apache top-level project, originally developed by Cloudera | 商业或开源（DB-Engines 未给出具体许可证） | 2013 | [DB-Engines](https://db-engines.com/en/system/Apache+Impala) |
+| 24 | Apache IoTDB | [Apache IoTDB](./Apache IoTDB/) | [官网](https://iotdb.apache.org/) | [repo](https://github.com/apache/iotdb) | 时序 | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2018 | [DB-Engines](https://db-engines.com/en/system/Apache+IoTDB) |
+| 25 | Apache Jackrabbit | [Apache Jackrabbit](./Apache Jackrabbit/) | [官网](https://jackrabbit.apache.org/) | [repo](https://github.com/apache/jackrabbit) | 内容 | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2006 | [DB-Engines](https://db-engines.com/en/system/Apache+Jackrabbit) |
+| 26 | Apache Jena TDB | [Apache Jena TDB](./Apache Jena TDB/) | [官网](https://jena.apache.org/documentation/tdb/index.html) | [repo](https://github.com/apache/jena) | RDF | Apache Software Foundation originally developed by HP Labs | 商业或开源（DB-Engines 未给出具体许可证） | 2000 | [DB-Engines](https://db-engines.com/en/system/Apache+Jena+-+TDB) |
+| 27 | Apache Phoenix | [Apache Phoenix](./Apache Phoenix/) | [官网](https://phoenix.apache.org/) | — | SQL | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2014 | [DB-Engines](https://db-engines.com/en/system/Apache+Phoenix) |
+| 28 | Apache Solr | [Apache Solr](./Apache Solr/) | [官网](https://solr.apache.org/) | [repo](https://github.com/apache/solr) | 搜索、空间 | Apache Software Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2006 | [DB-Engines](https://db-engines.com/en/system/Apache+Solr) |
+| 29 | Apache Spark | [Apache Spark](./Apache Spark/) | — | [repo](https://github.com/apache/spark) | — | — | — | — | — |
+| 30 | Apache ZooKeeper | [ZooKeeper](./ZooKeeper/) | [官网](https://zookeeper.apache.org) | [repo](https://github.com/apache/zookeeper) | KV | Apache Software Foundation | Apache v2 | 2008 | [DBDB](https://dbdb.io/db/zookeeper) |
+| 31 | BaseX | [BaseX](./BaseX/) | [官网](https://basex.org) | [repo](https://github.com/BaseXdb/basex) | XML | BaseX GmbH | BSD License | 2007 | [DB-Engines](https://db-engines.com/en/system/BaseX) [DBDB](https://dbdb.io/db/basex) |
+| 32 | Berkeley DB | [Berkeley DB](./Berkeley DB/) | [官网](https://www.oracle.com/database/technologies/related/berkeleydb.html) | [repo](https://github.com/berkeleydb/libdb) | — | — | — | 1994 | [DBDB](https://dbdb.io/db/berkeley-db) |
+| 33 | Calvin | [Calvin](./Calvin/) | [官网](http://dslam.cs.umd.edu/calvin) | — | SQL | Yale University | — | 2012 | [DBDB](https://dbdb.io/db/calvin) |
+| 34 | Chroma | [Chroma](./Chroma/) | [官网](https://www.trychroma.com) | [repo](https://github.com/chroma-core/chroma) | 向量 | Chroma | Apache v2 | 2022 | [DB-Engines](https://db-engines.com/en/system/Chroma) [DBDB](https://dbdb.io/db/chroma) |
+| 35 | Citus | [Citus](./Citus/) | [官网](https://www.citusdata.com) | [repo](https://github.com/citusdata/citus) | SQL、OLAP、文档 | Citus Data, Inc. | AGPL v3 | 2010 | [DB-Engines](https://db-engines.com/en/system/Citus) [DBDB](https://dbdb.io/db/citus) |
+| 36 | ClickHouse | [ClickHouse](./ClickHouse/) | [官网](https://clickhouse.com) | [repo](https://github.com/ClickHouse/ClickHouse) | OLAP、文档、时序、向量、空间 | Clickhouse Inc. | Apache v2 | 2016 | [DB-Engines](https://db-engines.com/en/system/ClickHouse) [DBDB](https://dbdb.io/db/clickhouse) |
+| 37 | CloudKit | [CloudKit](./CloudKit/) | [官网](http://getcloudkit.com) | [repo](https://github.com/jcrosby/cloudkit) | 文档 | — | 商业或开源（DB-Engines 未给出具体许可证） | 2016 | [DB-Engines](https://db-engines.com/en/system/CloudKit) [DBDB](https://dbdb.io/db/cloudkit) |
+| 38 | CockroachDB | [CockroachDB](./CockroachDB/) | [官网](https://www.cockroachlabs.com) | [repo](https://github.com/cockroachdb/cockroach) | SQL | Cockroach Labs | Business Source License | 2014 | [DBDB](https://dbdb.io/db/cockroachdb) |
+| 39 | Coherence | [Coherence](./Coherence/) | [官网](https://www.oracle.com/java/coherence) | [repo](https://github.com/oracle/coherence) | — | — | Universal Permissive License | 2000 | [DBDB](https://dbdb.io/db/coherence) |
+| 40 | Couchbase | [Couchbase](./Couchbase/) | [官网](https://www.couchbase.com) | [repo](https://github.com/apache/hbase) | 文档、KV、宽列、时序、向量、搜索、空间 | Couchbase, Inc. | Apache v2 | 2011 | [DB-Engines](https://db-engines.com/en/system/Couchbase) [DBDB](https://dbdb.io/db/couchbase) |
+| 41 | Coveo | [Coveo](./Coveo/) | [官网](https://www.coveo.com) | — | 搜索 | Coveo | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Coveo) |
+| 42 | Databricks | [Databricks](./Databricks/) | [官网](https://www.databricks.com) | — | SQL、OLAP、文档 | Databricks | Proprietary | 2013 | [DB-Engines](https://db-engines.com/en/system/Databricks) [DBDB](https://dbdb.io/db/databricks) |
+| 43 | Datastax Enterprise | [Datastax Enterprise](./Datastax Enterprise/) | [官网](https://www.datastax.com/products/datastax-enterprise) | — | 文档、宽列、图、向量、搜索、空间 | DataStax | 商业或开源（DB-Engines 未给出具体许可证） | 2011 | [DB-Engines](https://db-engines.com/en/system/Datastax+Enterprise) |
+| 44 | Datomic | [Datomic](./Datomic/) | [官网](https://www.datomic.com) | — | SQL | Cognitect | Proprietary | 2012 | [DB-Engines](https://db-engines.com/en/system/Datomic) [DBDB](https://dbdb.io/db/datomic) |
+| 45 | dBASE | [dBASE](./dBASE/) | [官网](https://www.dbase.com/) | — | SQL | Asthon Tate | Proprietary | — | [DB-Engines](https://db-engines.com/en/system/dBASE) [DBDB](https://dbdb.io/db/dbase) |
+| 46 | Dgraph | [Dgraph](./Dgraph/) | [官网](https://dgraph.io/) | [repo](https://github.com/dgraph-io/dgraph) | 图 | Dgraph Labs, Inc. | Apache v2 | 2016 | [DB-Engines](https://db-engines.com/en/system/Dgraph) [DBDB](https://dbdb.io/db/dgraph) |
+| 47 | DolphinDB | [DolphinDB](./DolphinDB/) | [官网](https://dolphindb.com) | [repo](https://github.com/dolphindb/DolphinDB) | SQL、OLAP、时序、向量 | DolphinDB, Inc | Proprietary | 2018 | [DB-Engines](https://db-engines.com/en/system/DolphinDB) [DBDB](https://dbdb.io/db/dolphindb) |
+| 48 | DuckDB | [DuckDB](./DuckDB/) | [官网](https://duckdb.org/) | [repo](https://github.com/duckdb/duckdb) | SQL、OLAP | — | MIT License | 2018 | [DB-Engines](https://db-engines.com/en/system/DuckDB) [DBDB](https://dbdb.io/db/duckdb) |
+| 49 | EDB Postgres | [EDB Postgres](./EDB Postgres/) | [官网](https://www.enterprisedb.com/) | — | SQL、文档、空间 | EnterpriseDB | 商业或开源（DB-Engines 未给出具体许可证） | 2005 | [DB-Engines](https://db-engines.com/en/system/EDB+Postgres) |
+| 50 | Ehcache | [Ehcache](./Ehcache/) | [官网](https://www.ehcache.org) | [repo](https://github.com/ehcache/ehcache3) | KV | Terracotta Inc, owned by Software AG | Apache v2 | 2009 | [DB-Engines](https://db-engines.com/en/system/Ehcache) [DBDB](https://dbdb.io/db/ehcache) |
+| 51 | Elasticsearch | [Elasticsearch](./Elasticsearch/) | [官网](https://www.elastic.co) | [repo](https://github.com/elastic/elasticsearch) | 文档、向量、搜索、空间 | Elastic | Apache v2 | 2010 | [DB-Engines](https://db-engines.com/en/system/Elasticsearch) [DBDB](https://dbdb.io/db/elasticsearch) |
+| 52 | Essbase | [Essbase](./Essbase/) | [官网](https://www.oracle.com/business-analytics/essbase.html) | — | OLAP | — | Proprietary | 1992 | [DBDB](https://dbdb.io/db/essbase) |
+| 53 | etcd | [etcd](./etcd/) | [官网](https://etcd.io) | [repo](https://github.com/etcd-io/etcd) | KV | — | Apache v2 | 2013 | [DB-Engines](https://db-engines.com/en/system/etcd) [DBDB](https://dbdb.io/db/etcd) |
+| 54 | EXASOL | [EXASOL](./EXASOL/) | [官网](https://www.exasol.com) | — | SQL、OLAP | Exasol | Proprietary | 2000 | [DB-Engines](https://db-engines.com/en/system/EXASOL) [DBDB](https://dbdb.io/db/exasol) |
+| 55 | Fauna | [Fauna](./Fauna/) | [官网](https://fauna.com)  ⚠️本次网络不可达 | [repo](https://github.com/fauna/faunadb) | SQL、文档、图、时序 | Fauna, Inc. | Proprietary | 2014 | [DB-Engines](https://db-engines.com/en/system/Fauna) [DBDB](https://dbdb.io/db/faunadb) |
+| 56 | FileMaker | [FileMaker](./FileMaker/) | [官网](https://www.claris.com/filemaker/) | — | SQL | Claris a subsidiary of Apple | Proprietary | 1983 | [DB-Engines](https://db-engines.com/en/system/FileMaker) [DBDB](https://dbdb.io/db/filemaker) |
+| 57 | Firebase Realtime Database | [Firebase Realtime Database](./Firebase Realtime Database/) | [官网](https://firebase.google.com/products/realtime-database/)  ⚠️本次网络不可达 | — | 文档 | Google acquired by Google 2014 | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Firebase+Realtime+Database) |
+| 58 | Firebird | [Firebird](./Firebird/) | [官网](http://www.firebirdsql.org/) | [repo](https://github.com/FirebirdSQL/firebird) | SQL | Firebird Foundation | Mozilla Public License | 2000 | [DB-Engines](https://db-engines.com/en/system/Firebird) [DBDB](https://dbdb.io/db/firebird) |
+| 59 | FoundationDB | [FoundationDB](./FoundationDB/) | [官网](https://github.com/apple/foundationdb) | [repo](https://github.com/apple/foundationdb) | SQL、文档、KV | FoundationDB | Apache v2 | 2013 | [DB-Engines](https://db-engines.com/en/system/FoundationDB) [DBDB](https://dbdb.io/db/foundationdb) |
+| 60 | GBase | [GBase](./GBase/) | [官网](http://www.gbase.cn) | — | SQL | General Data Technology Co., Ltd. | 商业或开源（DB-Engines 未给出具体许可证） | 2004 | [DB-Engines](https://db-engines.com/en/system/GBase) [DBDB](https://dbdb.io/db/gbase) |
+| 61 | GemFire | [GemFire](./GemFire/) | [官网](https://network.tanzu.vmware.com/products/pivotal-gemfire/) | — | 文档、KV | VMware | 商业或开源（DB-Engines 未给出具体许可证） | 2004 | [DB-Engines](https://db-engines.com/en/system/GemFire) |
+| 62 | Google BigQuery | [Google BigQuery](./Google BigQuery/) | [官网](https://cloud.google.com/bigquery/)  ⚠️本次网络不可达 | — | SQL | Google | 商业或开源（DB-Engines 未给出具体许可证） | 2010 | [DB-Engines](https://db-engines.com/en/system/Google+BigQuery) |
+| 63 | Google Bigtable | [Google Bigtable](./Google Bigtable/) | — | — | — | — | — | — | — |
+| 64 | Google Cloud Datastore | [Google Cloud Datastore](./Google Cloud Datastore/) | [官网](https://cloud.google.com/datastore/)  ⚠️本次网络不可达 | — | 文档 | Google | 商业或开源（DB-Engines 未给出具体许可证） | 2008 | [DB-Engines](https://db-engines.com/en/system/Google+Cloud+Datastore) |
+| 65 | Google Cloud Firestore | [Google Cloud Firestore](./Google Cloud Firestore/) | [官网](https://firebase.google.com/products/firestore/)  ⚠️本次网络不可达 | — | 文档 | Google | 商业或开源（DB-Engines 未给出具体许可证） | 2017 | [DB-Engines](https://db-engines.com/en/system/Google+Cloud+Firestore) |
+| 66 | Google F1 | [Google F1](./Google F1/) | [官网](https://ai.google/research/pubs/pub41344)  ⚠️本次网络不可达 | — | SQL | Google LLC | — | 2013 | [DBDB](https://dbdb.io/db/google-f1) |
+| 67 | Google Megastore | [Google Megastore](./Google Megastore/) | — | — | KV | — | — | — | — |
+| 68 | Google Percolator | [Google Percolator](./Google Percolator/) | — | — | KV | — | — | — | — |
+| 69 | Google Spanner | [Google Spanner](./Google Spanner/) | [官网](https://cloud.google.com/spanner)  ⚠️本次网络不可达 | — | SQL | Google LLC | Proprietary | 2007 | [DBDB](https://dbdb.io/db/cloud-spanner) |
+| 70 | GraphDB | [GraphDB](./GraphDB/) | [官网](https://graphdb.ontotext.com) | [repo](https://github.com/google/snappy) | 图 | Ontotext, trading as Graphwise | Proprietary | 2000 | [DB-Engines](https://db-engines.com/en/system/GraphDB) [DBDB](https://dbdb.io/db/graphdb) |
+| 71 | Graphite | [Graphite](./Graphite/) | [官网](https://github.com/graphite-project/graphite-web) | [repo](https://github.com/graphite-project/graphite-web) | 时序 | Chris Davis | 商业或开源（DB-Engines 未给出具体许可证） | 2006 | [DB-Engines](https://db-engines.com/en/system/Graphite) |
+| 72 | Greenplum | [Greenplum](./Greenplum/) | [官网](https://greenplum.org)  ⚠️本次网络不可达 | — | SQL、OLAP、文档、空间 | Pivotal Software Inc. | 商业或开源（DB-Engines 未给出具体许可证） | 2005 | [DB-Engines](https://db-engines.com/en/system/Greenplum) [DBDB](https://dbdb.io/db/greenplum) |
+| 73 | H2 | [H2](./H2/) | [官网](http://www.h2database.com) | [repo](https://github.com/h2database/h2database) | SQL、空间 | Thomas Mueller | 商业或开源（DB-Engines 未给出具体许可证） | 2005 | [DB-Engines](https://db-engines.com/en/system/H2) [DBDB](https://dbdb.io/db/h2) |
+| 74 | Hazelcast | [Hazelcast](./Hazelcast/) | [官网](https://hazelcast.com) | [repo](https://github.com/hazelcast/hazelcast) | 文档、KV | Hazelcast | Apache v2 | 2008 | [DB-Engines](https://db-engines.com/en/system/Hazelcast) [DBDB](https://dbdb.io/db/hazelcast) |
+| 75 | HyperSQL | [HyperSQL](./HyperSQL/) | [官网](https://hsqldb.org/) | — | SQL | HSQLDB Development Group | BSD License | 2001 | [DB-Engines](https://db-engines.com/en/system/HyperSQL) [DBDB](https://dbdb.io/db/hypersql) |
+| 76 | IBM Cloudant | [IBM Cloudant](./IBM Cloudant/) | [官网](https://www.ibm.com/products/cloudant) | — | 文档 | IBM, Apache Software Foundation IBM acquired Cloudant in February 2014 | 商业或开源（DB-Engines 未给出具体许可证） | 2010 | [DB-Engines](https://db-engines.com/en/system/IBM+Cloudant) |
+| 77 | IBM Db2 | [IBM-Db2-pureScale](./IBM-Db2-pureScale/) | [官网](https://www.ibm.com/products/db2) | — | SQL、文档、空间 | IBM | Proprietary | 1983 | [DB-Engines](https://db-engines.com/en/system/IBM+Db2) [DBDB](https://dbdb.io/db/db2) |
+| 78 | IMS | [IMS](./IMS/) | [官网](https://www.ibm.com/products/ims) | — | 层次 | IBM | Proprietary | — | [DB-Engines](https://db-engines.com/en/system/IMS) [DBDB](https://dbdb.io/db/ims) |
+| 79 | Infinispan | [Infinispan](./Infinispan/) | [官网](https://infinispan.org) | [repo](https://github.com/infinispan/infinispan) | KV | Red Hat, Inc. | Apache v2 | 2009 | [DB-Engines](https://db-engines.com/en/system/Infinispan) [DBDB](https://dbdb.io/db/infinispan) |
+| 80 | InfluxDB | [InfluxDB](./InfluxDB/) | [官网](https://www.influxdata.com) | [repo](https://github.com/influxdata/influxdb) | 时序、空间 | InfluxData | MIT License | 2013 | [DB-Engines](https://db-engines.com/en/system/InfluxDB) [DBDB](https://dbdb.io/db/influxdb) |
+| 81 | Informix | [Informix](./Informix/) | [官网](https://www.ibm.com/products/informix) | — | SQL、文档、时序、空间 | IBM, HCL Technologies Effective May 1st, 2017, HCL took on development, technical support, and product management teams, and works jointly with IBM on product strategy, marketing, and sales. | Proprietary | 1984 | [DB-Engines](https://db-engines.com/en/system/Informix) [DBDB](https://dbdb.io/db/informix) |
+| 82 | Ingres | [Ingres](./Ingres/) | [官网](https://www.actian.com/databases/ingres) | — | SQL | Actian Corporation | Proprietary | — | [DB-Engines](https://db-engines.com/en/system/Ingres) [DBDB](https://dbdb.io/db/ingres) |
+| 83 | Interbase | [Interbase](./Interbase/) | [官网](http://www.embarcadero.com/products/interbase) | — | SQL | Embarcadero | Proprietary | 1984 | [DB-Engines](https://db-engines.com/en/system/Interbase) [DBDB](https://dbdb.io/db/interbase) |
+| 84 | InterSystems IRIS | [InterSystems IRIS](./InterSystems IRIS/) | [官网](https://www.intersystems.com/products/intersystems-iris/) | — | SQL、文档、KV | InterSystems | 商业或开源（DB-Engines 未给出具体许可证） | 2018 | [DB-Engines](https://db-engines.com/en/system/InterSystems+IRIS) |
+| 85 | JanusGraph | [JanusGraph](./JanusGraph/) | [官网](https://janusgraph.org) | [repo](https://github.com/janusgraph/janusgraph) | 图 | Linux Foundation; originally developed as Titan by Aurelius | Apache v2 | 2017 | [DB-Engines](https://db-engines.com/en/system/JanusGraph) [DBDB](https://dbdb.io/db/janusgraph) |
+| 86 | Kdb | [Kdb](./Kdb/) | [官网](https://kx.com) | — | SQL | Inspur Group | Proprietary | 1998 | [DB-Engines](https://db-engines.com/en/system/K-DB) [DBDB](https://dbdb.io/db/kdb) |
+| 87 | LevelDB | [LevelDB](./LevelDB/) | [官网](https://github.com/google/leveldb) | [repo](https://github.com/google/leveldb) | KV | Google | BSD License | 2011 | [DB-Engines](https://db-engines.com/en/system/LevelDB) [DBDB](https://dbdb.io/db/leveldb) |
+| 88 | LMDB | [LMDB](./LMDB/) | [官网](https://lmdb.tech)  ⚠️本次网络不可达 | [repo](https://github.com/LMDB/lmdb) | KV | Symas | OpenLDAP Public License | 2011 | [DB-Engines](https://db-engines.com/en/system/LMDB) [DBDB](https://dbdb.io/db/lmdb) |
+| 89 | MariaDB | [MariaDB](./MariaDB/) | [官网](https://mariadb.com/) | [repo](https://github.com/MariaDB/server) | SQL、文档、图、空间 | MariaDB plc (MariaDB Enterprise Platform and MariaDB) The lead developer Monty Widenius is the original author of MySQL | GPL v2 | 2009 | [DB-Engines](https://db-engines.com/en/system/MariaDB) [DBDB](https://dbdb.io/db/mariadb) |
+| 90 | MarkLogic | [MarkLogic](./MarkLogic/) | [官网](http://www.progress.com/marklogic) | — | 文档、向量、搜索 | MarkLogic Corp. | Proprietary | 2001 | [DB-Engines](https://db-engines.com/en/system/MarkLogic) [DBDB](https://dbdb.io/db/marklogic) |
+| 91 | MaxDB | [MaxDB](./MaxDB/) | [官网](https://maxdb.sap.com/) | — | SQL | SAP, acquired from Software AG (Adabas-D) in 1997 | Proprietary | 1984 | [DB-Engines](https://db-engines.com/en/system/MaxDB) [DBDB](https://dbdb.io/db/maxdb) |
+| 92 | Meilisearch | [Meilisearch](./Meilisearch/) | [官网](https://github.com/meilisearch/meilisearch) | [repo](https://github.com/meilisearch/meilisearch) | 向量、搜索 | Meilisearch SAS | MIT License | 2020 | [DB-Engines](https://db-engines.com/en/system/Meilisearch) [DBDB](https://dbdb.io/db/meilisearch) |
+| 93 | Memcached | [Memcached](./Memcached/) | [官网](http://www.memcached.org/) | [repo](https://github.com/memcached/memcached) | KV | Danga Interactive originally developed by Brad Fitzpatrick for LiveJournal | BSD License | 2003 | [DB-Engines](https://db-engines.com/en/system/Memcached) [DBDB](https://dbdb.io/db/memcached) |
+| 94 | Memgraph | [Memgraph](./Memgraph/) | [官网](https://memgraph.com) | [repo](https://github.com/memgraph/memgraph) | 图 | Memgraph Ltd | Business Source License | 2017 | [DB-Engines](https://db-engines.com/en/system/Memgraph) [DBDB](https://dbdb.io/db/memgraph) |
+| 95 | Microsoft Access | [Microsoft Access](./Microsoft Access/) | [官网](https://www.microsoft.com/en-us/microsoft-365/access) | — | SQL | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 1992 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Access) |
+| 96 | Microsoft Azure AI Search | [Microsoft Azure AI Search](./Microsoft Azure AI Search/) | [官网](https://azure.microsoft.com/en-us/services/search/) | — | 向量、搜索 | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 2015 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Azure+AI+Search) |
+| 97 | Microsoft Azure Cosmos DB | [Microsoft Azure CosmosDB](./Microsoft Azure CosmosDB/) | [官网](https://azure.microsoft.com/en-us/products/cosmos-db) | — | 文档、KV、宽列、图、搜索、空间 | Microsoft | Proprietary | 2014 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Azure+Cosmos+DB) [DBDB](https://dbdb.io/db/cosmos-db) |
+| 98 | Microsoft Azure Data Explorer | [Microsoft Azure Data Explorer](./Microsoft Azure Data Explorer/) | [官网](https://azure.microsoft.com/services/data-explorer/) | — | SQL、文档、图、时序、搜索、空间 | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 2019 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Azure+Data+Explorer) |
+| 99 | Microsoft Azure SQL Database | [Microsoft Azure SQL Database](./Microsoft Azure SQL Database/) | [官网](https://azure.microsoft.com/en-us/products/azure-sql/database/) | — | SQL、文档、图、空间 | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 2010 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Azure+SQL+Database) |
+| 100 | Microsoft Azure Synapse Analytics | [Microsoft Azure Synapse Analytics](./Microsoft Azure Synapse Analytics/) | [官网](https://azure.microsoft.com/services/synapse-analytics/) | — | SQL | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 2016 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Azure+Synapse+Analytics) |
+| 101 | Microsoft Azure Table Storage | [Microsoft Azure Table Storage](./Microsoft Azure Table Storage/) | [官网](https://azure.microsoft.com/en-us/services/storage/tables/) | — | 宽列 | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 2012 | [DB-Engines](https://db-engines.com/en/system/Microsoft+Azure+Table+Storage) |
+| 102 | Microsoft Fabric | [Microsoft Fabric](./Microsoft Fabric/) | [官网](https://www.microsoft.com/en-us/microsoft-fabric) | — | SQL | Microsoft | — | — | [DB-Engines](https://db-engines.com/en/system/Microsoft+Fabric) |
+| 103 | Microsoft SQL Server | [Microsoft SQL Server](./Microsoft SQL Server/) | [官网](https://www.microsoft.com/en-us/sql-server/) | — | SQL、文档、图、空间 | Microsoft | 商业或开源（DB-Engines 未给出具体许可证） | 1989 | [DB-Engines](https://db-engines.com/en/system/Microsoft+SQL+Server) |
+| 104 | Milvus | [Milvus](./Milvus/) | [官网](https://milvus.io)  ⚠️HTTP 302 | [repo](https://github.com/milvus-io/milvus) | 向量 | The Milvus Project | Apache v2 | 2019 | [DB-Engines](https://db-engines.com/en/system/Milvus) [DBDB](https://dbdb.io/db/milvus) |
+| 105 | MonetDB | [MonetDB](./MonetDB/) | [官网](https://www.monetdb.org) | [repo](https://github.com/MonetDB/MonetDB) | SQL、OLAP、文档、空间 | MonetDB BV | Mozilla Public License | 2004 | [DB-Engines](https://db-engines.com/en/system/MonetDB) [DBDB](https://dbdb.io/db/monetdb) |
+| 106 | MongoDB | [MongoDB](./MongoDB/) | [官网](https://www.mongodb.com) | — | 文档、KV、时序、向量、搜索、空间 | MongoDB, Inc | Server Side Public License | 2009 | [DB-Engines](https://db-engines.com/en/system/MongoDB) [DBDB](https://dbdb.io/db/mongodb) |
+| 107 | MySQL | [MySQL](./MySQL/) | [官网](https://www.mysql.com) | [repo](https://github.com/mysql/mysql-server) | SQL、文档、空间 | Oracle since 2010, originally MySQL AB, then Sun | GPL v2 | 1995 | [DB-Engines](https://db-engines.com/en/system/MySQL) [DBDB](https://dbdb.io/db/mysql) |
+| 108 | NebulaGraph | [NebulaGraph](./NebulaGraph/) | [官网](https://github.com/vesoft-inc/nebula) | [repo](https://github.com/vesoft-inc/nebula) | 图 | Vesoft Inc. | Apache v2 | 2019 | [DB-Engines](https://db-engines.com/en/system/NebulaGraph) [DBDB](https://dbdb.io/db/nebula-graph) |
+| 109 | Neo4j | [Neo4j](./Neo4j/) | [官网](https://neo4j.com) | [repo](https://github.com/neo4j/neo4j) | 图 | Neo4j, Inc. | 商业或开源（DB-Engines 未给出具体许可证） | 2007 | [DB-Engines](https://db-engines.com/en/system/Neo4j) [DBDB](https://dbdb.io/db/neo4j) |
+| 110 | Netezza | [Netezza](./Netezza/) | [官网](https://www.ibm.com) | — | SQL、OLAP | IBM | Proprietary | 2000 | [DB-Engines](https://db-engines.com/en/system/Netezza) [DBDB](https://dbdb.io/db/netezza) |
+| 111 | OceanBase | [OceanBase](./OceanBase/) | [官网](https://en.oceanbase.com/) | [repo](https://github.com/oceanbase/oceanbase) | SQL、文档、宽列、向量 | OceanBase previously Alibaba and Ant Group | Mulan PubL v2 | 2010 | [DB-Engines](https://db-engines.com/en/system/OceanBase) [DBDB](https://dbdb.io/db/oceanbase) |
+| 112 | OpenEdge | [OpenEdge](./OpenEdge/) | [官网](https://www.progress.com/openedge) | — | SQL | Progress Software Corporation | Proprietary | 1984 | [DB-Engines](https://db-engines.com/en/system/OpenEdge) [DBDB](https://dbdb.io/db/openedge) |
+| 113 | openGauss / GaussDB | [GaussDB](./GaussDB/) | [官网](https://e.huawei.com/en/solutions/cloud-computing/big-data/gaussdb-distributed-database)  ⚠️本次网络不可达 | [repo](https://github.com/opengauss-mirror/openGauss-server) | SQL、文档、空间 | Huawei and openGauss community | Proprietary | 2019 | [DB-Engines](https://db-engines.com/en/system/openGauss) [DBDB](https://dbdb.io/db/gaussdb) |
+| 114 | OpenSearch | [OpenSearch](./OpenSearch/) | [官网](https://github.com/opensearch-project) | — | 向量、搜索 | The OpenSearch Software Foundation | Apache v2 | 2021 | [DB-Engines](https://db-engines.com/en/system/OpenSearch) [DBDB](https://dbdb.io/db/opensearch) |
+| 115 | Oracle | [Oracle](./Oracle/) | [官网](https://www.oracle.com/database/) | — | SQL、文档、图、向量、空间 | Oracle | Proprietary | 1980 | [DB-Engines](https://db-engines.com/en/system/Oracle) [DBDB](https://dbdb.io/db/oracle) |
+| 116 | Oracle Coherence | [Oracle Coherence](./Oracle Coherence/) | [官网](https://www.oracle.com/java/coherence/) | — | KV | Oracle | 商业或开源（DB-Engines 未给出具体许可证） | 2007 | [DB-Engines](https://db-engines.com/en/system/Oracle+Coherence) |
+| 117 | Oracle NoSQL | [Oracle NoSQL](./Oracle NoSQL/) | [官网](https://github.com/oracle/nosql) | [repo](https://github.com/oracle/nosql) | SQL、文档、KV | Oracle | 商业或开源（DB-Engines 未给出具体许可证） | 2011 | [DB-Engines](https://db-engines.com/en/system/Oracle+NoSQL) [DBDB](https://dbdb.io/db/oracle-nosql) |
+| 118 | OrientDB | [OrientDB](./OrientDB/) | [官网](https://orientdb.dev) | [repo](https://github.com/orientechnologies/orientdb) | 文档、KV、图 | OrientDB LTD; CallidusCloud; SAP | Apache v2 | 2010 | [DB-Engines](https://db-engines.com/en/system/OrientDB) [DBDB](https://dbdb.io/db/orientdb) |
+| 119 | Percona Server for MySQL | [Percona Server for MySQL](./Percona Server for MySQL/) | [官网](https://www.percona.com/software/mysql-database/percona-server) | [repo](https://github.com/mysql/mysql-server) | SQL | Percona | 商业或开源（DB-Engines 未给出具体许可证） | 2008 | [DB-Engines](https://db-engines.com/en/system/Percona+Server+for+MySQL) |
+| 120 | Pinecone | [Pinecone](./Pinecone/) | [官网](https://www.pinecone.io) | [repo](https://github.com/pinecone-io/pinecone-python-client) | 向量、搜索 | Pinecone Systems, Inc | Proprietary | 2019 | [DB-Engines](https://db-engines.com/en/system/Pinecone) [DBDB](https://dbdb.io/db/pinecone) |
+| 121 | PlanetScale | [PlanetScale](./PlanetScale/) | [官网](https://planetscale.com) | — | SQL、文档、空间 | PlanetScale | Proprietary | 2020 | [DB-Engines](https://db-engines.com/en/system/PlanetScale) [DBDB](https://dbdb.io/db/planetscale) |
+| 122 | PostGIS | [PostGIS](./PostGIS/) | [官网](https://postgis.net/) | [repo](https://github.com/postgis/postgis) | SQL、空间 | — | 商业或开源（DB-Engines 未给出具体许可证） | 2005 | [DB-Engines](https://db-engines.com/en/system/PostGIS) |
+| 123 | PostgreSQL | [PostgreSQL](./PostgreSQL/) | [官网](https://www.postgresql.org) | [repo](https://github.com/postgres/postgres) | SQL、文档、图、向量、空间 | PostgreSQL Global Development Group www.postgresql.org/­developer | PostgreSQL License | 1989 | [DB-Engines](https://db-engines.com/en/system/PostgreSQL) [DBDB](https://dbdb.io/db/postgresql) |
+| 124 | PouchDB | [PouchDB](./PouchDB/) | [官网](https://pouchdb.com) | [repo](https://github.com/apache/pouchdb) | 文档 | Apache Software Foundation | Apache v2 | 2012 | [DB-Engines](https://db-engines.com/en/system/PouchDB) [DBDB](https://dbdb.io/db/pouchdb) |
+| 125 | Presto | [Presto](./Presto/) | [官网](https://prestodb.io/) | [repo](https://github.com/prestodb/presto) | SQL | Facebook; Presto Foundation | 商业或开源（DB-Engines 未给出具体许可证） | 2013 | [DB-Engines](https://db-engines.com/en/system/Presto) |
+| 126 | Prometheus | [Prometheus](./Prometheus/) | [官网](https://prometheus.io) | [repo](https://github.com/prometheus/prometheus) | 时序 | SoundCloud | Apache v2 | 2015 | [DB-Engines](https://db-engines.com/en/system/Prometheus) [DBDB](https://dbdb.io/db/prometheus) |
+| 127 | Qdrant | [Qdrant](./Qdrant/) | [官网](https://github.com/qdrant/qdrant) | [repo](https://github.com/qdrant/qdrant) | 向量、搜索 | Qdrant | Apache v2 | 2021 | [DB-Engines](https://db-engines.com/en/system/Qdrant) [DBDB](https://dbdb.io/db/qdrant) |
+| 128 | QuestDB | [QuestDB](./QuestDB/) | [官网](https://questdb.com) | [repo](https://github.com/questdb/questdb) | SQL、时序 | QuestDB Technology Inc | Apache v2 | 2014 | [DB-Engines](https://db-engines.com/en/system/QuestDB) [DBDB](https://dbdb.io/db/questdb) |
+| 129 | RavenDB | [RavenDB](./RavenDB/) | [官网](https://ravendb.net) | [repo](https://github.com/ravendb/ravendb) | 文档、图、时序、空间 | Hibernating Rhinos | AGPL v3 | 2010 | [DB-Engines](https://db-engines.com/en/system/RavenDB) [DBDB](https://dbdb.io/db/ravendb) |
+| 130 | Realm | [Realm](./Realm/) | [官网](https://realm.io/) | [repo](https://github.com/realm/realm-core) | 文档 | Realm, acquired by MongoDB in May 2019 | Apache v2 | 2014 | [DB-Engines](https://db-engines.com/en/system/Realm) [DBDB](https://dbdb.io/db/realm) |
+| 131 | Redis | [Redis](./Redis/) | [官网](https://redis.com/) | [repo](https://github.com/redis/redis) | 文档、KV、图、时序、向量、搜索、空间 | Redis project core team, inspired by Salvatore Sanfilippo Development sponsored by Redis Inc. | BSD License | 2009 | [DB-Engines](https://db-engines.com/en/system/Redis) [DBDB](https://dbdb.io/db/redis) |
+| 132 | RethinkDB | [RethinkDB](./RethinkDB/) | [官网](https://rethinkdb.com/) | [repo](https://github.com/rethinkdb/rethinkdb) | 文档、空间 | The Linux Foundation since July 2017 | Apache v2 | 2009 | [DB-Engines](https://db-engines.com/en/system/RethinkDB) [DBDB](https://dbdb.io/db/rethinkdb) |
+| 133 | Riak KV | [Riak KV](./Riak KV/) | — | — | KV | OpenSource, formerly Basho Technologies | 商业或开源（DB-Engines 未给出具体许可证） | 2009 | [DB-Engines](https://db-engines.com/en/system/Riak+KV) |
+| 134 | RocksDB | [RocksDB](./RocksDB/) | [官网](https://rocksdb.org) | [repo](https://github.com/facebook/rocksdb) | KV | Facebook, Inc. | Apache v2 | 2013 | [DB-Engines](https://db-engines.com/en/system/RocksDB) [DBDB](https://dbdb.io/db/rocksdb) |
+| 135 | Rockset | [Rockset](./Rockset/) | [官网](https://openai.com/index/openai-acquires-rockset) | — | SQL、OLAP、文档、搜索 | Rockset | Proprietary | 2019 | [DB-Engines](https://db-engines.com/en/system/Rockset) [DBDB](https://dbdb.io/db/rockset) |
+| 136 | SAP Adaptive Server | [SAP Adaptive Server](./SAP Adaptive Server/) | [官网](https://www.sap.com/products/technology-platform/sybase-ase.html) | — | SQL、空间 | SAP, Sybase | 商业或开源（DB-Engines 未给出具体许可证） | 1987 | [DB-Engines](https://db-engines.com/en/system/SAP+Adaptive+Server) |
+| 137 | SAP HANA | [SAP HANA](./SAP HANA/) | [官网](https://www.sap.com/products/hana.html) | — | SQL、文档、图、空间 | SAP | 商业或开源（DB-Engines 未给出具体许可证） | 2010 | [DB-Engines](https://db-engines.com/en/system/SAP+HANA) |
+| 138 | SAP IQ | [SAP IQ](./SAP IQ/) | [官网](https://www.sap.com/products/technology-platform/sybase-iq-big-data-management.html) | — | SQL | SAP, formerly Sybase | 商业或开源（DB-Engines 未给出具体许可证） | 1994 | [DB-Engines](https://db-engines.com/en/system/SAP+IQ) |
+| 139 | SAP SQL Anywhere | [SAP SQL Anywhere](./SAP SQL Anywhere/) | [官网](https://www.sap.com/products/technology-platform/sql-anywhere.html) | — | SQL | SAP formerly Sybase | 商业或开源（DB-Engines 未给出具体许可证） | 1992 | [DB-Engines](https://db-engines.com/en/system/SAP+SQL+Anywhere) |
+| 140 | ScyllaDB | [ScyllaDB](./ScyllaDB/) | [官网](https://www.scylladb.com) | [repo](https://github.com/scylladb/scylla) | KV、宽列 | ScyllaDB | AGPL v3 | 2015 | [DB-Engines](https://db-engines.com/en/system/ScyllaDB) [DBDB](https://dbdb.io/db/scylla) |
+| 141 | SingleStore | [SingleStore](./SingleStore/) | [官网](https://www.singlestore.com) | — | SQL、OLAP、文档、时序、向量、空间 | SingleStore Inc. | Proprietary | 2013 | [DB-Engines](https://db-engines.com/en/system/SingleStore) [DBDB](https://dbdb.io/db/singlestore) |
+| 142 | Snowflake | [Snowflake](./Snowflake/) | [官网](https://www.snowflake.com) | — | SQL、OLAP | Snowflake Computing Inc. | Proprietary | 2014 | [DB-Engines](https://db-engines.com/en/system/Snowflake) [DBDB](https://dbdb.io/db/snowflake) |
+| 143 | SpatiaLite | [SpatiaLite](./SpatiaLite/) | [官网](https://www.gaia-gis.it/fossil/libspatialite/index) | — | SQL、空间 | Alessandro Furieri | 商业或开源（DB-Engines 未给出具体许可证） | 2008 | [DB-Engines](https://db-engines.com/en/system/SpatiaLite) |
+| 144 | Sphinx | [Sphinx](./Sphinx/) | [官网](http://sphinxsearch.com) | [repo](https://github.com/sphinxsearch/sphinx) | 搜索 | Sphinx Technologies Inc. | 商业或开源（DB-Engines 未给出具体许可证） | 2001 | [DB-Engines](https://db-engines.com/en/system/Sphinx) [DBDB](https://dbdb.io/db/sphinx) |
+| 145 | Splunk | [Splunk](./Splunk/) | [官网](https://www.splunk.com) | — | 搜索 | Splunk Inc. | Proprietary | 2003 | [DB-Engines](https://db-engines.com/en/system/Splunk) [DBDB](https://dbdb.io/db/splunk) |
+| 146 | SQLite | [SQLite](./SQLite/) | [官网](https://sqlite.org) | [repo](https://github.com/sqlite/sqlite) | SQL | Dwayne Richard Hipp | Public Domain | 2000 | [DB-Engines](https://db-engines.com/en/system/SQLite) [DBDB](https://dbdb.io/db/sqlite) |
+| 147 | Stardog | [Stardog](./Stardog/) | [官网](https://www.stardog.com) | — | 图 | Stardog-Union | Proprietary | 2010 | [DB-Engines](https://db-engines.com/en/system/Stardog) [DBDB](https://dbdb.io/db/stardog) |
+| 148 | StarRocks | [StarRocks](./StarRocks/) | [官网](https://www.starrocks.io) | [repo](https://github.com/StarRocks/starrocks) | SQL、OLAP | The Linux Foundation since Feb 2023 | Apache v2 | 2020 | [DB-Engines](https://db-engines.com/en/system/StarRocks) [DBDB](https://dbdb.io/db/starrocks) |
+| 149 | TDengine | [TDengine](./TDengine/) | [官网](https://github.com/taosdata/TDengine) | [repo](https://github.com/taosdata/TDengine) | SQL、时序 | TDEngine, previously Taos Data | AGPL v3 | 2019 | [DB-Engines](https://db-engines.com/en/system/TDengine) [DBDB](https://dbdb.io/db/tdengine) |
+| 150 | Tencent TDSQL | [TDSQL](./TDSQL/) | [官网](https://cloud.tencent.com/product/tdsql) | — | SQL | Tencent | — | 2012 | [DBDB](https://dbdb.io/db/tdsql) |
+| 151 | Teradata | [Teradata](./Teradata/) | [官网](https://www.teradata.com) | — | SQL、文档、图、时序、空间 | Teradata | Proprietary | 1984 | [DB-Engines](https://db-engines.com/en/system/Teradata) [DBDB](https://dbdb.io/db/teradata) |
+| 152 | TiDB | [TiDB](./TiDB/) | [官网](https://pingcap.com/) | [repo](https://github.com/pingcap/tidb) | SQL、OLAP、向量 | PingCAP, Inc. | Apache v2 | 2016 | [DB-Engines](https://db-engines.com/en/system/TiDB) [DBDB](https://dbdb.io/db/tidb) |
+| 153 | TigerGraph | [TigerGraph](./TigerGraph/) | [官网](https://www.tigergraph.com) | [repo](https://github.com/tigergraph/ecosys) | 图 | TigerGraph | Proprietary | 2017 | [DB-Engines](https://db-engines.com/en/system/TigerGraph) [DBDB](https://dbdb.io/db/tigergraph) |
+| 154 | Trino | [Trino](./Trino/) | [官网](https://trino.io) | [repo](https://github.com/trinodb/trino) | SQL、文档、KV、宽列、时序、搜索、空间 | Trino Software Foundation | Apache v2 | 2012 | [DB-Engines](https://db-engines.com/en/system/Trino) [DBDB](https://dbdb.io/db/trino) |
+| 155 | UniData,UniVerse | [UniData,UniVerse](./UniData,UniVerse/) | [官网](https://www.rocketsoftware.com/products/rocket-multivalue-application-development-platform/rocket-unidata) | — | 多值 | Rocket Software | 商业或开源（DB-Engines 未给出具体许可证） | 1985 | [DB-Engines](https://db-engines.com/en/system/UniData%2CUniVerse) |
+| 156 | Valkey | [Valkey](./Valkey/) | [官网](https://valkey.io) | [repo](https://github.com/valkey-io/valkey) | KV | The Linux Foundation | BSD License | 2024 | [DB-Engines](https://db-engines.com/en/system/Valkey) [DBDB](https://dbdb.io/db/valkey) |
+| 157 | Vertica | [Vertica](./Vertica/) | [官网](https://www.rocketsoftware.com/en-us/products/vertica?o=vert) | — | SQL、OLAP、时序、空间 | OpenText previously Micro Focus and Hewlett Packard | Proprietary | 2005 | [DB-Engines](https://db-engines.com/en/system/Vertica) [DBDB](https://dbdb.io/db/vertica) |
+| 158 | VictoriaMetrics | [VictoriaMetrics](./VictoriaMetrics/) | [官网](https://victoriametrics.com) | [repo](https://github.com/VictoriaMetrics/VictoriaMetrics) | 时序 | VictoriaMetrics | Apache v2 | 2018 | [DB-Engines](https://db-engines.com/en/system/VictoriaMetrics) [DBDB](https://dbdb.io/db/victoriametrics) |
+| 159 | Virtuoso | [Virtuoso](./Virtuoso/) | [官网](https://virtuoso.openlinksw.com) | — | SQL、文档、图、搜索、空间 | OpenLink Software | 商业或开源（DB-Engines 未给出具体许可证） | 1998 | [DB-Engines](https://db-engines.com/en/system/Virtuoso) [DBDB](https://dbdb.io/db/virtuoso) |
+| 160 | Vitess | [Vitess](./Vitess/) | [官网](https://vitess.io) | [repo](https://github.com/vitessio/vitess) | SQL、文档、空间 | The Linux Foundation, PlanetScale | Apache v2 | 2013 | [DB-Engines](https://db-engines.com/en/system/Vitess) [DBDB](https://dbdb.io/db/vitess) |
+| 161 | VoltDB | [VoltDB](./VoltDB/) | [官网](https://www.voltactivedata.com) | — | SQL | VoltDB Inc. | 商业或开源（DB-Engines 未给出具体许可证） | 2010 | [DB-Engines](https://db-engines.com/en/system/VoltDB) [DBDB](https://dbdb.io/db/voltdb) |
+| 162 | Weaviate | [Weaviate](./Weaviate/) | [官网](https://github.com/weaviate/weaviate) | [repo](https://github.com/weaviate/weaviate) | 向量、搜索 | Weaviate B.V. | BSD License | 2019 | [DB-Engines](https://db-engines.com/en/system/Weaviate) [DBDB](https://dbdb.io/db/weaviate) |
+| 163 | WiredTiger | [WiredTiger](./WiredTiger/) | [官网](https://www.mongodb.com) | [repo](https://github.com/wiredtiger/wiredtiger) | KV | WiredTiger | — | 2008 | [DBDB](https://dbdb.io/db/wiredtiger) |
+| 164 | YugabyteDB | [YugabyteDB](./YugabyteDB/) | [官网](https://www.yugabyte.com) | [repo](https://github.com/yugabyte/yugabyte-db) | SQL、文档、宽列 | Yugabyte Inc. | Apache v2 | 2017 | [DB-Engines](https://db-engines.com/en/system/YugabyteDB) [DBDB](https://dbdb.io/db/yugabytedb) |
+
+## 已收录文献
+
+| 数据库 | 论文 | 官方文档/白皮书 | 合计 |
+| --- | ---: | ---: | ---: |
+| 4D | 0 | 1 | 1 |
+| Aerospike | 1 | 1 | 2 |
+| Algolia | 0 | 1 | 1 |
+| Alibaba Cloud PolarDB | 4 | 1 | 5 |
+| Amazon Aurora | 5 | 1 | 6 |
+| Amazon CloudSearch | 0 | 1 | 1 |
+| Amazon DocumentDB | 1 | 1 | 2 |
+| Amazon DynamoDB | 2 | 1 | 3 |
+| Amazon Neptune | 0 | 1 | 1 |
+| Amazon Redshift | 4 | 1 | 5 |
+| Amazon SimpleDB | 0 | 1 | 1 |
+| Apache Cassandra | 5 | 1 | 6 |
+| Apache CouchDB | 0 | 1 | 1 |
+| Apache Derby | 0 | 1 | 1 |
+| Apache Drill | 1 | 1 | 2 |
+| Apache Druid | 0 | 1 | 1 |
+| Apache Flink | 5 | 1 | 6 |
+| Apache HBase | 0 | 1 | 1 |
+| Apache Hive | 3 | 0 | 3 |
+| Apache Ignite | 0 | 1 | 1 |
+| Apache Impala | 0 | 1 | 1 |
+| Apache IoTDB | 6 | 1 | 7 |
+| Apache Jena TDB | 0 | 1 | 1 |
+| Apache Phoenix | 0 | 1 | 1 |
+| Apache Solr | 0 | 1 | 1 |
+| Apache Spark | 6 | 0 | 6 |
+| Apache ZooKeeper | 1 | 1 | 2 |
+| BaseX | 0 | 1 | 1 |
+| Calvin | 1 | 0 | 1 |
+| Chroma | 0 | 1 | 1 |
+| Citus | 0 | 1 | 1 |
+| ClickHouse | 1 | 1 | 2 |
+| CloudKit | 1 | 0 | 1 |
+| CockroachDB | 3 | 1 | 4 |
+| Coherence | 2 | 1 | 3 |
+| Couchbase | 2 | 1 | 3 |
+| Coveo | 0 | 1 | 1 |
+| Databricks | 2 | 1 | 3 |
+| Datastax Enterprise | 0 | 1 | 1 |
+| Datomic | 0 | 1 | 1 |
+| Dgraph | 3 | 0 | 3 |
+| DuckDB | 6 | 1 | 7 |
+| EDB Postgres | 1 | 1 | 2 |
+| Ehcache | 0 | 1 | 1 |
+| Elasticsearch | 0 | 1 | 1 |
+| Essbase | 0 | 1 | 1 |
+| etcd | 0 | 1 | 1 |
+| EXASOL | 0 | 1 | 1 |
+| Fauna | 1 | 0 | 1 |
+| FileMaker | 0 | 1 | 1 |
+| Firebase Realtime Database | 5 | 0 | 5 |
+| Firebird | 0 | 1 | 1 |
+| FoundationDB | 1 | 1 | 2 |
+| GBase | 0 | 1 | 1 |
+| GemFire | 0 | 1 | 1 |
+| Google Cloud Datastore | 1 | 0 | 1 |
+| Google F1 | 2 | 0 | 2 |
+| Google Spanner | 1 | 0 | 1 |
+| GraphDB | 1 | 1 | 2 |
+| Graphite | 1 | 1 | 2 |
+| Greenplum | 1 | 0 | 1 |
+| H2 | 0 | 1 | 1 |
+| Hazelcast | 1 | 1 | 2 |
+| IBM Cloudant | 0 | 1 | 1 |
+| IBM Db2 | 6 | 1 | 7 |
+| Infinispan | 0 | 1 | 1 |
+| InfluxDB | 0 | 1 | 1 |
+| Informix | 0 | 1 | 1 |
+| Ingres | 0 | 1 | 1 |
+| Interbase | 0 | 1 | 1 |
+| InterSystems IRIS | 0 | 1 | 1 |
+| JanusGraph | 0 | 1 | 1 |
+| Kdb | 0 | 1 | 1 |
+| LevelDB | 0 | 1 | 1 |
+| LMDB | 0 | 1 | 1 |
+| MariaDB | 0 | 1 | 1 |
+| MarkLogic | 0 | 1 | 1 |
+| MaxDB | 0 | 1 | 1 |
+| Meilisearch | 0 | 1 | 1 |
+| Memcached | 0 | 1 | 1 |
+| Memgraph | 2 | 1 | 3 |
+| Microsoft Access | 6 | 1 | 7 |
+| Microsoft Azure AI Search | 0 | 1 | 1 |
+| Microsoft Azure Cosmos DB | 2 | 1 | 3 |
+| Microsoft Azure Data Explorer | 0 | 1 | 1 |
+| Microsoft Azure SQL Database | 0 | 1 | 1 |
+| Microsoft Azure Synapse Analytics | 2 | 1 | 3 |
+| Microsoft Azure Table Storage | 6 | 0 | 6 |
+| Microsoft Fabric | 3 | 1 | 4 |
+| Microsoft SQL Server | 0 | 1 | 1 |
+| MonetDB | 4 | 1 | 5 |
+| MongoDB | 15 | 1 | 16 |
+| MySQL | 1 | 0 | 1 |
+| NebulaGraph | 0 | 1 | 1 |
+| Neo4j | 2 | 1 | 3 |
+| OceanBase | 4 | 1 | 5 |
+| OpenEdge | 0 | 1 | 1 |
+| openGauss / GaussDB | 6 | 1 | 7 |
+| OpenSearch | 0 | 1 | 1 |
+| Oracle | 1 | 1 | 2 |
+| Oracle NoSQL | 0 | 1 | 1 |
+| Percona Server for MySQL | 0 | 1 | 1 |
+| PlanetScale | 0 | 1 | 1 |
+| PostGIS | 0 | 1 | 1 |
+| PostgreSQL | 7 | 1 | 8 |
+| PouchDB | 0 | 1 | 1 |
+| Presto | 3 | 0 | 3 |
+| Prometheus | 1 | 1 | 2 |
+| Qdrant | 0 | 1 | 1 |
+| QuestDB | 0 | 1 | 1 |
+| RavenDB | 0 | 1 | 1 |
+| Realm | 0 | 1 | 1 |
+| Redis | 1 | 1 | 2 |
+| RethinkDB | 0 | 1 | 1 |
+| Riak KV | 0 | 1 | 1 |
+| RocksDB | 2 | 0 | 2 |
+| SAP Adaptive Server | 6 | 1 | 7 |
+| SAP HANA | 6 | 1 | 7 |
+| SAP IQ | 0 | 1 | 1 |
+| SAP SQL Anywhere | 0 | 1 | 1 |
+| ScyllaDB | 1 | 1 | 2 |
+| SingleStore | 1 | 1 | 2 |
+| Snowflake | 2 | 1 | 3 |
+| SpatiaLite | 0 | 1 | 1 |
+| Sphinx | 2 | 1 | 3 |
+| Splunk | 0 | 1 | 1 |
+| SQLite | 4 | 1 | 5 |
+| Stardog | 0 | 1 | 1 |
+| StarRocks | 0 | 1 | 1 |
+| TDengine | 0 | 1 | 1 |
+| Tencent TDSQL | 6 | 1 | 7 |
+| Teradata | 3 | 1 | 4 |
+| TiDB | 2 | 1 | 3 |
+| TigerGraph | 2 | 1 | 3 |
+| Trino | 0 | 1 | 1 |
+| UniData,UniVerse | 0 | 1 | 1 |
+| Valkey | 0 | 1 | 1 |
+| Vertica | 1 | 1 | 2 |
+| VictoriaMetrics | 0 | 1 | 1 |
+| Virtuoso | 0 | 1 | 1 |
+| Vitess | 0 | 1 | 1 |
+| VoltDB | 4 | 1 | 5 |
+| Weaviate | 0 | 1 | 1 |
+| WiredTiger | 0 | 1 | 1 |
+| YugabyteDB | 1 | 1 | 2 |
+
+已下载论文 **196** 篇，官方文档/白皮书 **130** 份。
+
+### 论文清单
+
+| 数据库 | 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- | --- |
+| Aerospike | VLDB2016-AerospikeArchitectureofaRealTimeOperationalDBMS.pdf | VLDB 2016 | Aerospike: Architecture of a Real-Time Operational DBMS | [来源](https://vldb.org/pvldb/vol9/p1389-srinivasan.pdf) |
+| Alibaba Cloud PolarDB | FAST2020-POLARDBMeetsComputationalStorageEfficientlySupportAnalyticalWorkloadsinCloudNativeRelationalDatabase.pdf | FAST 2020 |  | [来源]() |
+| Alibaba Cloud PolarDB | VLDB2018-PolarFSAnUltralowLatencyandFailureResilientDistributedFileSystemforSharedStorageCloudDatabase.pdf | VLDB 2018 | PolarFS: An Ultra-low Latency and Failure Resilient Distributed File System for Shared Storage Cloud Database | [来源](https://vldb.org/pvldb/vol11/p1849-cao.pdf) |
+| Alibaba Cloud PolarDB | VLDB2023-PolarDBSCCACloudNativeDatabaseEnsuringLowLatencyforStronglyConsistentReads.pdf | VLDB 2023 | PolarDB-SCC: A Cloud-Native Database Ensuring Low Latency for Strongly Consistent Reads | [来源](https://www.vldb.org/pvldb/vol16/p3754-chen.pdf) |
+| Alibaba Cloud PolarDB | VLDB2025-FromScaleUptoScaleOutPolarDBsJourneytoAchieving2BilliontpmC.pdf | VLDB 2025 | From Scale-Up to Scale-Out: PolarDB’s Journey to Achieving 2 Billion tpmC | [来源](https://www.vldb.org/pvldb/vol18/p5059-chen.pdf) |
+| Amazon Aurora | SIGMOD2017-AmazonAuroraDesignConsiderationsforHighThroughputCloudNativeRelationalDatabases.pdf | SIGMOD 2017 |  | [来源]() |
+| Amazon Aurora | SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommits.pdf | — |  | [来源]() |
+| Amazon Aurora | SIGMOD2018-AmazonAuroraOnAvoidingDistributedConsensusforIOsCommitsandMembershipChanges.pdf | SIGMOD 2018 |  | [来源]() |
+| Amazon Aurora | VLDB2024-ResourceManagementinAuroraServerless.pdf | VLDB 2024 | Resource Management in Aurora Serverless | [来源](https://www.vldb.org/pvldb/vol17/p4038-urgaonkar.pdf) |
+| Amazon Aurora | VLDB2025-SunStormGeographicallydistributedtransactionsoverAurorastylesystems.pdf | VLDB 2025 | SunStorm: Geographically distributed transactions over Aurora-style systems | [来源](https://www.vldb.org/pvldb/vol18/p5555-nilangekar.pdf) |
+| Amazon DocumentDB | VLDB2015-SchemaAgnosticIndexingwithAzureDocumentDB.pdf | VLDB 2015 | Schema-Agnostic Indexing with Azure DocumentDB | [来源](https://vldb.org/pvldb/vol8/p1668-shukla.pdf) |
+| Amazon DynamoDB | Paper-AmazonDynamoDBDeveloperGuide.pdf | — | Amazon DynamoDB - Developer Guide | [来源](https://docs.aws.amazon.com/pdfs/amazondynamodb/latest/developerguide/dynamodb-dg.pdf) |
+| Amazon DynamoDB | Paper-MicrosoftWordsosp067decandia1doc.pdf | — | Microsoft Word - sosp067-decandia1.doc | [来源](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) |
+| Amazon Redshift | VLDB2020-FastandEffectiveDistributionKeyRecommendationforAmazonRedshift.pdf | VLDB 2020 | Fast and Effective Distribution-Key Recommendation for Amazon Redshift | [来源](https://www.vldb.org/pvldb/vol13/p2411-parchas.pdf) |
+| Amazon Redshift | VLDB2021-TheevolutionofAmazonRedshift.pdf | VLDB 2021 | The evolution of Amazon Redshift | [来源](https://www.vldb.org/pvldb/vol14/p3162-pandis.pdf) |
+| Amazon Redshift | VLDB2024-WhyTPCIsNotEnoughAnAnalysisoftheAmazonRedshiftFleet.pdf | VLDB 2024 | Why TPC Is Not Enough: An Analysis of the Amazon Redshift Fleet | [来源](https://www.vldb.org/pvldb/vol17/p3694-saxena.pdf) |
+| Amazon Redshift | VLDB2026-IncrementalQueryOptimizerStatisticsinAmazonRedshift.pdf | VLDB 2026 | Incremental Query Optimizer Statistics in Amazon Redshift | [来源](https://www.vldb.org/pvldb/vol19/p3941-pfeil.pdf) |
+| Apache Cassandra | SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf | SIGMOD 2014 |  | [来源]() |
+| Apache Cassandra | VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf | VLDB 2015 | Understanding the Causes of Consistency Anomalies in Apache Cassandra | [来源](https://vldb.org/pvldb/vol8/p810-fan.pdf) |
+| Apache Cassandra | VLDB2022-TriememtablesinCassandra.pdf | VLDB 2022 | Trie memtables in Cassandra | [来源](https://www.vldb.org/pvldb/vol15/p3359-lambov.pdf) |
+| Apache Cassandra | arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf | arXiv 2013 |  | [来源]() |
+| Apache Cassandra | arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf | arXiv 2021 |  | [来源]() |
+| Apache Drill | VLDB2015-SmartDrillDownANewDataExplorationOperator.pdf | VLDB 2015 | Smart Drill-Down: A New Data Exploration Operator | [来源](https://vldb.org/pvldb/vol8/p1928-joglekar.pdf) |
+| Apache Flink | VLDB2017-StateManagementinApacheFlinkÆConsistentStatefulDistributedStreamProcessing.pdf | VLDB 2017 | State Management in Apache Flink¬Æ: Consistent Stateful Distributed Stream Processing | [来源](https://vldb.org/pvldb/vol10/p1718-carbone.pdf) |
+| Apache Flink | VLDB2021-WatermarksinStreamProcessingSystemsSemanticsandComparativeAnalysisofApacheFlinkandGoogleCloudDataflow.pdf | VLDB 2021 | Watermarks in Stream Processing Systems: Semantics and Comparative Analysis of Apache Flink and Google Cloud Dataflow | [来源](https://www.vldb.org/pvldb/vol14/p3135-begoli.pdf) |
+| Apache Flink | VLDB2025-DisaggregatedStateManagementinApacheFlink20.pdf | VLDB 2025 | Disaggregated State Management in Apache Flink 2.0 | [来源](https://www.vldb.org/pvldb/vol18/p4846-mei.pdf) |
+| Apache Flink | VLDB2025-NoiseMattersCrossContrastiveLearningforFlinkAnomalyDetection.pdf | VLDB 2025 | Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection | [来源](https://www.vldb.org/pvldb/vol18/p1159-zhuang.pdf) |
+| Apache Flink | VLDB2026-ScarfSelfAdaptiveTuningviaMultiObjectiveReinforcementLearningforApacheFlink.pdf | VLDB 2026 | Scarf: Self-Adaptive Tuning via Multi-Objective Reinforcement Learning for Apache Flink | [来源](https://www.vldb.org/pvldb/vol19/p1516-gao.pdf) |
+| Apache Hive | VLDB2009-HiveAWarehousingSolutionOveraMapReduceFramework.pdf | VLDB 2009 | Hive - A Warehousing Solution Over a Map-Reduce Framework | [来源](https://vldb.org/pvldb/vol2/vldb09-938.pdf) |
+| Apache Hive | VLDB2014-DGFIndexforSmartGridEnhancingHivewithaCostEffectiveMultidimensionalRangeIndex.pdf | VLDB 2014 | DGFIndex for Smart Grid: Enhancing Hive with a Cost-Effective Multidimensional Range Index | [来源](https://vldb.org/pvldb/vol7/p1496-liu.pdf) |
+| Apache Hive | VLDB2023-DHiveQueryExecutionPerformanceAnalysisviaDataflowinApacheHive.pdf | VLDB 2023 | DHive: Query Execution Performance Analysis via Dataflow in Apache Hive | [来源](https://www.vldb.org/pvldb/vol16/p3998-zhang.pdf) |
+| Apache IoTDB | VLDB2020-ApacheIoTDBTimeseriesdatabaseforInternetofThings.pdf | VLDB 2020 | Apache IoTDB: Time-series database for Internet of Things | [来源](https://www.vldb.org/pvldb/vol13/p2901-wang.pdf) |
+| Apache IoTDB | VLDB2023-FrequencyDomainDataEncodinginApacheIoTDB.pdf | VLDB 2023 | Frequency Domain Data Encoding in Apache IoTDB | [来源](https://www.vldb.org/pvldb/vol16/p282-song.pdf) |
+| Apache IoTDB | VLDB2023-TsQualityMeasuringTimeSeriesDataQualityinApacheIoTDB.pdf | VLDB 2023 | TsQuality: Measuring Time Series Data Quality in Apache IoTDB | [来源](https://www.vldb.org/pvldb/vol16/p3982-song.pdf) |
+| Apache IoTDB | VLDB2024-DistancebasedOutlierQueryOptimizationinApacheIoTDB.pdf | VLDB 2024 | Distance-based Outlier Query Optimization in Apache IoTDB | [来源](https://www.vldb.org/pvldb/vol17/p2778-song.pdf) |
+| Apache IoTDB | VLDB2024-OnReducingSpaceAmplificationwithMultiColumnCompactioninApacheIoTDB.pdf | VLDB 2024 | On Reducing Space Amplification with Multi-Column Compaction in Apache IoTDB | [来源](https://www.vldb.org/pvldb/vol17/p2974-song.pdf) |
+| Apache IoTDB | VLDB2025-MigrationFreeElasticStorageofTimeSeriesinApacheIoTDB.pdf | VLDB 2025 | Migration-Free Elastic Storage of Time Series in Apache IoTDB | [来源](https://www.vldb.org/pvldb/vol18/p1784-song.pdf) |
+| Apache Spark | VLDB2019-SparkCruiseHandsfreeComputationReuseinSpark.pdf | VLDB 2019 | SparkCruise: Handsfree Computation Reuse in Spark | [来源](https://vldb.org/pvldb/vol12/p1850-roy.pdf) |
+| Apache Spark | VLDB2020-DynamicSpeculativeOptimizationsforSQLCompilationinApacheSpark.pdf | VLDB 2020 | Dynamic Speculative Optimizations for SQL Compilation in Apache Spark | [来源](https://vldb.org/pvldb/vol13/p754-schiavio.pdf) |
+| Apache Spark | VLDB2021-AutoExecutorPredictiveParallelismforSparkSQLQueries.pdf | VLDB 2021 | AutoExecutor: Predictive Parallelism for Spark SQL Queries | [来源](https://www.vldb.org/pvldb/vol14/p2855-sen.pdf) |
+| Apache Spark | VLDB2021-DebuggingMissingAnswersforSparkQueriesoverNestedDatawithBreadcrumb.pdf | VLDB 2021 | Debugging Missing Answers for Spark Queries over Nested Data with Breadcrumb | [来源](https://www.vldb.org/pvldb/vol14/p2731-diestelkamper.pdf) |
+| Apache Spark | VLDB2021-SparkCruiseWorkloadOptimizationinManagedSparkClustersatMicrosoft.pdf | VLDB 2021 | SparkCruise: Workload Optimization in Managed Spark Clusters at Microsoft | [来源](https://www.vldb.org/pvldb/vol14/p3122-roy.pdf) |
+| Apache Spark | VLDB2023-TowardsGeneralandEfficientOnlineTuningforSpark.pdf | VLDB 2023 | Towards General and Efficient Online Tuning for Spark | [来源](https://www.vldb.org/pvldb/vol16/p3570-li.pdf) |
+| Apache ZooKeeper | USENIX-Huntpdf.pdf | USENIX | Hunt.pdf | [来源](https://www.usenix.org/legacy/events/atc10/tech/full_papers/Hunt.pdf) |
+| Calvin | FAST-CalvinFastDistributedTransactionsforPartitionedDatabaseSystems.pdf | FAST | Calvin: Fast Distributed Transactions for Partitioned Database Systems | [来源](http://cs-www.cs.yale.edu/homes/dna/papers/calvin-sigmod12.pdf) |
+| ClickHouse | VLDB2024-ClickHouseLightningFastAnalyticsforEveryone.pdf | VLDB 2024 | ClickHouse - Lightning Fast Analytics for Everyone | [来源](https://www.vldb.org/pvldb/vol17/p3731-schulze.pdf) |
+| CloudKit | VLDB2018-CloudKitStructuredStorageforMobileApplications.pdf | VLDB 2018 | CloudKit: Structured Storage for Mobile Applications | [来源](https://vldb.org/pvldb/vol11/p540-shraer.pdf) |
+| CockroachDB | 2019-TheDefinitiveGuidetoCockroachDB.pdf | — |  | [来源]() |
+| CockroachDB | SIGMOD2020-CockroachDBTheResilientGeoDistributedSQLDatabase.pdf | SIGMOD 2020 |  | [来源]() |
+| CockroachDB | VLDB2022-ADemonstrationofMultiRegionCockroachDB.pdf | VLDB 2022 | A Demonstration of Multi-Region CockroachDB | [来源](https://www.vldb.org/pvldb/vol15/p3610-taft.pdf) |
+| Coherence | VLDB2025-CacheCoherenceOverDisaggregatedMemory.pdf | VLDB 2025 | Cache Coherence Over Disaggregated Memory | [来源](https://www.vldb.org/pvldb/vol18/p2978-wang.pdf) |
+| Coherence | VLDB2025-OpenMELUnsupervisedMultimodalEntityLinkingUsingNoiseFreeExpandedQueriesandGlobalCoherence.pdf | VLDB 2025 | OpenMEL: Unsupervised Multimodal Entity Linking Using Noise-Free Expanded Queries and Global Coherence | [来源](https://www.vldb.org/pvldb/vol18/p2454-zhu.pdf) |
+| Couchbase | VLDB2019-CouchbaseAnalyticsNoETLforScalableNoSQLDataAnalysis.pdf | VLDB 2019 | Couchbase Analytics: NoETL for Scalable NoSQL Data Analysis | [来源](https://vldb.org/pvldb/vol12/p2275-hubail.pdf) |
+| Couchbase | VLDB2022-MagmaAhighdatadensitystorageengineusedinCouchbase.pdf | VLDB 2022 | Magma: A high data density storage engine used in Couchbase | [来源](https://www.vldb.org/pvldb/vol15/p3496-lakshman.pdf) |
+| Databricks | VLDB2026-AutoLiquidAutonomicDataLayoutOptimizationfortheDatabricksLakehouse.pdf | VLDB 2026 | AutoLiquid: Autonomic Data Layout Optimization for the Databricks Lakehouse | [来源](https://www.vldb.org/pvldb/vol19/p4023-liang.pdf) |
+| Databricks | VLDB2026-UltronHistoryBasedQueryOptimizationatDatabricks.pdf | VLDB 2026 | Ultron: History-Based Query Optimization at Databricks | [来源](https://www.vldb.org/pvldb/vol19/p4358-marcus.pdf) |
+| Dgraph | ICDE2019-DgraphALargeScaleGraphDatabase.pdf | ICDE 2019 | Dgraph: A Large-Scale Graph Database | [来源](https://arxiv.org/pdf/1904.09612) |
+| Dgraph | SIGMOD2017-DGraphADistributedGraphDatabase.pdf | SIGMOD 2017 | DGraph: A Distributed Graph Database | [来源](https://arxiv.org/pdf/1704.02761) |
+| Dgraph | TechnicalReport2020-DgraphSynchronouslyReplicatedTransactionalandDistributedGraph.pdf | TechnicalReport 2020 |  | [来源]() |
+| DuckDB | Paper-CIDR2020raasveldtmuehleisenduckdbpdf.pdf | — | CIDR2020-raasveldt-muehleisen-duckdb.pdf | [来源](https://duckdb.org/pdf/CIDR2020-raasveldt-muehleisen-duckdb.pdf) |
+| DuckDB | Paper-DuckDBanEmbeddableAnalyticalDatabase.pdf | — | DuckDB: an Embeddable Analytical Database | [来源](https://duckdb.org/pdf/SIGMOD2019-demo-duckdb.pdf) |
+| DuckDB | Paper2023-DuckDBFOSDEM.pdf | 2023 | DuckDB - FOSDEM | [来源](https://archive.fosdem.org/2023/schedule/event/python_duckdb/attachments/slides/5854/export/events/attachments/python_duckdb/slides/5854/Presentation_Slides.pdf) |
+| DuckDB | VLDB2022-DuckDBWasmFastAnalyticalProcessingfortheWeb.pdf | VLDB 2022 | DuckDB-Wasm: Fast Analytical Processing for the Web | [来源](https://www.vldb.org/pvldb/vol15/p3574-kohn.pdf) |
+| DuckDB | VLDB2023-DuckPGQBringingSQLPGQtoDuckDB.pdf | VLDB 2023 | DuckPGQ: Bringing SQL/PGQ to DuckDB | [来源](https://www.vldb.org/pvldb/vol16/p4034-wolde.pdf) |
+| DuckDB | VLDB2025-BeyondQuackingDeepIntegrationofLanguageModelsandRAGintoDuckDB.pdf | VLDB 2025 | Beyond Quacking: Deep Integration of Language Models and RAG into DuckDB | [来源](https://www.vldb.org/pvldb/vol18/p5415-mhedhbi.pdf) |
+| EDB Postgres | VLDB2026-LakebaseServerlessPostgresoverOpenLakeStorage.pdf | VLDB 2026 | Lakebase: Serverless Postgres over Open Lake Storage | [来源](https://www.vldb.org/pvldb/vol19/p4385-pandis.pdf) |
+| Fauna | VLDB2021-FaunaTemporalGraphDatabase.pdf | VLDB 2021 | Fauna: Temporal Graph Database | [来源](https://arxiv.org/pdf/2111.00838) |
+| Firebase Realtime Database | VLDB2011-AnalyticsfortheRealTimeWeb.pdf | VLDB 2011 | Analytics for the RealTime Web | [来源](https://vldb.org/pvldb/vol4/p1391-grinev.pdf) |
+| Firebase Realtime Database | VLDB2013-RealtimeAnalysisofInformationDiffusioninSocialMedia.pdf | VLDB 2013 | Realtime Analysis of Information Diffusion in Social Media | [来源](https://vldb.org/pvldb/vol6/p1416-taxidou.pdf) |
+| Firebase Realtime Database | VLDB2020-RealtimeIndexFreeSingleSourceSimRankProcessingonWebScaleGraphs.pdf | VLDB 2020 | Realtime Index-Free Single Source SimRank Processing on Web-Scale Graphs | [来源](https://vldb.org/pvldb/vol13/p966-shi.pdf) |
+| Firebase Realtime Database | VLDB2020-RealtimeTopkPersonalizedPageRankoverLargeGraphsonGPUs.pdf | VLDB 2020 | Realtime Top-k Personalized PageRank over Large Graphs on GPUs | [来源](https://vldb.org/pvldb/vol13/p15-shi.pdf) |
+| Firebase Realtime Database | VLDB2022-MetasNextgenerationRealtimeMonitoringandAnalyticsPlatform.pdf | VLDB 2022 | Meta's Next-generation Realtime Monitoring and Analytics Platform | [来源](https://www.vldb.org/pvldb/vol15/p3522-mo.pdf) |
+| FoundationDB | SIGMOD2021-FoundationDBADistributedUnbundledTransactionalKeyValueStore.pdf | SIGMOD 2021 |  | [来源]() |
+| Google Cloud Datastore | VLDB2011-UsingPaxostoBuildaScalableConsistentandHighlyAvailableDatastore.pdf | VLDB 2011 | Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore | [来源](https://vldb.org/pvldb/vol4/p243-rao.pdf) |
+| Google F1 | VLDB2013-F1ADistributedSQLDatabaseThatScales.pdf | VLDB 2013 | F1: A Distributed SQL Database That Scales | [来源](https://vldb.org/pvldb/vol6/p1068-shute.pdf) |
+| Google F1 | VLDB2018-F1QueryDeclarativeQueryingatScale.pdf | VLDB 2018 | F1 Query: Declarative Querying at Scale | [来源](https://vldb.org/pvldb/vol11/p1835-samwel.pdf) |
+| Google Spanner | OSDI2012-SpannerGooglesGloballyDistributedDatabase.pdf | OSDI 2012 | Spanner: Google's Globally-Distributed Database | [来源](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf) |
+| GraphDB | Paper-lecture07pdf.pdf | — | lecture07.pdf | [来源](https://www.cs.helsinki.fi/u/tpkarkka/opetus/12k/dct/lecture07.pdf) |
+| Graphite | VLDB2020-GraphiteANUMAawareHPCSystemforGraphAnalyticsBasedonanewMPIXParallelismModel.pdf | VLDB 2020 | Graphite: A NUMA-aware HPC System for Graph Analytics Based on a new MPI * X Parallelism Model | [来源](https://vldb.org/pvldb/vol13/p783-mofrad.pdf) |
+| Greenplum | Paper2017-CMUSCS15721Spring2017QueryCompilation.pdf | 2017 | CMU SCS 15-721 (Spring 2017) :: Query Compilation | [来源](https://15721.courses.cs.cmu.edu/spring2017/slides/20-compilation.pdf) |
+| Hazelcast | VLDB2021-HazelcastJetLowlatencyStreamProcessingatthe9999thPercentile.pdf | VLDB 2021 | Hazelcast Jet: Low-latency Stream Processing at the 99.99th Percentile | [来源](https://www.vldb.org/pvldb/vol14/p3110-katsifodimos.pdf) |
+| IBM Db2 | VLDB2009-AnObjectPlacementAdvisorforDB2UsingSolidStateStorage.pdf | VLDB 2009 | An Object Placement Advisor for DB2 Using Solid State Storage | [来源](https://vldb.org/pvldb/vol2/vldb09-853.pdf) |
+| IBM Db2 | VLDB2009-EfficientIndexCompressioninDB2LUW.pdf | VLDB 2009 | Efficient Index Compression in DB2 LUW | [来源](https://vldb.org/pvldb/vol2/vldb09-798.pdf) |
+| IBM Db2 | VLDB2010-MEETDB2AutomatedDatabaseMigrationEvaluation.pdf | VLDB 2010 | MEET DB2: Automated Database Migration Evaluation | [来源](https://vldb.org/pvldb/vol3/I05.pdf) |
+| IBM Db2 | VLDB2013-DB2withBLUAccelerationSoMuchMorethanJustaColumnStore.pdf | VLDB 2013 | DB2 with BLU Acceleration: So Much More than Just a Column Store | [来源](https://vldb.org/pvldb/vol6/p1080-barber.pdf) |
+| IBM Db2 | VLDB2019-SynergisticGraphandSQLAnalyticsInsideIBMDb2.pdf | VLDB 2019 | Synergistic Graph and SQL Analytics Inside IBM Db2 | [来源](https://vldb.org/pvldb/vol12/p1782-tian.pdf) |
+| IBM Db2 | VLDB2020-Db2EventStoreAPurposeBuiltIoTDatabaseEngine.pdf | VLDB 2020 | Db2 Event Store: A Purpose-Built IoT Database Engine | [来源](https://www.vldb.org/pvldb/vol13/p3299-garcia-arellano.pdf) |
+| Memgraph | 2020-Memgraph.pdf | — |  | [来源]() |
+| Memgraph | arXiv2021-MemgraphAHighPerformanceGraphDatabase.pdf | arXiv 2021 | Memgraph: A High Performance Graph Database | [来源](https://arxiv.org/pdf/2104.04457) |
+| Microsoft Access | VLDB2009-CorrelationMapsACompressedAccessMethodforExploitingSoftFunctionalDependencies.pdf | VLDB 2009 | Correlation Maps: A Compressed Access Method for Exploiting Soft Functional Dependencies | [来源](https://vldb.org/pvldb/vol2/vldb09-199.pdf) |
+| Microsoft Access | VLDB2009-FullFidelityFlexibleObjectOrientedXMLAccess.pdf | VLDB 2009 | Full-Fidelity Flexible Object-Oriented XML Access | [来源](https://vldb.org/pvldb/vol2/vldb09-216.pdf) |
+| Microsoft Access | VLDB2020-RDFFramesKnowledgeGraphAccessforMachineLearningTools.pdf | VLDB 2020 | RDFFrames: Knowledge Graph Access for Machine Learning Tools | [来源](https://www.vldb.org/pvldb/vol13/p2889-mohamed.pdf) |
+| Microsoft Access | VLDB2020-SieveAMiddlewareApproachtoScalableAccessControlforDatabaseManagementSystems.pdf | VLDB 2020 | Sieve: A Middleware Approach to Scalable Access Control for Database Management Systems | [来源](https://www.vldb.org/pvldb/vol13/p2424-pappachan.pdf) |
+| Microsoft Access | VLDB2021-ADemonstrationofNoDAUnifiedAccesstoNoSQLStores.pdf | VLDB 2021 | A Demonstration of NoDA: Unified Access to NoSQL Stores | [来源](https://www.vldb.org/pvldb/vol14/p2851-koutroumanis.pdf) |
+| Microsoft Access | VLDB2021-ApproachingDRAMperformancebyusingmicrosecondlatencyflashmemoryforsmallsizedrandomreadaccessesanewaccessmethoda.pdf | VLDB 2021 | Approaching DRAM performance by using microsecond-latency flash memory for small-sized random read accesses: a new access method and its graph applications | [来源](https://www.vldb.org/pvldb/vol14/p1311-suzuki.pdf) |
+| Microsoft Azure Cosmos DB | VLDB2021-TheCosmosBigDataPlatformatMicrosoftOveraDecadeofProgressandaDecadetoLookForward.pdf | VLDB 2021 | The Cosmos Big Data Platform at Microsoft: Over a Decade of Progress and a Decade to Look Forward | [来源](https://www.vldb.org/pvldb/vol14/p3148-jindal.pdf) |
+| Microsoft Azure Cosmos DB | VLDB2025-CostEffectiveLowLatencyVectorSearchwithAzureCosmosDB.pdf | VLDB 2025 | Cost-Effective, Low Latency Vector Search with Azure Cosmos DB | [来源](https://www.vldb.org/pvldb/vol18/p5166-upreti.pdf) |
+| Microsoft Azure Synapse Analytics | VLDB2020-POLARISTheDistributedSQLEngineinAzureSynapse.pdf | VLDB 2020 | POLARIS: The Distributed SQL Engine in Azure Synapse | [来源](https://www.vldb.org/pvldb/vol13/p3204-saborit.pdf) |
+| Microsoft Azure Synapse Analytics | VLDB2021-HyperspaceTheIndexingSubsystemofAzureSynapse.pdf | VLDB 2021 | Hyperspace: The Indexing Subsystem of Azure Synapse | [来源](https://www.vldb.org/pvldb/vol14/p3043-potharaju.pdf) |
+| Microsoft Azure Table Storage | VLDB2009-AnsweringTableAugmentationQueriesfromUnstructuredListsontheWeb.pdf | VLDB 2009 | Answering Table Augmentation Queries from Unstructured Lists on the Web | [来源](https://vldb.org/pvldb/vol2/vldb09-652.pdf) |
+| Microsoft Azure Table Storage | VLDB2020-TableExtractionandUnderstandingforScientificandEnterpriseApplications.pdf | VLDB 2020 | Table Extraction and Understanding for Scientific and Enterprise Applications | [来源](https://www.vldb.org/pvldb/vol13/p3433-burdick.pdf) |
+| Microsoft Azure Table Storage | VLDB2024-LakeCompassAnEndtoEndSystemforTableMaintenanceSearchandAnalysisinDataLakes.pdf | VLDB 2024 | LakeCompass: An End-to-End System for Table Maintenance, Search and Analysis in Data Lakes | [来源](https://www.vldb.org/pvldb/vol17/p4381-chai.pdf) |
+| Microsoft Azure Table Storage | VLDB2025-BIRDIENaturalLanguageDrivenTableDiscoveryUsingDifferentiableSearchIndex.pdf | VLDB 2025 | BIRDIE: Natural Language-Driven Table Discovery Using Differentiable Search Index | [来源](https://www.vldb.org/pvldb/vol18/p2070-gao.pdf) |
+| Microsoft Azure Table Storage | VLDB2026-FedAugmentTableAugmentationSearchoverDecentralizedDataRepositories.pdf | VLDB 2026 | FedAugment: Table Augmentation Search over Decentralized Data Repositories | [来源](https://www.vldb.org/pvldb/vol19/p2672-behme.pdf) |
+| Microsoft Azure Table Storage | VLDB2026-GASALightweightFrameworkforFilteredSearchoverWidetableVectors.pdf | VLDB 2026 | GAS: A Lightweight Framework for Filtered Search over Wide-table Vectors | [来源](https://www.vldb.org/pvldb/vol19/p3133-tong.pdf) |
+| Microsoft Fabric | VLDB2020-ResilientDBGlobalScaleResilientBlockchainFabric.pdf | VLDB 2020 | ResilientDB: Global Scale Resilient Blockchain Fabric | [来源](https://vldb.org/pvldb/vol13/p868-gupta.pdf) |
+| Microsoft Fabric | VLDB2020-ScalableResilientandConfigurablePermissionedBlockchainFabric.pdf | VLDB 2020 | Scalable, Resilient and Configurable Permissioned Blockchain Fabric | [来源](https://www.vldb.org/pvldb/vol13/p2893-rahnama.pdf) |
+| Microsoft Fabric | VLDB2026-HermesatScalePoweringDistributedQuerieswithaUnifiedMemoryFabric.pdf | VLDB 2026 | Hermes at Scale: Powering Distributed Queries with a Unified Memory Fabric | [来源](https://www.vldb.org/pvldb/vol19/p3969-gubner.pdf) |
+| MonetDB | Paper-Columnimprintsasecondaryindexstructure.pdf | — | Column imprints: a secondary index structure | [来源](https://15721.courses.cs.cmu.edu/spring2016/papers/p893-sidirourgos.pdf) |
+| MonetDB | Paper-P19pdf.pdf | — | P19.pdf | [来源](https://www.cidrdb.org/cidr2005/papers/P19.pdf) |
+| MonetDB | VLDB-MemoryEfficientHashJoins.pdf | VLDB | Memory-Efficient Hash Joins | [来源](http://www.vldb.org/pvldb/vol8/p353-barber.pdf) |
+| MonetDB | VLDB2012-MonetDBDataCellOnlineAnalyticsinaStreamingColumnStore.pdf | VLDB 2012 | MonetDB/DataCell: Online Analytics in a Streaming Column-Store | [来源](https://vldb.org/pvldb/vol5/p1910_eriettaliarou_vldb2012.pdf) |
+| MongoDB | ACMQueue2017-MongoDBJavaScriptFuzzer.pdf | ACM Queue 2017 |  | [来源]() |
+| MongoDB | CACM2017-MongoDBJavaScriptFuzzer.pdf | CACM 2017 |  | [来源]() |
+| MongoDB | ICDE2020-DecidingWhentoTradeDataFreshnessforPerformanceinMongoDBasaService.pdf | ICDE 2020 |  | [来源]() |
+| MongoDB | MasterThesis2017-JohannesBaumSerializabilityCheckingforMongoDBClients.pdf | Master Thesis 2017 |  | [来源]() |
+| MongoDB | MasterThesis2019-QuantitativePerformanceEvaluationofCloudBasedMySQLRelationalVsMongoDBNoSQLDatabasewithYCSB.pdf | Master Thesis 2019 |  | [来源]() |
+| MongoDB | NSDI2021-FaultTolerantReplicationwithPullBasedConsensusinMongoDB.pdf | NSDI 2021 |  | [来源]() |
+| MongoDB | SIGMOD2019-TyulenevImplementationofClusterwideLogicalClockandCausalConsistencyinMongoDB.pdf | SIGMOD 2019 |  | [来源]() |
+| MongoDB | StrangeloopTLA2019-ABugLifeFixingaMongoDBReplicationProtocolBugwithTLAplus.pdf | — |  | [来源]() |
+| MongoDB | VLDB2019-AdaptingTPCCBenchmarktoMeasurePerformanceofMultiDocumentTransactionsinMongoDB.pdf | VLDB 2019 | Adapting TPC-C Benchmark to Measure Performance of Multi-Document Transactions in MongoDB | [来源](https://vldb.org/pvldb/vol12/p2254-kamsky.pdf) |
+| MongoDB | VLDB2019-SchultzTunableConsistencyinMongoDB.pdf | VLDB 2019 | Tunable Consistency in MongoDB | [来源](https://vldb.org/pvldb/vol12/p2071-schultz.pdf) |
+| MongoDB | VLDB2020-eXtremeModellinginPractice.pdf | VLDB 2020 |  | [来源]() |
+| MongoDB | VLDB2025-DesignandModularVerificationofDistributedTransactionsinMongoDB.pdf | VLDB 2025 | Design and Modular Verification of Distributed Transactions in MongoDB | [来源](https://www.vldb.org/pvldb/vol18/p5045-schultz.pdf) |
+| MongoDB | arXiv2016-160309291ExpressivityandComplexityofMongoDBExtendedVersion.pdf | arXiv 2016 |  | [来源]() |
+| MongoDB | arXiv2020-200408425AutomatedSystemPerformanceTestingatMongoDB.pdf | arXiv 2020 |  | [来源]() |
+| MongoDB | arXiv2021-210211960DesignandVerificationofaLoglessDynamicReconfigurationProtocolinMongoDBReplication.pdf | arXiv 2021 |  | [来源]() |
+| MySQL | Paper-p5sompolskipdf.pdf | — | p5-sompolski.pdf | [来源](https://15721.courses.cs.cmu.edu/spring2017/papers/21-vectorization1/p5-sompolski.pdf) |
+| Neo4j | TechnicalReport2016-SnapshotIsolationforNeo4j.pdf | TechnicalReport 2016 |  | [来源]() |
+| Neo4j | VLDB2026-Provlepsis4jQueryingFutureGraphsinNeo4j.pdf | VLDB 2026 | Provlepsis4j: Querying Future Graphs in Neo4j | [来源](https://www.vldb.org/pvldb/vol19/p4770-gkartzios.pdf) |
+| OceanBase | VLDB2022-OceanBaseA707MilliontpmCDistributedRelationalDatabaseSystem.pdf | VLDB 2022 | OceanBase: A 707 Million tpmC Distributed Relational Database System | [来源](https://www.vldb.org/pvldb/vol15/p3385-xu.pdf) |
+| OceanBase | VLDB2023-OceanBasePaeticaAHybridSharednothingSharedeverythingDatabaseforSupportingSingleMachineandDistributedCluster.pdf | VLDB 2023 | OceanBase Paetica: A Hybrid Shared-nothing/Shared-everything Database for Supporting Single Machine and Distributed Cluster | [来源](https://www.vldb.org/pvldb/vol16/p3728-xu.pdf) |
+| OceanBase | VLDB2026-ATreeStructuredTwoPhaseCommitFrameworkforOceanBaseOptimizingScalabilityandConsistency.pdf | VLDB 2026 | A Tree-Structured Two-Phase Commit Framework for OceanBase: Optimizing Scalability and Consistency | [来源](https://www.vldb.org/pvldb/vol19/p4250-xu.pdf) |
+| OceanBase | VLDB2026-OceanBaseBacchusaHighPerformanceandScalableCloudNativeSharedStorageArchitectureforMultiCloud.pdf | VLDB 2026 | OceanBase Bacchus: a High-Performance and Scalable Cloud-Native Shared Storage Architecture for Multi-Cloud | [来源](https://www.vldb.org/pvldb/vol19/p4089-xu.pdf) |
+| openGauss / GaussDB | VLDB2021-DBMindASelfDrivingPlatforminopenGauss.pdf | VLDB 2021 | DBMind: A Self-Driving Platform in openGauss | [来源](https://www.vldb.org/pvldb/vol14/p2743-zhou.pdf) |
+| openGauss / GaussDB | VLDB2021-FullEncryptionAnendtoendencryptionmechanisminGaussDB.pdf | VLDB 2021 | Full Encryption: An end to end encryption mechanism in GaussDB | [来源](https://www.vldb.org/pvldb/vol14/p2811-guo.pdf) |
+| openGauss / GaussDB | VLDB2021-openGaussAnAutonomousDatabaseSystem.pdf | VLDB 2021 | openGauss: An Autonomous Database System | [来源](https://www.vldb.org/pvldb/vol14/p3028-li.pdf) |
+| openGauss / GaussDB | VLDB2024-GaussDBACloudNativeMultiPrimaryDatabasewithComputeMemoryStorageDisaggregation.pdf | VLDB 2024 | GaussDB: A Cloud-Native Multi-Primary Database with Compute-Memory-Storage Disaggregation | [来源](https://www.vldb.org/pvldb/vol17/p3786-li.pdf) |
+| openGauss / GaussDB | VLDB2025-GRewriterPracticalQueryRewritingwithAutomaticRuleSetExpansioninGaussDB.pdf | VLDB 2025 | GRewriter: Practical Query Rewriting with Automatic Rule Set Expansion in GaussDB | [来源](https://www.vldb.org/pvldb/vol18/p4991-jiang.pdf) |
+| openGauss / GaussDB | VLDB2026-NoSilverBulletBoostingGaussDBPerformanceonthe30TBTPCHWorkload.pdf | VLDB 2026 | No Silver Bullet: Boosting GaussDB Performance on the 30TB TPC-H Workload | [来源](https://www.vldb.org/pvldb/vol19/p4036-zeyl.pdf) |
+| Oracle | VLDB2009-HybridColumnarCompressioninOracleDatabase11g.pdf | VLDB 2009 | Hybrid Columnar Compression in Oracle Database 11g | [来源](https://www.vldb.org/pvldb/vol2/vldb09-486.pdf) |
+| PostgreSQL | PPT2020-ExtendingPostgreSQLtoGoogleSpannerArchitecture.pdf | PPT 2020 |  | [来源]() |
+| PostgreSQL | VLDB2013-PAQOAPreferenceAwareQueryOptimizerforPostgreSQL.pdf | VLDB 2013 | PAQO: A Preference-Aware Query Optimizer for PostgreSQL | [来源](https://vldb.org/pvldb/vol6/p1334-farnan.pdf) |
+| PostgreSQL | VLDB2016-PrecisionPerformanceSurgeryforPostgreSQLLLVMbasedExpressionCompilationJustinTime.pdf | VLDB 2016 | Precision Performance Surgery for PostgreSQL: LLVM-based Expression Compilation, Just in Time | [来源](https://vldb.org/pvldb/vol9/p1517-butterstein.pdf) |
+| PostgreSQL | VLDB2018-ProvSQLProvenanceandProbabilityManagementinPostgreSQL.pdf | VLDB 2018 | ProvSQL:Provenance and Probability Management in PostgreSQL | [来源](https://vldb.org/pvldb/vol11/p2034-senellart.pdf) |
+| PostgreSQL | VLDB2021-PostCENNPostgreSQLwithMachineLearningModelsforCardinalityEstimation.pdf | VLDB 2021 | PostCENN: PostgreSQL with Machine Learning Models for Cardinality Estimation | [来源](https://www.vldb.org/pvldb/vol14/p2715-woltmann.pdf) |
+| PostgreSQL | VLDB2023-DeepVQLDeepVideoQueriesonPostgreSQL.pdf | VLDB 2023 | DeepVQL: Deep Video Queries on PostgreSQL | [来源](https://www.vldb.org/pvldb/vol16/p3910-nam.pdf) |
+| PostgreSQL | VLDB2026-TuningtheLookaheadDistanceforPostgreSQLAsynchronousIO.pdf | VLDB 2026 | Tuning the Lookahead Distance for PostgreSQL Asynchronous IO | [来源](https://www.vldb.org/pvldb/vol19/p3982-wu.pdf) |
+| Presto | VLDB2024-PrestosHistorybasedQueryOptimizer.pdf | VLDB 2024 | Presto’s History-based Query Optimizer | [来源](https://www.vldb.org/pvldb/vol17/p4077-shankhdhar.pdf) |
+| Presto | VLDB2026-FromPrestotoPrestissimoAVeloxPoweredModernizationJourney.pdf | VLDB 2026 | From Presto to Prestissimo: A Velox-Powered Modernization Journey | [来源](https://www.vldb.org/pvldb/vol19/p4399-dutta.pdf) |
+| Presto | VLDB2026-SQLNativeVectorSearchatBillionScaleinPresto.pdf | VLDB 2026 | SQL-Native Vector Search at Billion Scale in Presto | [来源](https://www.vldb.org/pvldb/vol19/p4182-xu.pdf) |
+| Prometheus | VLDB-p1816tellerpdf.pdf | VLDB | p1816-teller.pdf | [来源](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf) |
+| Redis | arXiv2024-RedisAHighPerformanceInMemoryDatabase.pdf | arXiv 2024 | Redis: A High-Performance In-Memory Database | [来源](https://arxiv.org/pdf/2406.07544) |
+| RocksDB | VLDB2025-AreJoinsoverLSMtreesReadyTakeRocksDBasanExample.pdf | VLDB 2025 | Are Joins over LSM-trees Ready: Take RocksDB as an Example | [来源](https://www.vldb.org/pvldb/vol18/p1077-luo.pdf) |
+| RocksDB | VLDB2026-HowMuchCanRocksDBChewAchievingNearZeroWriteStallswithSustainableRocksDB.pdf | VLDB 2026 | How Much Can RocksDB Chew? Achieving Near-Zero Write Stalls with Sustainable RocksDB | [来源](https://www.vldb.org/pvldb/vol19/p3202-shin.pdf) |
+| SAP Adaptive Server | VLDB2014-AdaptiveQueryProcessingonRAWData.pdf | VLDB 2014 | Adaptive Query Processing on RAW Data | [来源](https://vldb.org/pvldb/vol7/p1119-karpathiotakis.pdf) |
+| SAP Adaptive Server | VLDB2014-ScalableandAdaptiveOnlineJoins.pdf | VLDB 2014 | Scalable and Adaptive Online Joins | [来源](https://vldb.org/pvldb/vol7/p441-elseidy.pdf) |
+| SAP Adaptive Server | VLDB2021-AdaptiveCodeGenerationforDataIntensiveAnalytics.pdf | VLDB 2021 | Adaptive Code Generation for Data-Intensive Analytics | [来源](https://www.vldb.org/pvldb/vol14/p929-zhang.pdf) |
+| SAP Adaptive Server | VLDB2021-BreakingDownMemoryWallsAdaptiveMemoryManagementinLSMbasedStorageSystems.pdf | VLDB 2021 | Breaking Down Memory Walls: Adaptive Memory Management in LSM-based Storage Systems | [来源](https://www.vldb.org/pvldb/vol14/p241-luo.pdf) |
+| SAP Adaptive Server | VLDB2026-BreakingtheIsolationFreshnessTradeoffJointAdaptiveStorageOptimizationforHTAPSystems.pdf | VLDB 2026 | Breaking the Isolation-Freshness Trade-off: Joint Adaptive Storage Optimization for HTAP Systems | [来源](https://www.vldb.org/pvldb/vol19/p1142-ding.pdf) |
+| SAP Adaptive Server | VLDB2026-ReStoreinActionAdaptiveMultiTierStorageManagementviaIntelligentDataMigrationPolicy.pdf | VLDB 2026 | ReStore-in-Action: Adaptive Multi-Tier Storage Management via Intelligent Data Migration Policy | [来源](https://www.vldb.org/pvldb/vol19/p4702-zhang.pdf) |
+| SAP HANA | VLDB2013-SAPHANATheEvolutionfromaModernMainMemoryDataPlatformtoanEnterpriseApplicationPlatform.pdf | VLDB 2013 | SAP HANA: The Evolution from a Modern Main-Memory Data Platform to an Enterprise Application Platform | [来源](https://vldb.org/pvldb/vol6/p1184-sikka.pdf) |
+| SAP HANA | VLDB2017-ParallelReplicationacrossFormatsinSAPHANAforScalingOutMixedOLTPOLAPWorkloads.pdf | VLDB 2017 | Parallel Replication across Formats in SAP HANA for Scaling Out Mixed OLTP/OLAP Workloads | [来源](https://vldb.org/pvldb/vol10/p1598-han.pdf) |
+| SAP HANA | VLDB2019-NativeStoreExtensionforSAPHANA.pdf | VLDB 2019 | Native Store Extension for SAP HANA | [来源](https://vldb.org/pvldb/vol12/p2047-sherkat.pdf) |
+| SAP HANA | VLDB2019-SAPHANAgoesprivateFromPrivacyResearchtoPrivacyAwareEnterpriseAnalytics.pdf | VLDB 2019 | SAP HANA goes private - From Privacy Research to Privacy Aware Enterprise Analytics | [来源](https://vldb.org/pvldb/vol12/p1998-kessler.pdf) |
+| SAP HANA | VLDB2024-AnExaminationofCXLMemoryUseCasesforInMemoryDatabaseManagementSystemsusingSAPHANA.pdf | VLDB 2024 | An Examination of CXL Memory Use Cases for In-Memory Database Management Systems using SAP HANA | [来源](https://www.vldb.org/pvldb/vol17/p3827-ahn.pdf) |
+| SAP HANA | VLDB2025-TheHANANativeQueryEngineforLakehouseSystems.pdf | VLDB 2025 | The HANA Native Query Engine for Lakehouse Systems | [来源](https://www.vldb.org/pvldb/vol18/p4831-ritter.pdf) |
+| ScyllaDB | arXiv2023-ScyllaDBAShardperCoreNoSQLDatabase.pdf | arXiv 2023 | ScyllaDB: A Shard-per-Core NoSQL Database | [来源](https://arxiv.org/pdf/2308.12953) |
+| SingleStore | VLDB2024-SingleStoreVAnIntegratedVectorDatabaseSysteminSingleStore.pdf | VLDB 2024 | SingleStore-V: An Integrated Vector Database System in SingleStore | [来源](https://www.vldb.org/pvldb/vol17/p3772-chen.pdf) |
+| Snowflake | Paper-Snowflake_SIGMODpdf.pdf | — | Snowflake_SIGMOD.pdf | [来源](http://info.snowflake.net/rs/252-RFO-227/images/Snowflake_SIGMOD.pdf) |
+| Snowflake | VLDB2025-WorkloadInsightsFromtheSnowflakeDataCloudWhatDoProductionAnalyticQueriesReallyLookLike.pdf | VLDB 2025 | Workload Insights From the Snowflake Data Cloud: What Do Production Analytic Queries Really Look Like? | [来源](https://www.vldb.org/pvldb/vol18/p5126-bress.pdf) |
+| Sphinx | VLDB2020-SPHINXASystemforMetapathbasedEntityExplorationinHeterogeneousInformationNetworks.pdf | VLDB 2020 | SPHINX: A System for Metapath-based Entity Exploration in Heterogeneous Information Networks | [来源](https://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf) |
+| Sphinx | VLDB2025-SphinxASuccinctPerfectHashIndexforx86.pdf | VLDB 2025 | Sphinx: A Succinct Perfect Hash Index for x86 | [来源](https://www.vldb.org/pvldb/vol18/p4424-maghrebi.pdf) |
+| SQLite | Paper2015-AJITforSQLite.pdf | 2015 | A JIT for SQLite | [来源](https://soft-dev.org/talks/2015/jit-sqlite-truffle.pdf) |
+| SQLite | VLDB2015-SQLiteOptimizationwithPhaseChangeMemoryforMobileApplications.pdf | VLDB 2015 | SQLite Optimization with Phase Change Memory for Mobile Applications | [来源](https://vldb.org/pvldb/vol8/p1454-oh.pdf) |
+| SQLite | VLDB2018-SQLStatementLoggingforMakingSQLiteTrulyLite.pdf | VLDB 2018 | SQL Statement Logging for Making SQLite Truly Lite | [来源](https://vldb.org/pvldb/vol11/p513-park.pdf) |
+| SQLite | VLDB2022-SQLitePastPresentandFuture.pdf | VLDB 2022 | SQLite: Past, Present, and Future | [来源](https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf) |
+| Tencent TDSQL | PPT2019-ConceptualModelingonTencentDistributedDatabaseSystems.pdf | — |  | [来源]() |
+| Tencent TDSQL | Paper-腾讯云.pdf | — | 腾讯云 | [来源](https://main.qcloudimg.com/raw/3cc780eb2b03f8ea32878ba3eac47eb0.pdf) |
+| Tencent TDSQL | VLDB2019-ALightweightandEfficientTemporalDatabaseManagementSysteminTDSQL.pdf | VLDB 2019 | A Lightweight and Efficient Temporal Database Management System in TDSQL | [来源](https://vldb.org/pvldb/vol12/p2035-lu.pdf) |
+| Tencent TDSQL | VLDB2024-TDSQLTencentDistributedDatabaseSystem.pdf | VLDB 2024 | TDSQL: Tencent Distributed Database System | [来源](https://www.vldb.org/pvldb/vol17/p3869-chen.pdf) |
+| Tencent TDSQL | VLDB2026-ReachingthePinnacleofTPCDSCodesignofArchitectureExecutorandStorageinTDSQL.pdf | VLDB 2026 | Reaching the Pinnacle of TPC-DS: Co-design of Architecture, Executor, and Storage in TDSQL | [来源](https://www.vldb.org/pvldb/vol19/p4009-chu.pdf) |
+| Tencent TDSQL | WWW2019-EfficientTimeintervalDataExtractioninMVCCbasedRDBMS.pdf | WWW 2019 |  | [来源]() |
+| Teradata | VLDB2016-HybridRowColumnPartitioninginTeradata.pdf | VLDB 2016 | Hybrid Row-Column Partitioning in Teradata | [来源](https://vldb.org/pvldb/vol9/p1353-alKateb.pdf) |
+| Teradata | VLDB2019-IndatabaseDistributedMachineLearningDemonstrationusingTeradataSQLEngine.pdf | VLDB 2019 | In-database Distributed Machine Learning: Demonstration using Teradata SQL Engine | [来源](https://vldb.org/pvldb/vol12/p1854-sandha.pdf) |
+| Teradata | VLDB2021-NotBlackBoxAnymoreEnablingAnalyticsAwareOptimizationsinTeradataVantage.pdf | VLDB 2021 | Not Black-Box Anymore! Enabling Analytics-Aware Optimizations in Teradata Vantage | [来源](https://www.vldb.org/pvldb/vol14/p2959-eltabakh.pdf) |
+| TiDB | PPT2020-ADanceonRaft.pdf | PPT 2020 |  | [来源]() |
+| TiDB | VLDB2020-TiDBARaftbasedHTAPDatabase.pdf | VLDB 2020 | TiDB: A Raft-based HTAP Database | [来源](https://www.vldb.org/pvldb/vol13/p3072-huang.pdf) |
+| TigerGraph | 2021-ForresterTEITigerGraphROIReport.pdf | — |  | [来源]() |
+| TigerGraph | VLDB2017-TigerGraphAFastandScalableGraphDatabase.pdf | VLDB 2017 | TigerGraph: A Fast and Scalable Graph Database | [来源](https://arxiv.org/pdf/1703.02083) |
+| Vertica | VLDB2012-TheVerticaAnalyticDatabaseCStore7YearsLater.pdf | VLDB 2012 | The Vertica Analytic Database: C-Store 7 Years Later | [来源](https://vldb.org/pvldb/vol5/p1790_andrewlamb_vldb2012.pdf) |
+| VoltDB | Paper-GuidetoPerformanceandCustomization.pdf | — | Guide to Performance and Customization | [来源](https://downloads.voltdb.com/documentation/PerfGuide.pdf) |
+| VoltDB | Paper-UsingVoltDB.pdf | — | Using VoltDB | [来源](http://downloads.voltdb.com/documentation/UsingVoltDB.pdf) |
+| VoltDB | Paper2016-WhatsReallyNewwithNewSQL.pdf | 2016 | What's Really New with NewSQL? | [来源](https://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf) |
+| VoltDB | Paper2017-hvwhitepapervoltdbtechnicaloverviewpdf.pdf | 2017 | hv-white-paper-voltdb-technical-overview.pdf | [来源](https://www.voltactivedata.com/wp-content/uploads/2017/03/hv-white-paper-voltdb-technical-overview.pdf) |
+| YugabyteDB | arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf | arXiv 2020 | YugabyteDB: Distributed SQL at Planet Scale | [来源](https://arxiv.org/pdf/2011.00050) |
+
+## 未能获取的资料
+
+以下资料在抓取时链接失效或站点拒绝自动访问。这些条目已在对应数据库目录的 README 中标注，未以任何方式伪造内容。
+
+| 数据库 | 预期文件 | 原因 | 来源链接 |
+| --- | --- | --- | --- |
+| Amazon Aurora | Paper-p1041verbitskipdf.pdf | HTTP 403 | [https://www.allthingsdistributed.com/files/p1041-verbitski.pdf](https://www.allthingsdistributed.com/files/p1041-verbitski.pdf) |
+| ClickHouse | Paper-string_optimizationpdf.pdf | HTTP 404 | [https://presentations.clickhouse.com/meetup19/string_optimization.pdf](https://presentations.clickhouse.com/meetup19/string_optimization.pdf) |
+| Coherence | Paper-oracletangosolgenpresentation072406pdf.pdf | HTTP 403 | [https://www.oracle.com/us/corporate/acquisitions/tangosol/oracle-tangosol-gen-presentation-072406.pdf](https://www.oracle.com/us/corporate/acquisitions/tangosol/oracle-tangosol-gen-presentation-072406.pdf) |
+| Google Spanner | Google-spannerosdi2012pdf.pdf | URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway> | [https://static.googleusercontent.com/media/research.google.com/en/archive/spanner-osdi2012.pdf](https://static.googleusercontent.com/media/research.google.com/en/archive/spanner-osdi2012.pdf) |
+| Ingres | Paper-stonebraker1976pdf.pdf | HTTP 404 | [https://sites.fas.harvard.edu/~cs265/papers/stonebraker-1976.pdf](https://sites.fas.harvard.edu/~cs265/papers/stonebraker-1976.pdf) |
+| Ingres | Paper2023-DS21ActianX_04Apdf.pdf | HTTP 403 | [https://www.actian.com/wp-content/uploads/2023/12/DS21-ActianX_04A.pdf](https://www.actian.com/wp-content/uploads/2023/12/DS21-ActianX_04A.pdf) |
+| Neo4j | Paper-neo4jgraphdatabasesawspdf.pdf | HTTP 403 | [https://d0.awsstatic.com/whitepapers/Database/neo4j-graph-databases-aws.pdf](https://d0.awsstatic.com/whitepapers/Database/neo4j-graph-databases-aws.pdf) |
+| RavenDB | Paper-InsideRavenDB40pdf.pdf | URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway> | [https://github.com/ravendb/book/releases/download/v4.0.27-rc/Inside.RavenDB.4.0.pdf](https://github.com/ravendb/book/releases/download/v4.0.27-rc/Inside.RavenDB.4.0.pdf) |
+| RethinkDB | Paper-rethinkdbwhitepaperpdf.pdf | HTTP 404 | [http://www.cs.toronto.edu/~ryanjohn/teaching/csc2531-f11/rethinkdb-whitepaper.pdf](http://www.cs.toronto.edu/~ryanjohn/teaching/csc2531-f11/rethinkdb-whitepaper.pdf) |
+| TDSQL | Paper-NameBrightComingSoon.pdf | ValueError: not a PDF (content-type='text/html; charset=utf-8', html body) | [http://www.nwpu-bioinformatics.com/ER2018/file/Conceptual%20Modeling%20on%20Tencents%20Distributed%20Database%20Systems.pdf](http://www.nwpu-bioinformatics.com/ER2018/file/Conceptual%20Modeling%20on%20Tencents%20Distributed%20Database%20Systems.pdf) |

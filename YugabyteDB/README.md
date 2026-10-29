@@ -20,3 +20,40 @@
 
 > In this post, we dive deeper into Percolator and Spanner, the two Google systems 
 > behind those papers, as well as the open source databases (TiDB; YugabyteDB & CockroachDB) they have inspired.
+
+YugabyteDB is a transactional distributed SQL database for cloud-native and geo-distributed applications. YugabyteDB is consistent and partition tolerant. It supports distributed ACID transactions, auto-sharding, and auto-balancing. Besides PostgreSQL-compatible SQL API, it supports the Apache Cassandra Query Language (CQL).
+
+## 基本信息
+
+- **数据库类型**: SQL、文档、宽列
+- **所属机构**: Yugabyte Inc.
+- **许可证**: Apache v2
+- **首次发布**: 2017
+
+## 官网与文档
+
+- [官网](https://www.yugabyte.com)
+- [官网](https://www.yugabyte.com/)
+- [官方文档](https://docs.yugabyte.com/)
+- [官方文档](https://docs.yugabyte.com/stable/)
+- [官方文档](https://github.com/yugabyte/yugabyte-db)
+- [GitHub](https://github.com/yugabyte/yugabyte-db)
+
+## 数据源
+
+- [DB-Engines](https://db-engines.com/en/system/YugabyteDB)
+- [Database of Databases](https://dbdb.io/db/yugabytedb)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf](papers/arXiv2020-YugabyteDBDistributedSQLatPlanetScale.pdf) | arXiv 2020 | YugabyteDB: Distributed SQL at Planet Scale | [来源](https://arxiv.org/pdf/2011.00050) |
+
+### 官方文档与白皮书
+
+| 文件 | 标题 | 来源 |
+| --- | --- | --- |
+| [YugabyteDBDocs.md](docs/YugabyteDBDocs.md) | YugabyteDB Docs | [来源](https://docs.yugabyte.com/) |

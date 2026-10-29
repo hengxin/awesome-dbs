@@ -8,3 +8,13 @@
 
 ## TLA
 - [Percolator.tla@pingcap.github](https://github.com/pingcap/tla-plus/blob/master/Percolator/Percolator.tla)
+
+## 基本信息
+
+- **数据库类型**: KV
+
+## 官网与文档
+
+
+## 数据源
+

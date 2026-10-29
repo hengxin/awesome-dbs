@@ -41,6 +41,42 @@
 ### Extension
 
 - LWT in Theory and Practice
-- [PaxosRMW:arXiv2021](refs/arXiv2021%202103.14701%20Extending%20Classic%20Paxos%20for%20High-performance%20Read-Modify-Write%20Registers.pdf)
-- [CAS:arXiv2013](refs/arXiv2013%201309.2772%20A%20Practical%20Distributed%20Universal%20Construction%20with%20Unknown%20Participants.pdf)
-- [RAMP:SIGMOD2014](refs/SIGMOD2014%20Scalable%20Atomic%20Visibility%20with%20RAMP%20Transactions.pdf)
+- [PaxosRMW:arXiv2021](refs/arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf)
+- [CAS:arXiv2013](refs/arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf)
+- [RAMP:SIGMOD2014](refs/SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf)
+
+Apache Cassandra is a free and open source NoSQL distributed database management system. It provides high availability, high scalability, and fault tolerance, even while running on commodity hardware. Cassandra has no single-point of failure, and is well-suited for clusters spanning multiple datacenter. Cassandra is decentralized and master-less. Therefore, data in a Cassandra cluster is…
+
+## 基本信息
+
+- **数据库类型**: 宽列
+- **许可证**: Apache v2
+- **首次发布**: 2008
+
+## 官网与文档
+
+- [官网](https://cassandra.apache.org/_/index.html)
+- [官方文档](https://cassandra.apache.org/doc/latest/)
+- [GitHub](https://github.com/apache/cassandra)
+
+## 数据源
+
+- [Database of Databases](https://dbdb.io/db/cassandra)
+
+## 收录资料
+
+### 论文
+
+| 文件 | 发表 | 标题 | 来源 |
+| --- | --- | --- | --- |
+| [SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf](refs/SIGMOD2014-ScalableAtomicVisibilitywithRAMPTransactions.pdf) | SIGMOD 2014 |  | [来源]() |
+| [VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf](refs/VLDB2015-UnderstandingtheCausesofConsistencyAnomaliesinApacheCassandra.pdf) | VLDB 2015 | Understanding the Causes of Consistency Anomalies in Apache Cassandra | [来源](https://vldb.org/pvldb/vol8/p810-fan.pdf) |
+| [VLDB2022-TriememtablesinCassandra.pdf](refs/VLDB2022-TriememtablesinCassandra.pdf) | VLDB 2022 | Trie memtables in Cassandra | [来源](https://www.vldb.org/pvldb/vol15/p3359-lambov.pdf) |
+| [arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf](refs/arXiv2013-13092772APracticalDistributedUniversalConstructionwithUnknownParticipants.pdf) | arXiv 2013 |  | [来源]() |
+| [arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf](refs/arXiv2021-210314701ExtendingClassicPaxosforHighperformanceReadModifyWriteRegisters.pdf) | arXiv 2021 |  | [来源]() |
+
+### 官方文档与白皮书
+
+| 文件 | 标题 | 来源 |
+| --- | --- | --- |
+| [WelcometoApacheCassandrasdocumentationApacheCassandraDocumentation.md](docs/WelcometoApacheCassandrasdocumentationApacheCassandraDocumentation.md) | Welcome to Apache Cassandra’s documentation! \| Apache Cassandra Documentation | [来源](https://cassandra.apache.org/doc/latest/) |
