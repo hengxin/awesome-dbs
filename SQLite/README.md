@@ -10,6 +10,7 @@ Widely used embeddable, in-process RDBMS
 - **所属机构**: Dwayne Richard Hipp
 - **许可证**: Public Domain
 - **首次发布**: 2000
+- **国家/地区**: US
 
 ## 官网与文档
 

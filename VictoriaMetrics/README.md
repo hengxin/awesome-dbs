@@ -10,6 +10,7 @@ A fast, cost-effective and scalable Time Series DBMS and monitoring solution
 - **所属机构**: VictoriaMetrics
 - **许可证**: Apache v2
 - **首次发布**: 2018
+- **国家/地区**: UA
 
 ## 官网与文档
 

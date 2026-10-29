@@ -8,6 +8,7 @@ Amazon Aurora is a relational database offered as a service in Amazon's AWS. Bas
 - **所属机构**: Amazon
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2015
+- **国家/地区**: US
 
 ## 官网与文档
 

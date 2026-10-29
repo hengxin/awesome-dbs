@@ -21,6 +21,7 @@ ScyllaDB is an open-source distributed wide-column NoSQL database offering high 
 - **所属机构**: ScyllaDB
 - **许可证**: AGPL v3
 - **首次发布**: 2015
+- **国家/地区**: IL
 
 ## 官网与文档
 

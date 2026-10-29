@@ -10,6 +10,7 @@ A distributed, linear scalable, high perfomant Graph DBMS
 - **所属机构**: Vesoft Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2019
+- **国家/地区**: CN
 
 ## 官网与文档
 

@@ -10,6 +10,7 @@ A high-performance, column-oriented SQL DBMS for online analytical processing (O
 - **所属机构**: Clickhouse Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2016
+- **国家/地区**: RU
 
 ## 官网与文档
 

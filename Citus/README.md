@@ -10,6 +10,7 @@ Scalable hybrid operational and analytics RDBMS for big data use cases based on 
 - **所属机构**: Citus Data, Inc.
 - **许可证**: AGPL v3
 - **首次发布**: 2010
+- **国家/地区**: TR , US
 
 ## 官网与文档
 

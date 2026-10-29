@@ -10,6 +10,7 @@ Light-weight Native XML DBMS with support for XQuery 3.0 and interactive GUI.
 - **所属机构**: BaseX GmbH
 - **许可证**: BSD License
 - **首次发布**: 2007
+- **国家/地区**: DE
 
 ## 官网与文档
 

@@ -10,6 +10,7 @@ JavaScript DBMS with an API inspired by CouchDB
 - **所属机构**: Apache Software Foundation
 - **许可证**: Apache v2
 - **首次发布**: 2012
+- **国家/地区**: US
 
 ## 官网与文档
 

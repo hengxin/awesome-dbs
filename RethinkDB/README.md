@@ -10,6 +10,7 @@ DBMS for the Web with a mechanism to push updated query results to applications 
 - **所属机构**: The Linux Foundation since July 2017
 - **许可证**: Apache v2
 - **首次发布**: 2009
+- **国家/地区**: US
 
 ## 官网与文档
 

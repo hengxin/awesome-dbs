@@ -10,6 +10,7 @@ Operational and transactional Enterprise NoSQL database
 - **所属机构**: MarkLogic Corp.
 - **许可证**: Proprietary
 - **首次发布**: 2001
+- **国家/地区**: US
 
 ## 官网与文档
 

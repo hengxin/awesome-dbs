@@ -8,6 +8,7 @@ Netezza is a data warehouse appliance and database management system designed fo
 - **所属机构**: IBM
 - **许可证**: Proprietary
 - **首次发布**: 2000
+- **国家/地区**: US
 
 ## 官网与文档
 

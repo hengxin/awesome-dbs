@@ -10,6 +10,7 @@ Fast distributed SQL query engine for big data analytics. Forked from Presto and
 - **所属机构**: Trino Software Foundation
 - **许可证**: Apache v2
 - **首次发布**: 2012
+- **国家/地区**: US
 
 ## 官网与文档
 

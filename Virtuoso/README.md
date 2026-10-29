@@ -10,6 +10,7 @@ Virtuoso is a multi-model hybrid-RDBMS that supports management of data represen
 - **所属机构**: OpenLink Software
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 1998
+- **国家/地区**: FI
 
 ## 官网与文档
 

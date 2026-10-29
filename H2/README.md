@@ -10,6 +10,7 @@ Full-featured RDBMS with a small footprint, either embedded into a Java applicat
 - **所属机构**: Thomas Mueller
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2005
+- **国家/地区**: CH
 
 ## 官网与文档
 

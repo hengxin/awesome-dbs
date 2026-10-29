@@ -10,6 +10,7 @@ An open-source, AI-native vector database for search, RAG, and AI agents, with b
 - **所属机构**: Weaviate B.V.
 - **许可证**: BSD License
 - **首次发布**: 2019
+- **国家/地区**: NL
 
 ## 官网与文档
 

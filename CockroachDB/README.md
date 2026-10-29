@@ -23,6 +23,7 @@ CockroachDB (sometimes shortened as CRDB) is a free and open source distributed 
 - **所属机构**: Cockroach Labs
 - **许可证**: Business Source License
 - **首次发布**: 2014
+- **国家/地区**: US
 
 ## 官网与文档
 

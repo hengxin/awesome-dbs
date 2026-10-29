@@ -8,6 +8,7 @@ Oracle database, originally a relational DBMS, has evolved into a converged, mul
 - **所属机构**: Oracle
 - **许可证**: Proprietary
 - **首次发布**: 1980
+- **国家/地区**: US
 
 ## 官网与文档
 

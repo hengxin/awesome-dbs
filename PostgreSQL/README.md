@@ -8,6 +8,7 @@ PostgreSQL is an object-relational database based on Postgres, developed from Un
 - **所属机构**: PostgreSQL Global Development Group www.postgresql.org/­developer
 - **许可证**: PostgreSQL License
 - **首次发布**: 1989
+- **国家/地区**: US
 
 ## 官网与文档
 

@@ -13,6 +13,7 @@ Spatial extension of SQLite
 
 - [官网](https://www.gaia-gis.it/fossil/libspatialite/index)
 - [官方文档](https://www.gaia-gis.it/gaia-sins/spatialite_topics.html)
+- [GitHub](https://github.com/gaia-gis/spatialite)
 
 ## 数据源
 

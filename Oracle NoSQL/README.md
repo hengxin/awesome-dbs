@@ -10,6 +10,7 @@ A multi-model, scalable, distributed NoSQL database, designed to provide highly 
 - **所属机构**: Oracle
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2011
+- **国家/地区**: US
 
 ## 官网与文档
 

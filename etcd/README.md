@@ -9,6 +9,7 @@ A distributed reliable key-value store
 - **数据库类型**: KV
 - **许可证**: Apache v2
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 

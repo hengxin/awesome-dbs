@@ -8,8 +8,9 @@ Widely used RDBMS in China, including analytical, transactional, distributed tra
 
 - **数据库类型**: SQL
 - **所属机构**: General Data Technology Co., Ltd.
-- **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
+- **许可证**: Proprietary
 - **首次发布**: 2004
+- **国家/地区**: CN
 
 ## 官网与文档
 

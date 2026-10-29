@@ -8,9 +8,11 @@ MaxDB is a relational DBMS developed by SAP.
 - **所属机构**: SAP, acquired from Software AG (Adabas-D) in 1997
 - **许可证**: Proprietary
 - **首次发布**: 1984
+- **国家/地区**: DE
 
 ## 官网与文档
 
+- [官网](http://maxdb.sap.com)
 - [官网](https://maxdb.sap.com/)
 - [官方文档](https://maxdb.sap.com/documentation/)
 

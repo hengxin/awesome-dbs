@@ -10,6 +10,7 @@ Datomic builds on immutable values, supports point-in-time queries and uses 3rd 
 - **所属机构**: Cognitect
 - **许可证**: Proprietary
 - **首次发布**: 2012
+- **国家/地区**: US
 
 ## 官网与文档
 

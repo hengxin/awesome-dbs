@@ -8,6 +8,7 @@ The Databricks Lakehouse Platform combines elements of data lakes and data wareh
 - **所属机构**: Databricks
 - **许可证**: Proprietary
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 

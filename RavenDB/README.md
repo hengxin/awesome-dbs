@@ -10,6 +10,7 @@ Open Source Operational and Transactional Enterprise NoSQL Document Database
 - **所属机构**: Hibernating Rhinos
 - **许可证**: AGPL v3
 - **首次发布**: 2010
+- **国家/地区**: IL
 
 ## 官网与文档
 

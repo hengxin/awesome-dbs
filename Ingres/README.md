@@ -9,6 +9,7 @@ Well established RDBMS
 - **数据库类型**: SQL
 - **所属机构**: Actian Corporation
 - **许可证**: Proprietary
+- **国家/地区**: US
 
 ## 官网与文档
 

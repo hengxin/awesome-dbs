@@ -4,6 +4,7 @@ Apache Spark SQL is a component on top of 'Spark Core' for structured data proce
 
 ## 基本信息
 
+- **数据库类型**: SQL、OLAP、流
 
 ## 官网与文档
 

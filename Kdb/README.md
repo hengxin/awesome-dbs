@@ -10,6 +10,7 @@ High performance Time Series DBMS
 - **所属机构**: Inspur Group
 - **许可证**: Proprietary
 - **首次发布**: 1998
+- **国家/地区**: US
 
 ## 官网与文档
 

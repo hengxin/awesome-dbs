@@ -10,6 +10,7 @@ Enterprise Knowledge Graph platform and graph DBMS with high availability, high 
 - **所属机构**: Stardog-Union
 - **许可证**: Proprietary
 - **首次发布**: 2010
+- **国家/地区**: US
 
 ## 官网与文档
 

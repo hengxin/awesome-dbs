@@ -10,6 +10,7 @@ Application development environment with integrated database management system
 - **所属机构**: Progress Software Corporation
 - **许可证**: Proprietary
 - **首次发布**: 1984
+- **国家/地区**: US
 
 ## 官网与文档
 

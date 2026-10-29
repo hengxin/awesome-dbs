@@ -10,6 +10,7 @@ Embeddable persistent key-value store optimized for fast storage (flash and RAM)
 - **所属机构**: Facebook, Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 

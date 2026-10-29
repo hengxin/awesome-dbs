@@ -10,6 +10,7 @@ A managed, cloud-native vector database
 - **所属机构**: Pinecone Systems, Inc
 - **许可证**: Proprietary
 - **首次发布**: 2019
+- **国家/地区**: US
 
 ## 官网与文档
 

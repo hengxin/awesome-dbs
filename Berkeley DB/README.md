@@ -6,7 +6,9 @@ Widely used in-process key-value store
 
 ## 基本信息
 
+- **数据库类型**: SQL
 - **首次发布**: 1994
+- **国家/地区**: US
 
 ## 官网与文档
 

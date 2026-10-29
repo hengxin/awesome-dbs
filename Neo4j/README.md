@@ -8,6 +8,7 @@ Neo4j is a graph database that leverages data relationships as first-class entit
 - **所属机构**: Neo4j, Inc.
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2007
+- **国家/地区**: SE
 
 ## 官网与文档
 

@@ -10,6 +10,7 @@ FileMaker is a cross-platform RDBMS that includes a GUI frontend.
 - **所属机构**: Claris a subsidiary of Apple
 - **许可证**: Proprietary
 - **首次发布**: 1983
+- **国家/地区**: US
 
 ## 官网与文档
 

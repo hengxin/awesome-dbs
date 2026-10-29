@@ -10,6 +10,7 @@ FoundationDB is a distributed non-relational database that supports ACID transac
 - **所属机构**: FoundationDB
 - **许可证**: Apache v2
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 

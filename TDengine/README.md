@@ -10,6 +10,7 @@ Time Series DBMS and big data platform
 - **所属机构**: TDEngine, previously Taos Data
 - **许可证**: AGPL v3
 - **首次发布**: 2019
+- **国家/地区**: CN
 
 ## 官网与文档
 

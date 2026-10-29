@@ -52,6 +52,7 @@ Apache Cassandra is a free and open source NoSQL distributed database management
 - **数据库类型**: 宽列
 - **许可证**: Apache v2
 - **首次发布**: 2008
+- **国家/地区**: US
 
 ## 官网与文档
 

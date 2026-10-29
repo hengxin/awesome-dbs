@@ -6,8 +6,10 @@ Oracles in-memory data grid solution
 
 ## 基本信息
 
+- **数据库类型**: KV
 - **许可证**: Universal Permissive License
 - **首次发布**: 2000
+- **国家/地区**: US
 
 ## 官网与文档
 

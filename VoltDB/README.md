@@ -8,6 +8,7 @@ VoltDB is a commercial in-memory DBMS that is scalable and ACID-compliant. VoltD
 - **所属机构**: VoltDB Inc.
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2010
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -15,6 +16,7 @@ VoltDB is a commercial in-memory DBMS that is scalable and ACID-compliant. VoltD
 - [官网](https://www.voltdb.com/)
 - [官方文档](https://docs.voltdb.com)
 - [官方文档](https://docs.voltdb.com/)
+- [GitHub](https://github.com/voltdb/voltdb)
 
 ## 数据源
 

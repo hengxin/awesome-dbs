@@ -10,6 +10,7 @@ Firebird is an open source RDBMS forked from Borland's InterBase
 - **所属机构**: Firebird Foundation
 - **许可证**: Mozilla Public License
 - **首次发布**: 2000
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -17,7 +18,7 @@ Firebird is an open source RDBMS forked from Borland's InterBase
 - [官网](https://www.firebirdsql.org)
 - [官方文档](http://www.firebirdsql.org/en/reference-manuals/)
 - [官方文档](https://www.firebirdsql.org/en/firebird-rdbms)
-- [GitHub](https://github.com/FirebirdSQL/firebird)
+- [GitHub](https://github.com/firebird-sql/firebird)
 
 ## 数据源
 

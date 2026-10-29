@@ -10,6 +10,7 @@ An open source RDBMS, enhanced with high availability, security, interoperabilit
 - **所属机构**: MariaDB plc (MariaDB Enterprise Platform and MariaDB) The lead developer Monty Widenius is the original author of MySQL
 - **许可证**: GPL v2
 - **首次发布**: 2009
+- **国家/地区**: SE
 
 ## 官网与文档
 

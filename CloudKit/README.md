@@ -5,8 +5,9 @@ CloudKit provides schema-free, auto-versioned, RESTful JSON storage.
 ## 基本信息
 
 - **数据库类型**: 文档
-- **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
+- **许可证**: MIT License
 - **首次发布**: 2016
+- **国家/地区**: US
 
 ## 官网与文档
 

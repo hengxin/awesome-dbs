@@ -10,6 +10,7 @@ Multi-model DBMS (Document, Graph, Key/Value)
 - **所属机构**: OrientDB LTD; CallidusCloud; SAP
 - **许可证**: Apache v2
 - **首次发布**: 2010
+- **国家/地区**: GB
 
 ## 官网与文档
 

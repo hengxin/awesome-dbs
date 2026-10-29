@@ -10,6 +10,7 @@ A DBMS designed for efficient storage of vector data and vector similarity searc
 - **所属机构**: The Milvus Project
 - **许可证**: Apache v2
 - **首次发布**: 2019
+- **国家/地区**: CN
 
 ## 官网与文档
 

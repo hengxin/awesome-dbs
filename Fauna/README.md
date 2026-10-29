@@ -13,6 +13,7 @@ FaunaDB is a cloud-native OLTP database with distributed ACID transactions using
 - **所属机构**: Fauna, Inc.
 - **许可证**: Proprietary
 - **首次发布**: 2014
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -20,7 +21,7 @@ FaunaDB is a cloud-native OLTP database with distributed ACID transactions using
 - [官网](https://fauna.com/)
 - [官方文档](https://docs.fauna.com)
 - [官方文档](https://docs.fauna.com/)
-- [GitHub](https://github.com/fauna/faunadb)
+- [GitHub](https://github.com/fauna/fauna)
 
 ## 数据源
 

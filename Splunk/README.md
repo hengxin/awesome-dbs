@@ -10,6 +10,7 @@ Analytics Platform for Big Data
 - **所属机构**: Splunk Inc.
 - **许可证**: Proprietary
 - **首次发布**: 2003
+- **国家/地区**: US
 
 ## 官网与文档
 

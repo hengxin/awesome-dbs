@@ -8,6 +8,7 @@ Aerospike is a distributed key-value DBMS. It is mainly targeted at OLTP workloa
 - **所属机构**: Aerospike
 - **许可证**: AGPL v3
 - **首次发布**: 2012
+- **国家/地区**: US
 
 ## 官网与文档
 

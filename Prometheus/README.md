@@ -10,6 +10,7 @@ Open-source Time Series DBMS and monitoring system
 - **所属机构**: SoundCloud
 - **许可证**: Apache v2
 - **首次发布**: 2015
+- **国家/地区**: DE
 
 ## 官网与文档
 

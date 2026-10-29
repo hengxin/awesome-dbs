@@ -8,6 +8,7 @@ Valkey is a hard-fork of Redis started in 2024.
 - **所属机构**: The Linux Foundation
 - **许可证**: BSD License
 - **首次发布**: 2024
+- **国家/地区**: US
 
 ## 官网与文档
 

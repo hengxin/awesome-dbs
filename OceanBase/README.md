@@ -27,6 +27,7 @@ OceanBase is an open source distributed relational DBMS which is fully compatibl
 - **所属机构**: OceanBase previously Alibaba and Ant Group
 - **许可证**: Mulan PubL v2
 - **首次发布**: 2010
+- **国家/地区**: CN
 
 ## 官网与文档
 

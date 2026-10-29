@@ -10,6 +10,7 @@ Open source search engine for searching in data from different sources, e.g. rel
 - **所属机构**: Sphinx Technologies Inc.
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2001
+- **国家/地区**: US
 
 ## 官网与文档
 

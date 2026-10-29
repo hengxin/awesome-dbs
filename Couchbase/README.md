@@ -8,6 +8,7 @@ Couchbase is an open-source, distributed NoSQL document database. It supports th
 - **所属机构**: Couchbase, Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2011
+- **国家/地区**: US
 
 ## 官网与文档
 

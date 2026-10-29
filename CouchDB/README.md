@@ -12,6 +12,7 @@ CouchDB (" c luster o f u nreliable c ommodity h ardware") is a document-oriente
 - **所属机构**: Apache Software Foundation Apache top-level project, originally developed by Damien Katz, a former Lotus Notes developer
 - **许可证**: Apache v2
 - **首次发布**: 2005
+- **国家/地区**: US
 
 ## 官网与文档
 

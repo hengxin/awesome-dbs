@@ -9,10 +9,11 @@ dBase was one of the first databases with a development environment on PC's. Its
 - **数据库类型**: SQL
 - **所属机构**: Asthon Tate
 - **许可证**: Proprietary
+- **国家/地区**: US
 
 ## 官网与文档
 
-- [官网](https://www.dbase.com/)
+- [官网](http://www.dbase.com/)
 - [官网](https://www.dbase.com)
 - [官方文档](http://www.dbase.com/support/knowledgebase/)
 

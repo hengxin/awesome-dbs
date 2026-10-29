@@ -10,6 +10,7 @@ DBMS for storing time series, events and metrics
 - **所属机构**: InfluxData
 - **许可证**: MIT License
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 

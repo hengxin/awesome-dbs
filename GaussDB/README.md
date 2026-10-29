@@ -14,6 +14,7 @@ GaussDB is a distributed DBMS based on Postgres developed by Huawei.
 - **所属机构**: Huawei and openGauss community
 - **许可证**: Proprietary
 - **首次发布**: 2019
+- **国家/地区**: CN
 
 ## 官网与文档
 
@@ -22,7 +23,7 @@ GaussDB is a distributed DBMS based on Postgres developed by Huawei.
 - [官网](https://opengauss.org/)
 - [官方文档](https://docs.opengauss.org/en/)
 - [官方文档](https://gitee.com/opengauss/docs)
-- [GitHub](https://github.com/opengauss-mirror/openGauss-server)
+- [GitHub](https://github.com/openGauss/openGauss-server)
 
 ## 数据源
 

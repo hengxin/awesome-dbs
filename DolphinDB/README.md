@@ -10,6 +10,7 @@ DolphinDB is a high performance Time Series DBMS . It is integrated with an easy
 - **所属机构**: DolphinDB, Inc
 - **许可证**: Proprietary
 - **首次发布**: 2018
+- **国家/地区**: CN
 
 ## 官网与文档
 

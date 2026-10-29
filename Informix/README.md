@@ -10,6 +10,7 @@ A secure embeddable database from IBM, positioned besides IBM Db2 as a relativel
 - **所属机构**: IBM, HCL Technologies Effective May 1st, 2017, HCL took on development, technical support, and product management teams, and works jointly with IBM on product strategy, marketing, and sales.
 - **许可证**: Proprietary
 - **首次发布**: 1984
+- **国家/地区**: US
 
 ## 官网与文档
 

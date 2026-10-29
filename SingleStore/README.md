@@ -8,6 +8,7 @@ SingleStore is a distributed, cloud-native database that can handle transactiona
 - **所属机构**: SingleStore Inc.
 - **许可证**: Proprietary
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -15,6 +16,7 @@ SingleStore is a distributed, cloud-native database that can handle transactiona
 - [官网](https://www.singlestore.com/)
 - [官方文档](https://docs.singlestore.com)
 - [官方文档](https://docs.singlestore.com/)
+- [GitHub](https://github.com/memlabs/singlestore)
 
 ## 数据源
 

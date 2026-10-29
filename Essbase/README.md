@@ -9,6 +9,7 @@ Multidimensional database platform for analytic applications
 - **数据库类型**: OLAP
 - **许可证**: Proprietary
 - **首次发布**: 1992
+- **国家/地区**: US
 
 ## 官网与文档
 

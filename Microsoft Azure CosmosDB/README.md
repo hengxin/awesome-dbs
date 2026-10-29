@@ -8,6 +8,7 @@ CosmosDB is a globally distributed, consistent, schema-less, multi-model documen
 - **所属机构**: Microsoft
 - **许可证**: Proprietary
 - **首次发布**: 2014
+- **国家/地区**: US
 
 ## 官网与文档
 

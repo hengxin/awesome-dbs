@@ -10,6 +10,7 @@ MongoDB is an open-source, cross-platform document-oriented DBMS store. It is a 
 - **所属机构**: MongoDB, Inc
 - **许可证**: Server Side Public License
 - **首次发布**: 2009
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -17,6 +18,7 @@ MongoDB is an open-source, cross-platform document-oriented DBMS store. It is a 
 - [官网](https://www.mongodb.com/)
 - [官方文档](https://www.mongodb.com/docs/)
 - [官方文档](https://www.mongodb.com/docs/manual/)
+- [GitHub](https://github.com/mongodb)
 
 ## 数据源
 

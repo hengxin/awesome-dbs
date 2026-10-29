@@ -39,6 +39,7 @@ TiDB is an open-source distributed SQL database that supports Hybrid Transaction
 - **所属机构**: PingCAP, Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2016
+- **国家/地区**: US
 
 ## 官网与文档
 

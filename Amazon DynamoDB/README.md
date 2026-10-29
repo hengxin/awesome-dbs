@@ -13,6 +13,7 @@ DynamoDB is a managed NoSQL database service provided by Amazon Web Services. As
 - **所属机构**: Amazon
 - **许可证**: Proprietary
 - **首次发布**: 2012
+- **国家/地区**: US
 
 ## 官网与文档
 

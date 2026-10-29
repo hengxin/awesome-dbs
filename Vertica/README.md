@@ -8,6 +8,7 @@ Vertica is a distributed, shared-nothing column-store DBMS.
 - **所属机构**: OpenText previously Micro Focus and Hewlett Packard
 - **许可证**: Proprietary
 - **首次发布**: 2005
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -15,6 +16,7 @@ Vertica is a distributed, shared-nothing column-store DBMS.
 - [官网](https://www.vertica.com/)
 - [官方文档](https://docs.vertica.com)
 - [官方文档](https://vertica.com/documentation)
+- [GitHub](https://github.com/vertica/vertica)
 
 ## 数据源
 

@@ -28,6 +28,7 @@ Dgraph is a distributed graph database that supports GraphQL. It emphasizes conc
 - **所属机构**: Dgraph Labs, Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2016
+- **国家/地区**: US
 
 ## 官网与文档
 

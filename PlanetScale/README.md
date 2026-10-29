@@ -10,6 +10,7 @@ Scalable, distributed, fully managed MySQL and PostgreSQL database platform
 - **所属机构**: PlanetScale
 - **许可证**: Proprietary
 - **首次发布**: 2020
+- **国家/地区**: US
 
 ## 官网与文档
 

@@ -10,6 +10,7 @@ High-performance, in-memory, MPP database specifically designed for in-memory an
 - **所属机构**: Exasol
 - **许可证**: Proprietary
 - **首次发布**: 2000
+- **国家/地区**: DE
 
 ## 官网与文档
 

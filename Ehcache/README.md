@@ -10,6 +10,7 @@ A widely adopted Java cache with tiered storage options
 - **所属机构**: Terracotta Inc, owned by Software AG
 - **许可证**: Apache v2
 - **首次发布**: 2009
+- **国家/地区**: US
 
 ## 官网与文档
 

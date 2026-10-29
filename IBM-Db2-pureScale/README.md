@@ -8,6 +8,7 @@ IBM Db2 is a relational database management system that is focused on transactio
 - **所属机构**: IBM
 - **许可证**: Proprietary
 - **首次发布**: 1983
+- **国家/地区**: US
 
 ## 官网与文档
 

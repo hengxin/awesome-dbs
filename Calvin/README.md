@@ -7,10 +7,12 @@ Calvin is a scalable transactional database system that leverages determinism to
 - **数据库类型**: SQL
 - **所属机构**: Yale University
 - **首次发布**: 2012
+- **国家/地区**: US
 
 ## 官网与文档
 
 - [官网](http://dslam.cs.umd.edu/calvin)
+- [GitHub](https://github.com/cmu-db/calvin)
 
 ## 数据源
 

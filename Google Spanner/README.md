@@ -16,6 +16,7 @@ Spanner is Google's globally distributed NewSQL database management system. It f
 - **所属机构**: Google LLC
 - **许可证**: Proprietary
 - **首次发布**: 2007
+- **国家/地区**: US
 
 ## 官网与文档
 

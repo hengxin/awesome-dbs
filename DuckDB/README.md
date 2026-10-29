@@ -9,6 +9,7 @@ An embeddable, in-process, column-oriented SQL OLAP RDBMS
 - **数据库类型**: SQL、OLAP
 - **许可证**: MIT License
 - **首次发布**: 2018
+- **国家/地区**: NL
 
 ## 官网与文档
 

@@ -10,6 +10,7 @@ A powerful, fast, open-source and highly customizable Search Engine
 - **所属机构**: Meilisearch SAS
 - **许可证**: MIT License
 - **首次发布**: 2020
+- **国家/地区**: FR
 
 ## 官网与文档
 

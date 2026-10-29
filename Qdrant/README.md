@@ -10,6 +10,7 @@ A high-performance vector database with neural network or semantic-based matchin
 - **所属机构**: Qdrant
 - **许可证**: Apache v2
 - **首次发布**: 2021
+- **国家/地区**: DE
 
 ## 官网与文档
 

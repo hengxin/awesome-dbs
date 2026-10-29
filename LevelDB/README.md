@@ -10,9 +10,11 @@ Embeddable fast key-value storage library that provides an ordered mapping from 
 - **所属机构**: Google
 - **许可证**: BSD License
 - **首次发布**: 2011
+- **国家/地区**: US
 
 ## 官网与文档
 
+- [官网](http://leveldb.org)
 - [官网](https://github.com/google/leveldb)
 - [官方文档](https://github.com/google/leveldb/blob/main/doc/index.md)
 - [GitHub](https://github.com/google/leveldb)

@@ -8,6 +8,7 @@ Redis ("REmote DIctionary Server") is a networked, in-memory, key-value store th
 - **所属机构**: Redis project core team, inspired by Salvatore Sanfilippo Development sponsored by Redis Inc.
 - **许可证**: BSD License
 - **首次发布**: 2009
+- **国家/地区**: IT
 
 ## 官网与文档
 
@@ -17,7 +18,7 @@ Redis ("REmote DIctionary Server") is a networked, in-memory, key-value store th
 - [官方文档](https://docs.redis.com/latest/index.html)
 - [官方文档](https://redis.io/docs/)
 - [官方文档](https://redis.io/docs/latest)
-- [GitHub](https://github.com/redis/redis)
+- [GitHub](https://github.com/redis)
 
 ## 数据源
 

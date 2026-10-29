@@ -7,6 +7,7 @@ IBM Information Management System (IMS) is a hierarchical database management sy
 - **数据库类型**: 层次
 - **所属机构**: IBM
 - **许可证**: Proprietary
+- **国家/地区**: US
 
 ## 官网与文档
 

@@ -14,6 +14,7 @@ F1 is a relational distributed transactional database. And it's built on Google'
 - **数据库类型**: SQL
 - **所属机构**: Google LLC
 - **首次发布**: 2013
+- **国家/地区**: US
 
 ## 官网与文档
 

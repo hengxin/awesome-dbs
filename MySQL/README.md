@@ -23,6 +23,7 @@ MySQL is an open-source relational database management system. MySQL is used in 
 - **所属机构**: Oracle since 2010, originally MySQL AB, then Sun
 - **许可证**: GPL v2
 - **首次发布**: 1995
+- **国家/地区**: SE
 
 ## 官网与文档
 

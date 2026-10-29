@@ -10,6 +10,7 @@ A distributed, RESTful modern search and analytics engine based on Apache Lucene
 - **所属机构**: Elastic
 - **许可证**: Apache v2
 - **首次发布**: 2010
+- **国家/地区**: US
 
 ## 官网与文档
 

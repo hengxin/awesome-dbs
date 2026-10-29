@@ -8,6 +8,7 @@ TigerGraph is a distributed, parallel graph DBMS with high availability designed
 - **所属机构**: TigerGraph
 - **许可证**: Proprietary
 - **首次发布**: 2017
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -15,7 +16,7 @@ TigerGraph is a distributed, parallel graph DBMS with high availability designed
 - [官网](https://www.tigergraph.com/)
 - [官方文档](https://docs.tigergraph.com/)
 - [官方文档](https://tigergraph.com/docs/)
-- [GitHub](https://github.com/tigergraph/ecosys)
+- [GitHub](https://github.com/tigergraph/tigergraph)
 
 ## 数据源
 

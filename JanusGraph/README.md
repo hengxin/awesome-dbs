@@ -8,6 +8,7 @@ JanusGraph is a transactional graph DBMS optimized for storing and querying grap
 - **所属机构**: Linux Foundation; originally developed as Titan by Aurelius
 - **许可证**: Apache v2
 - **首次发布**: 2017
+- **国家/地区**: US
 
 ## 官网与文档
 

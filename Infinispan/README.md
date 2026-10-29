@@ -8,6 +8,7 @@ Infinispan is a distributed cache and key-value NoSQL storage system developed b
 - **所属机构**: Red Hat, Inc.
 - **许可证**: Apache v2
 - **首次发布**: 2009
+- **国家/地区**: US
 
 ## 官网与文档
 

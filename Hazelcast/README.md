@@ -10,6 +10,7 @@ A widely adopted in-memory data grid
 - **所属机构**: Hazelcast
 - **许可证**: Apache v2
 - **首次发布**: 2008
+- **国家/地区**: US
 
 ## 官网与文档
 

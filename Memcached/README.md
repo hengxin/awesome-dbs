@@ -10,6 +10,7 @@ In-memory key-value store, originally intended for caching
 - **所属机构**: Danga Interactive originally developed by Brad Fitzpatrick for LiveJournal
 - **许可证**: BSD License
 - **首次发布**: 2003
+- **国家/地区**: US
 
 ## 官网与文档
 

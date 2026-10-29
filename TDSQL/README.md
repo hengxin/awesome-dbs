@@ -34,11 +34,13 @@ TDSQL is an abbreviation for TecentDistributed SQL. It is derived from MySQL and
 - **数据库类型**: SQL
 - **所属机构**: Tencent
 - **首次发布**: 2012
+- **国家/地区**: CN
 
 ## 官网与文档
 
-- [官网](https://cloud.tencent.com/product/tdsql)
+- [官网](http://tdsql.org)
 - [官方文档](https://cloud.tencent.com/document/product/557)
+- [GitHub](https://github.com/Tencent/TencentDB)
 
 ## 数据源
 

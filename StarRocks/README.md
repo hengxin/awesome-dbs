@@ -10,6 +10,7 @@ An open source, high-performance columnar analytical database that enables real-
 - **所属机构**: The Linux Foundation since Feb 2023
 - **许可证**: Apache v2
 - **首次发布**: 2020
+- **国家/地区**: CN
 
 ## 官网与文档
 

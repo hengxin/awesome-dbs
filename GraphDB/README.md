@@ -8,6 +8,7 @@ GraphDB is a distributed RDF graph database that supports SPARQL queries. It is 
 - **所属机构**: Ontotext, trading as Graphwise
 - **许可证**: Proprietary
 - **首次发布**: 2000
+- **国家/地区**: BG
 
 ## 官网与文档
 

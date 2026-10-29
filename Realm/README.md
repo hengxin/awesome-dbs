@@ -10,6 +10,7 @@ A DBMS built for use on mobile devices that’s a fast, easy to use alternative 
 - **所属机构**: Realm, acquired by MongoDB in May 2019
 - **许可证**: Apache v2
 - **首次发布**: 2014
+- **国家/地区**: US
 
 ## 官网与文档
 

@@ -10,6 +10,7 @@ Cloud-based data warehousing service for structured and semi-structured data
 - **所属机构**: Snowflake Computing Inc.
 - **许可证**: Proprietary
 - **首次发布**: 2014
+- **国家/地区**: US
 
 ## 官网与文档
 

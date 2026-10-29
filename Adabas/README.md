@@ -7,6 +7,7 @@ Adabas ("adaptable database system") is a database management system developed b
 - **数据库类型**: 多值
 - **所属机构**: Software AG
 - **许可证**: Proprietary
+- **国家/地区**: DE
 
 ## 官网与文档
 

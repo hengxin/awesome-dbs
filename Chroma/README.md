@@ -10,6 +10,7 @@ Chroma is an open-source vector DBMS.
 - **所属机构**: Chroma
 - **许可证**: Apache v2
 - **首次发布**: 2022
+- **国家/地区**: US
 
 ## 官网与文档
 

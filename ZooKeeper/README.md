@@ -17,6 +17,7 @@ ZooKeeper is a distributed, open source coordination service from Apache for dis
 - **所属机构**: Apache Software Foundation
 - **许可证**: Apache v2
 - **首次发布**: 2008
+- **国家/地区**: US
 
 ## 官网与文档
 

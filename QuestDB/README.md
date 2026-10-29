@@ -10,6 +10,7 @@ A high performance open source SQL database for time series data
 - **所属机构**: QuestDB Technology Inc
 - **许可证**: Apache v2
 - **首次发布**: 2014
+- **国家/地区**: GB
 
 ## 官网与文档
 

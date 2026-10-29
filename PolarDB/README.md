@@ -8,6 +8,7 @@ PolarDB is a commercial cloud based relational database product developed by the
 - **所属机构**: Alibaba
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2017
+- **国家/地区**: CN
 
 ## 官网与文档
 
@@ -15,7 +16,7 @@ PolarDB is a commercial cloud based relational database product developed by the
 - [官网](https://www.alibabacloud.com/product/polardb)
 - [官方文档](https://polardb.github.io/polardb-pg-docs/)
 - [官方文档](https://www.alibabacloud.com/help/en/polardb/product-overview)
-- [GitHub](https://github.com/polardb/PolarDB-for-PostgreSQL)
+- [GitHub](https://github.com/alibaba/polardb)
 
 ## 数据源
 

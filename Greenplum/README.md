@@ -11,6 +11,7 @@ Greenplum is an open-source data warehouse. It uses massive parallel processing 
 - **所属机构**: Pivotal Software Inc.
 - **许可证**: 商业或开源（DB-Engines 未给出具体许可证）
 - **首次发布**: 2005
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -18,6 +19,7 @@ Greenplum is an open-source data warehouse. It uses massive parallel processing 
 - [官网](https://greenplum.org/)
 - [官方文档](https://docs.greenplum.org)
 - [官方文档](https://docs.greenplum.org/)
+- [GitHub](https://github.com/greenplum-db/gpdb)
 
 ## 数据源
 

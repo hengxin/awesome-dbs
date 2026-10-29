@@ -10,6 +10,7 @@ A distributed, RESTful search and analytics engine forked from Elasticsearch and
 - **所属机构**: The OpenSearch Software Foundation
 - **许可证**: Apache v2
 - **首次发布**: 2021
+- **国家/地区**: US
 
 ## 官网与文档
 
@@ -18,6 +19,7 @@ A distributed, RESTful search and analytics engine forked from Elasticsearch and
 - [官网](https://opensearch.org/)
 - [官方文档](https://docs.opensearch.org/latest)
 - [官方文档](https://opensearch.org/docs/latest)
+- [GitHub](https://github.com/opensearch-project)
 
 ## 数据源
 

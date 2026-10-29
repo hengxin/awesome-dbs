@@ -8,6 +8,7 @@ Memgraph is a native fully distributed in-memory graph database built to handle 
 - **所属机构**: Memgraph Ltd
 - **许可证**: Business Source License
 - **首次发布**: 2017
+- **国家/地区**: GB
 
 ## 官网与文档
 
