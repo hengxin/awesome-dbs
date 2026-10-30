@@ -43,6 +43,7 @@ A List of Awesome Database Systems
 | [DB-Benchs](DB-Benchs/) | 基准测试报告 |
 | [DB-Logos](DB-Logos/) | 各数据库 Logo |
 | [数据库发展研究报告](数据库发展研究报告/) | 28 份数据库技术发展研究报告（信通院年度系列、Gartner/IDC 市场报告、学术综述），含[索引文档](数据库发展研究报告/数据库研究报告索引.md) |
+| [Benchmarking](Benchmarking/) | 数据库性能评测资源：36 篇论文按数据库类型分目录，34 项基准套件/数据集/仓库/规范，含[结构化清单](Benchmarking/BENCHMARKING-INDEX.md) |
 | `Benchmarking/` | 基准测试工具与规范（TPC、LDBC 等） |
 
 ## 资料来源可追溯
